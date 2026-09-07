@@ -1,9 +1,17 @@
-# Core dependencies for Market Basket Analysis clustering
+# Dependencias estrictamente necesarias para cluster_apps.py
+
+# Embeddings semanticos de las descripciones de cada startup
 sentence-transformers==3.0.1
+
+# Similitud coseno entre embeddings
 scikit-learn==1.5.1
+
+# Algebra de vectores y matrices
 numpy==1.26.4
-pandas==2.2.3
+
+# Backend de sentence-transformers. Se fija la version para que el workflow
+# instale la rueda CPU y evite arrastrar CUDA (~2 GB) en el runner.
 torch==2.4.1
-transformers==4.41.2
-tqdm==4.66.4
-scipy==1.14.1
+
+# Ingesta opcional desde feeds RSS/Atom (--rss)
+feedparser==6.0.11

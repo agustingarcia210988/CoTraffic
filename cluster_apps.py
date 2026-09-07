@@ -1,32 +1,101 @@
 #!/usr/bin/env python3
 """
-Market Basket Analysis & Semantic Clustering for CoTraffic.
-Identifies complementary startup groups for cross-promotional campaigns.
+Market Basket Analysis & Semantic Clustering para CoTraffic.
+
+Arma "clusters de co-marketing" de 4 a 5 startups complementarias bajo dos
+restricciones duras:
+
+  1. Todas las startups de un cluster comparten la misma audiencia objetivo.
+  2. Ninguna categoria se repite dentro del cluster, para que el grupo no
+     incluya competidores directos.
+
+Entre los grupos que cumplen ambas reglas se elige el de mayor cohesion
+semantica, medida como la similitud coseno promedio entre los embeddings de
+las descripciones (Sentence-Transformers + scikit-learn).
+
+Fuentes de datos (ver --data / --rss), en orden de precedencia:
+  - JSON local o remoto (HTTPS) con la lista de startups.
+  - Feeds RSS/Atom publicos (Product Hunt, BetaList, etc.), infiriendo
+    categoria y audiencia por palabras clave.
+  - Dataset de ejemplo embebido, usado como fallback.
 """
 
+from __future__ import annotations
+
+import argparse
+import itertools
 import json
 import logging
+import math
+import re
 import sys
-from dataclasses import dataclass, asdict
+import urllib.request
+from dataclasses import asdict, dataclass
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Set, Optional
+from typing import Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import DBSCAN
-from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
+
+# --------------------------------------------------------------------------
+# Parametros de negocio
+# --------------------------------------------------------------------------
 
 MIN_CLUSTER_SIZE = 4
 MAX_CLUSTER_SIZE = 5
-DBSCAN_EPS = 0.35
-DBSCAN_MIN_SAMPLES = 2
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
-@dataclass
+# La busqueda exhaustiva de combinaciones es optima pero crece como C(n, k).
+# Por encima de este numero de combinaciones posibles pasamos a construccion
+# greedy, que es lineal en la cantidad de semillas y escala a datasets grandes.
+EXHAUSTIVE_LIMIT = 50_000
+
+# Taxonomia usada para inferir categoria y audiencia cuando la fuente de datos
+# no las trae (tipicamente RSS). Son heuristicas por palabra clave: alcanzan
+# para prototipar, no reemplazan una clasificacion curada.
+CATEGORY_KEYWORDS: Dict[str, Sequence[str]] = {
+    "Productividad": ("task", "todo", "productiv", "workflow", "note", "focus"),
+    "Tracking": ("time track", "timesheet", "tracking", "pomodoro"),
+    "Ventas": ("sales", "proposal", "pipeline", "lead", "outreach"),
+    "CRM": ("crm", "client", "customer relation", "contact"),
+    "Facturacion": ("invoice", "billing", "payment", "factur"),
+    "Marketing": ("marketing", "campaign", "seo", "newsletter", "ads"),
+    "E-commerce": ("ecommerce", "e-commerce", "shopify", "storefront", "checkout"),
+    "Inventario": ("inventory", "stock", "warehouse"),
+    "Logistica": ("shipping", "logistic", "delivery", "fulfillment"),
+    "DevOps": ("devops", "ci/cd", "deploy", "kubernetes"),
+    "QA": ("bug", "testing", "test suite", "flaky"),
+    "Documentacion": ("documentation", "docs", "knowledge base", "wiki"),
+    "Observability": ("monitoring", "observability", "logging", "apm", "uptime"),
+    "Seguridad": ("security", "secret", "vault", "encryption"),
+    "Analytics": ("analytics", "dashboard", "metrics", "insight"),
+}
+
+AUDIENCE_KEYWORDS: Dict[str, Sequence[str]] = {
+    "Freelancers & Remote Teams": ("freelance", "solopreneur", "remote team", "contractor"),
+    "E-commerce Stores": ("ecommerce", "e-commerce", "online store", "shopify", "merchant"),
+    "Developers & Dev Teams": ("developer", "engineer", "devops", "api", "sdk", "code"),
+    "Agencias": ("agency", "agencies", "studio", "client work"),
+}
+
+UNKNOWN_CATEGORY = "Sin categoria"
+UNKNOWN_AUDIENCE = "Sin audiencia"
+
+
+# --------------------------------------------------------------------------
+# Modelo de datos
+# --------------------------------------------------------------------------
+
+# eq=False mantiene la igualdad por identidad: evita que dataclass compare los
+# embeddings (arrays de numpy) al evaluar `in` sobre listas de startups.
+@dataclass(eq=False)
 class Startup:
-    """Represents a startup/app with core metadata."""
+    """Una startup/app con los metadatos relevantes para el agrupamiento."""
+
     id: str
     nombre: str
     categoria: str
@@ -38,12 +107,19 @@ class Startup:
 
     def to_dict(self) -> Dict:
         data = asdict(self)
-        data.pop('embedding', None)
+        data.pop("embedding", None)
         return data
+
+    def texto_semantico(self) -> str:
+        """Texto que se convierte en embedding."""
+        tags = ", ".join(self.tags)
+        return f"{self.descripcion}. Tags: {tags}" if tags else self.descripcion
+
 
 @dataclass
 class CoMarketingCluster:
-    """Represents a cluster of complementary startups for co-marketing."""
+    """Grupo de startups complementarias listo para una campana conjunta."""
+
     cluster_id: str
     audiencia_objetivo: str
     startups: List[Dict]
@@ -52,268 +128,493 @@ class CoMarketingCluster:
 
     def to_dict(self) -> Dict:
         return {
-            'cluster_id': self.cluster_id,
-            'audiencia_objetivo': self.audiencia_objetivo,
-            'startups': self.startups,
-            'complementarity_score': round(self.complementarity_score, 4),
-            'rationale': self.rationale,
-            'size': len(self.startups)
+            "cluster_id": self.cluster_id,
+            "audiencia_objetivo": self.audiencia_objetivo,
+            "startups": self.startups,
+            "complementarity_score": round(self.complementarity_score, 4),
+            "rationale": self.rationale,
+            "size": len(self.startups),
         }
 
-def load_startup_data(data_source: Optional[str] = None) -> List[Startup]:
-    """Load startup data from JSON file or use built-in example data."""
-    if data_source and Path(data_source).exists():
-        logger.info(f"Loading startup data from {data_source}")
-        try:
-            with open(data_source, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            return [Startup(**item) for item in data]
-        except Exception as e:
-            logger.error(f"Error loading data from {data_source}: {e}")
-            logger.info("Falling back to example data")
 
-    example_data = [
-        Startup(id="1", nombre="TaskFlow", categoria="Productividad",
-            descripcion="Herramienta de gestión de tareas colaborativa para equipos remotos",
-            tags=["tareas", "colaboración", "equipos"],
-            audiencia_objetivo="Freelancers & Remote Teams",
-            url="https://taskflow.example.com"),
-        Startup(id="2", nombre="TimeLogger", categoria="Tracking",
-            descripcion="Software de time tracking automatizado para freelancers",
-            tags=["time-tracking", "facturación", "freelance"],
-            audiencia_objetivo="Freelancers & Remote Teams",
-            url="https://timelogger.example.com"),
-        Startup(id="3", nombre="ProposalMaker", categoria="Ventas",
-            descripcion="Generador de propuestas profesionales con plantillas",
-            tags=["propuestas", "B2B", "ventas"],
-            audiencia_objetivo="Freelancers & Remote Teams",
-            url="https://proposalmaker.example.com"),
-        Startup(id="4", nombre="ClientPortal", categoria="CRM",
-            descripcion="Portal seguro para comunicación cliente-proveedor",
-            tags=["comunicación", "cliente", "gestión"],
-            audiencia_objetivo="Freelancers & Remote Teams",
-            url="https://clientportal.example.com"),
-        Startup(id="5", nombre="ShopAI", categoria="E-commerce",
-            descripcion="Plataforma de e-commerce con IA para recomendaciones de productos",
-            tags=["e-commerce", "IA", "recomendaciones"],
-            audiencia_objetivo="E-commerce Stores",
-            url="https://shopai.example.com"),
-        Startup(id="6", nombre="InvTracker", categoria="Inventory",
-            descripcion="Sistema de gestión de inventario en tiempo real",
-            tags=["inventario", "stock", "e-commerce"],
-            audiencia_objetivo="E-commerce Stores",
-            url="https://invtracker.example.com"),
-        Startup(id="7", nombre="ReviewBooster", categoria="Marketing",
-            descripcion="Herramienta para recopilar y mostrar reseñas de clientes",
-            tags=["reviews", "social-proof", "marketing"],
-            audiencia_objetivo="E-commerce Stores",
-            url="https://reviewbooster.example.com"),
-        Startup(id="8", nombre="ShippingPro", categoria="Logística",
-            descripcion="Optimización de envíos y cálculo de costos multicarrier",
-            tags=["envíos", "logística", "e-commerce"],
-            audiencia_objetivo="E-commerce Stores",
-            url="https://shippingpro.example.com"),
-        Startup(id="9", nombre="CodeDeploy", categoria="DevOps",
-            descripcion="Pipeline CI/CD simplificado para desarrolladores",
-            tags=["CI/CD", "deployment", "DevOps"],
-            audiencia_objetivo="Developers & Dev Teams",
-            url="https://codedeploy.example.com"),
-        Startup(id="10", nombre="BugTracker", categoria="QA",
-            descripcion="Sistema de seguimiento de errores integrado",
-            tags=["bugs", "testing", "QA"],
-            audiencia_objetivo="Developers & Dev Teams",
-            url="https://bugtracker.example.com"),
-        Startup(id="11", nombre="DocHub", categoria="Documentación",
-            descripcion="Plataforma colaborativa para documentación de APIs",
-            tags=["documentación", "API", "colaboración"],
-            audiencia_objetivo="Developers & Dev Teams",
-            url="https://dochub.example.com"),
-        Startup(id="12", nombre="MonitorPro", categoria="Observability",
-            descripcion="Monitoreo de aplicaciones y análisis de performance",
-            tags=["monitoreo", "performance", "observability"],
-            audiencia_objetivo="Developers & Dev Teams",
-            url="https://monitorpro.example.com"),
-    ]
-    logger.info(f"Loaded {len(example_data)} example startups")
-    return example_data
+# --------------------------------------------------------------------------
+# Ingesta de datos
+# --------------------------------------------------------------------------
 
-def generate_embeddings(startups: List[Startup], model_name: str = "all-MiniLM-L6-v2") -> List[Startup]:
-    """Generate semantic embeddings for startup descriptions."""
-    logger.info(f"Loading embedding model: {model_name}")
-    model = SentenceTransformer(model_name)
-    texts = [f"{s.descripcion}. Tags: {', '.join(s.tags)}" for s in startups]
-    logger.info(f"Generating embeddings for {len(startups)} startups...")
-    embeddings = model.encode(texts, show_progress_bar=True)
-    for startup, embedding in zip(startups, embeddings):
-        startup.embedding = embedding
-    logger.info("Embeddings generated successfully")
+
+def load_startup_data(
+    data_source: Optional[str] = None,
+    rss_feeds: Optional[Sequence[str]] = None,
+) -> List[Startup]:
+    """Carga startups desde JSON (local o remoto), RSS o el dataset de ejemplo."""
+    if data_source:
+        startups = _load_from_json_source(data_source)
+        if startups:
+            logger.info(f"{len(startups)} startups cargadas desde {data_source}")
+            return startups
+        logger.warning("La fuente JSON no devolvio datos; se intenta la siguiente opcion")
+
+    if rss_feeds:
+        startups = _load_from_rss(rss_feeds)
+        if startups:
+            return startups
+        logger.warning("Los feeds RSS no devolvieron datos; se usa el dataset de ejemplo")
+
+    logger.info("Usando el dataset de ejemplo embebido")
+    return _example_startups()
+
+
+def _load_from_json_source(source: str) -> List[Startup]:
+    """Lee una lista de startups desde un path local o una URL HTTP(S)."""
+    try:
+        if source.startswith(("http://", "https://")):
+            logger.info(f"Descargando dataset desde {source}")
+            with urllib.request.urlopen(source, timeout=30) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+        else:
+            path = Path(source)
+            if not path.exists():
+                logger.warning(f"No existe el archivo {source}")
+                return []
+            logger.info(f"Leyendo dataset local {source}")
+            payload = json.loads(path.read_text(encoding="utf-8"))
+
+        # Se acepta tanto una lista suelta como {"startups": [...]}.
+        items = payload.get("startups", []) if isinstance(payload, dict) else payload
+        return [_startup_from_dict(item) for item in items]
+    except Exception as exc:
+        logger.error(f"No se pudo leer {source}: {exc}")
+        return []
+
+
+def _startup_from_dict(item: Dict) -> Startup:
+    """Construye una Startup tolerando campos faltantes en la fuente."""
+    nombre = item.get("nombre") or item.get("name") or "Sin nombre"
+    return Startup(
+        id=str(item.get("id") or nombre),
+        nombre=nombre,
+        categoria=item.get("categoria") or UNKNOWN_CATEGORY,
+        descripcion=item.get("descripcion") or item.get("description") or "",
+        tags=list(item.get("tags") or []),
+        audiencia_objetivo=item.get("audiencia_objetivo") or UNKNOWN_AUDIENCE,
+        url=item.get("url"),
+    )
+
+
+def _load_from_rss(feed_urls: Sequence[str]) -> List[Startup]:
+    """Extrae startups de feeds RSS/Atom publicos (Product Hunt, BetaList, ...)."""
+    try:
+        import feedparser
+    except ImportError:
+        logger.error("feedparser no esta instalado: no se pueden leer feeds RSS")
+        return []
+
+    startups: List[Startup] = []
+    for feed_url in feed_urls:
+        logger.info(f"Leyendo feed {feed_url}")
+        parsed = feedparser.parse(feed_url)
+        if not parsed.entries:
+            logger.warning(f"Feed sin entradas o ilegible: {feed_url}")
+            continue
+
+        for entry in parsed.entries:
+            nombre = (entry.get("title") or "").strip()
+            if not nombre:
+                continue
+            descripcion = _strip_html(entry.get("summary") or entry.get("description") or "")
+            tags = [t.get("term", "") for t in entry.get("tags", []) if t.get("term")]
+            texto = f"{nombre} {descripcion} {' '.join(tags)}"
+            startups.append(
+                Startup(
+                    id=str(entry.get("id") or entry.get("link") or nombre),
+                    nombre=nombre,
+                    categoria=_infer_label(texto, CATEGORY_KEYWORDS, UNKNOWN_CATEGORY),
+                    descripcion=descripcion,
+                    tags=tags,
+                    audiencia_objetivo=_infer_label(texto, AUDIENCE_KEYWORDS, UNKNOWN_AUDIENCE),
+                    url=entry.get("link"),
+                )
+            )
+
+    logger.info(f"{len(startups)} entradas obtenidas de {len(feed_urls)} feed(s)")
     return startups
 
-def compute_similarity(embedding1: np.ndarray, embedding2: np.ndarray) -> float:
-    """Compute cosine similarity between two embeddings."""
-    dot_product = np.dot(embedding1, embedding2)
-    norm1 = np.linalg.norm(embedding1)
-    norm2 = np.linalg.norm(embedding2)
-    return dot_product / (norm1 * norm2) if norm1 > 0 and norm2 > 0 else 0.0
+
+def _strip_html(texto: str) -> str:
+    """Limpia el HTML que suelen traer los resumenes de RSS."""
+    return re.sub(r"<[^>]+>", " ", texto).replace("&nbsp;", " ").strip()
+
+
+def _infer_label(texto: str, taxonomia: Dict[str, Sequence[str]], default: str) -> str:
+    """Devuelve la etiqueta cuyas palabras clave aparecen mas veces en el texto."""
+    texto = texto.lower()
+    mejor, mejor_hits = default, 0
+    for etiqueta, palabras in taxonomia.items():
+        hits = sum(texto.count(palabra) for palabra in palabras)
+        if hits > mejor_hits:
+            mejor, mejor_hits = etiqueta, hits
+    return mejor
+
+
+def _example_startups() -> List[Startup]:
+    """Dataset simulado: 3 audiencias x 7 startups, con categorias repetidas a
+    proposito para ejercitar la restriccion de no-competencia."""
+    crudo = [
+        # --- Freelancers & Remote Teams ---
+        ("1", "TaskFlow", "Productividad", "Gestion de tareas colaborativa para equipos remotos",
+         ["tareas", "colaboracion", "equipos"], "Freelancers & Remote Teams"),
+        ("2", "TimeLogger", "Tracking", "Time tracking automatizado para freelancers",
+         ["time-tracking", "facturacion", "freelance"], "Freelancers & Remote Teams"),
+        ("3", "ProposalMaker", "Ventas", "Generador de propuestas profesionales con plantillas",
+         ["propuestas", "B2B", "ventas"], "Freelancers & Remote Teams"),
+        ("4", "ClientPortal", "CRM", "Portal seguro para la comunicacion cliente-proveedor",
+         ["comunicacion", "cliente", "gestion"], "Freelancers & Remote Teams"),
+        ("5", "InvoiceZen", "Facturacion", "Facturacion recurrente y cobros para trabajo independiente",
+         ["facturas", "cobros", "freelance"], "Freelancers & Remote Teams"),
+        ("6", "FocusRoom", "Productividad", "Sesiones de trabajo profundo con bloqueo de distracciones",
+         ["foco", "pomodoro", "habitos"], "Freelancers & Remote Teams"),
+        ("7", "ContractSign", "Legal", "Contratos y firma electronica para acuerdos con clientes",
+         ["contratos", "firma", "legal"], "Freelancers & Remote Teams"),
+        # --- E-commerce Stores ---
+        ("8", "ShopAI", "E-commerce", "Plataforma de e-commerce con IA para recomendar productos",
+         ["e-commerce", "IA", "recomendaciones"], "E-commerce Stores"),
+        ("9", "InvTracker", "Inventario", "Gestion de inventario en tiempo real multi-deposito",
+         ["inventario", "stock", "e-commerce"], "E-commerce Stores"),
+        ("10", "ReviewBooster", "Marketing", "Recopila y muestra resenas de clientes verificadas",
+         ["reviews", "social-proof", "marketing"], "E-commerce Stores"),
+        ("11", "ShippingPro", "Logistica", "Optimizacion de envios y costos multicarrier",
+         ["envios", "logistica", "e-commerce"], "E-commerce Stores"),
+        ("12", "CartRescue", "Retencion", "Recupera carritos abandonados con secuencias automaticas",
+         ["carrito", "retencion", "email"], "E-commerce Stores"),
+        ("13", "PricePulse", "Pricing", "Monitoreo de precios de la competencia y repricing",
+         ["precios", "competencia", "margen"], "E-commerce Stores"),
+        ("14", "AdSpark", "Marketing", "Creacion y testeo de anuncios para tiendas online",
+         ["ads", "creatividades", "performance"], "E-commerce Stores"),
+        # --- Developers & Dev Teams ---
+        ("15", "CodeDeploy", "DevOps", "Pipeline CI/CD simplificado para equipos de desarrollo",
+         ["CI/CD", "deployment", "DevOps"], "Developers & Dev Teams"),
+        ("16", "BugTracker", "QA", "Seguimiento de errores integrado al flujo de trabajo",
+         ["bugs", "testing", "QA"], "Developers & Dev Teams"),
+        ("17", "DocHub", "Documentacion", "Plataforma colaborativa para documentacion de APIs",
+         ["documentacion", "API", "colaboracion"], "Developers & Dev Teams"),
+        ("18", "MonitorPro", "Observability", "Monitoreo de aplicaciones y analisis de performance",
+         ["monitoreo", "performance", "observability"], "Developers & Dev Teams"),
+        ("19", "SecretVault", "Seguridad", "Gestion de secretos y credenciales para entornos cloud",
+         ["secretos", "seguridad", "cloud"], "Developers & Dev Teams"),
+        ("20", "APIForge", "API Design", "Diseno y mocking de APIs antes de escribir codigo",
+         ["API", "diseno", "mocking"], "Developers & Dev Teams"),
+        ("21", "FlakyGuard", "QA", "Detecta y aisla tests inestables en la suite automatizada",
+         ["tests", "flaky", "CI"], "Developers & Dev Teams"),
+    ]
+
+    startups = [
+        Startup(
+            id=sid,
+            nombre=nombre,
+            categoria=categoria,
+            descripcion=descripcion,
+            tags=tags,
+            audiencia_objetivo=audiencia,
+            url=f"https://{nombre.lower()}.example.com",
+        )
+        for sid, nombre, categoria, descripcion, tags, audiencia in crudo
+    ]
+    logger.info(f"{len(startups)} startups de ejemplo cargadas")
+    return startups
+
+
+# --------------------------------------------------------------------------
+# Embeddings y similitud
+# --------------------------------------------------------------------------
+
+
+def generate_embeddings(startups: List[Startup], model_name: str = EMBEDDING_MODEL) -> List[Startup]:
+    """Calcula el embedding semantico de cada startup a partir de su descripcion."""
+    from sentence_transformers import SentenceTransformer
+
+    logger.info(f"Cargando modelo de embeddings: {model_name}")
+    model = SentenceTransformer(model_name)
+
+    textos = [s.texto_semantico() for s in startups]
+    logger.info(f"Generando embeddings para {len(startups)} startups...")
+    embeddings = model.encode(textos, show_progress_bar=False)
+
+    for startup, embedding in zip(startups, embeddings):
+        startup.embedding = embedding
+    logger.info("Embeddings generados correctamente")
+    return startups
+
+
+def build_similarity_index(startups: List[Startup]) -> Tuple[np.ndarray, Dict[str, int]]:
+    """Matriz de similitud coseno entre todas las startups + indice id -> fila."""
+    matriz = np.vstack([s.embedding for s in startups])
+    similitudes = cosine_similarity(matriz)
+    indice = {s.id: i for i, s in enumerate(startups)}
+    return similitudes, indice
+
+
+def calculate_complementarity(
+    cluster: Sequence[Startup], similitudes: np.ndarray, indice: Dict[str, int]
+) -> float:
+    """Cohesion del cluster: similitud coseno promedio entre todos sus pares.
+
+    Como el cluster ya tiene garantizada una audiencia comun y categorias
+    distintas, una similitud alta indica startups del mismo universo tematico
+    pero con funciones diferentes: exactamente el perfil complementario buscado.
+    """
+    pares = list(itertools.combinations(cluster, 2))
+    if not pares:
+        return 0.0
+    valores = [similitudes[indice[a.id], indice[b.id]] for a, b in pares]
+    return float(np.mean(valores))
+
+
+# --------------------------------------------------------------------------
+# Construccion de clusters
+# --------------------------------------------------------------------------
+
 
 def cluster_by_audience(startups: List[Startup]) -> Dict[str, List[Startup]]:
-    """Group startups by shared target audience."""
-    audience_groups = {}
+    """Agrupa startups por audiencia objetivo (restriccion 1)."""
+    grupos: Dict[str, List[Startup]] = {}
     for startup in startups:
-        audience = startup.audiencia_objetivo
-        if audience not in audience_groups:
-            audience_groups[audience] = []
-        audience_groups[audience].append(startup)
-    logger.info(f"Found {len(audience_groups)} distinct audiences")
-    return audience_groups
+        grupos.setdefault(startup.audiencia_objetivo, []).append(startup)
+    logger.info(f"Se encontraron {len(grupos)} audiencias distintas")
+    return grupos
 
-def is_valid_cluster(startups: List[Startup]) -> bool:
-    """Check if cluster respects 'no duplicate categories' constraint."""
-    categories = [s.categoria for s in startups]
-    return len(categories) == len(set(categories))
 
-def calculate_complementarity(startups: List[Startup]) -> float:
-    """Calculate average pairwise semantic similarity within a cluster."""
-    if len(startups) < 2:
-        return 0.0
-    similarities = []
-    for i in range(len(startups)):
-        for j in range(i + 1, len(startups)):
-            sim = compute_similarity(startups[i].embedding, startups[j].embedding)
-            similarities.append(sim)
-    return sum(similarities) / len(similarities) if similarities else 0.0
+def has_unique_categories(cluster: Sequence[Startup]) -> bool:
+    """Valida la restriccion 2: ninguna categoria repetida en el cluster."""
+    categorias = [s.categoria for s in cluster]
+    return len(categorias) == len(set(categorias))
 
-def generate_candidate_clusters(startups: List[Startup], min_size: int, max_size: int) -> List[List[Startup]]:
-    """Generate valid candidate clusters respecting category constraint."""
-    candidates = []
-    by_category = {}
-    for startup in startups:
-        if startup.categoria not in by_category:
-            by_category[startup.categoria] = []
-        by_category[startup.categoria].append(startup)
-    
-    categories = list(by_category.keys())
-    if len(categories) >= min_size:
-        def build_from_categories(selected_categories, current_cluster):
-            if len(current_cluster) >= max_size:
-                if len(current_cluster) >= min_size:
-                    candidates.append(current_cluster[:])
-                return
-            for cat in selected_categories:
-                if cat in by_category:
-                    for startup in by_category[cat]:
-                        if startup not in current_cluster:
-                            current_cluster.append(startup)
-                            remaining = [c for c in selected_categories if c != cat]
-                            build_from_categories(remaining, current_cluster)
-                            current_cluster.pop()
-                            if len(candidates) >= 10:
-                                return
-        build_from_categories(categories, [])
-    
-    if not candidates and len(startups) >= min_size:
-        embeddings = np.array([s.embedding for s in startups])
-        scaler = StandardScaler()
-        embeddings_scaled = scaler.fit_transform(embeddings)
-        from sklearn.metrics.pairwise import cosine_distances
-        distances = cosine_distances(embeddings_scaled)
-        clustering = DBSCAN(eps=DBSCAN_EPS, min_samples=DBSCAN_MIN_SAMPLES, metric='precomputed').fit(distances)
-        for cluster_id in set(clustering.labels_):
-            if cluster_id == -1:
-                continue
-            cluster_startups = [startups[i] for i in range(len(startups)) if clustering.labels_[i] == cluster_id]
-            if is_valid_cluster(cluster_startups) and min_size <= len(cluster_startups) <= max_size:
-                candidates.append(cluster_startups)
-    
-    return candidates
 
-def select_best_clusters(candidates: List[List[Startup]]) -> List[List[Startup]]:
-    """Select the best non-overlapping clusters."""
-    scored_candidates = [(calculate_complementarity(c), c) for c in candidates]
-    scored_candidates.sort(key=lambda x: x[0], reverse=True)
-    selected = []
-    used_startups = set()
-    for score, cluster in scored_candidates:
-        cluster_ids = {s.id for s in cluster}
-        if not (cluster_ids & used_startups):
-            selected.append(cluster)
-            used_startups.update(cluster_ids)
-    return selected
+def generate_candidate_clusters(
+    grupo: List[Startup],
+    similitudes: np.ndarray,
+    indice: Dict[str, int],
+    min_size: int = MIN_CLUSTER_SIZE,
+    max_size: int = MAX_CLUSTER_SIZE,
+) -> List[List[Startup]]:
+    """Genera grupos candidatos de tamano valido y sin categorias repetidas.
 
-def build_complementary_clusters(startups: List[Startup], audience_groups: Dict[str, List[Startup]], 
-                                min_size: int = MIN_CLUSTER_SIZE, max_size: int = MAX_CLUSTER_SIZE) -> List[CoMarketingCluster]:
-    """Build complementary clusters within each audience group."""
-    clusters = []
-    cluster_counter = 0
-    for audience, group in audience_groups.items():
-        logger.info(f"\\nClustering audience: {audience} ({len(group)} startups)")
-        if len(group) < min_size:
-            logger.warning(f"Audience '{audience}' has only {len(group)} startups (minimum: {min_size}). Skipping.")
+    Para grupos chicos hace busqueda exhaustiva (optima); para grupos grandes
+    cae en construccion greedy para no explotar combinatoriamente.
+    """
+    if len(grupo) < min_size:
+        return []
+
+    tope = min(max_size, len(grupo))
+    combinaciones = sum(math.comb(len(grupo), k) for k in range(min_size, tope + 1))
+
+    if combinaciones <= EXHAUSTIVE_LIMIT:
+        candidatos = _exhaustive_candidates(grupo, min_size, tope)
+        logger.info(f"  Busqueda exhaustiva: {len(candidatos)} candidatos validos")
+    else:
+        candidatos = _greedy_candidates(grupo, similitudes, indice, min_size, tope)
+        logger.info(f"  Busqueda greedy: {len(candidatos)} candidatos validos")
+    return candidatos
+
+
+def _exhaustive_candidates(
+    grupo: List[Startup], min_size: int, max_size: int
+) -> List[List[Startup]]:
+    """Todas las combinaciones de tamano [min_size, max_size] sin categorias repetidas."""
+    candidatos = []
+    for size in range(max_size, min_size - 1, -1):
+        for combo in itertools.combinations(grupo, size):
+            if has_unique_categories(combo):
+                candidatos.append(list(combo))
+    return candidatos
+
+
+def _greedy_candidates(
+    grupo: List[Startup],
+    similitudes: np.ndarray,
+    indice: Dict[str, int],
+    min_size: int,
+    max_size: int,
+) -> List[List[Startup]]:
+    """Desde cada startup semilla, suma la vecina mas similar de categoria nueva."""
+    candidatos: List[List[Startup]] = []
+    vistos = set()
+
+    for semilla in grupo:
+        cluster = [semilla]
+        categorias = {semilla.categoria}
+
+        while len(cluster) < max_size:
+            mejor, mejor_score = None, -1.0
+            for candidata in grupo:
+                if candidata in cluster or candidata.categoria in categorias:
+                    continue
+                score = float(
+                    np.mean([similitudes[indice[candidata.id], indice[m.id]] for m in cluster])
+                )
+                if score > mejor_score:
+                    mejor, mejor_score = candidata, score
+            if mejor is None:
+                break
+            cluster.append(mejor)
+            categorias.add(mejor.categoria)
+
+        if len(cluster) >= min_size:
+            firma = frozenset(s.id for s in cluster)
+            if firma not in vistos:
+                vistos.add(firma)
+                candidatos.append(cluster)
+
+    return candidatos
+
+
+def select_best_clusters(
+    candidatos: List[List[Startup]], similitudes: np.ndarray, indice: Dict[str, int]
+) -> List[Tuple[List[Startup], float]]:
+    """Elige los mejores clusters sin solapar startups entre si.
+
+    Ordena por tamano (un cluster de 5 vale mas que uno de 4 para una campana
+    conjunta) y, a igual tamano, por cohesion semantica.
+    """
+    puntuados = [
+        (len(c), calculate_complementarity(c, similitudes, indice), c) for c in candidatos
+    ]
+    puntuados.sort(key=lambda t: (t[0], t[1]), reverse=True)
+
+    seleccionados: List[Tuple[List[Startup], float]] = []
+    usadas: set = set()
+    for _, score, cluster in puntuados:
+        ids = {s.id for s in cluster}
+        if ids & usadas:
             continue
-        candidate_clusters = generate_candidate_clusters(group, min_size, max_size)
-        if not candidate_clusters:
-            continue
-        selected_clusters = select_best_clusters(candidate_clusters)
-        for candidate in selected_clusters:
-            cluster_counter += 1
-            cluster_id = f"cluster_{audience.lower().replace(' ', '_')}_{cluster_counter}"
-            complementarity_score = calculate_complementarity(candidate)
-            categories = ", ".join([s.categoria for s in candidate])
-            co_cluster = CoMarketingCluster(
-                cluster_id=cluster_id,
-                audiencia_objetivo=audience,
-                startups=[s.to_dict() for s in candidate],
-                complementarity_score=complementarity_score,
-                rationale=f"Complementary tools for {audience}: {categories}"
+        seleccionados.append((cluster, score))
+        usadas |= ids
+    return seleccionados
+
+
+def build_complementary_clusters(
+    startups: List[Startup],
+    similitudes: np.ndarray,
+    indice: Dict[str, int],
+    min_size: int = MIN_CLUSTER_SIZE,
+    max_size: int = MAX_CLUSTER_SIZE,
+) -> List[CoMarketingCluster]:
+    """Pipeline de agrupamiento: audiencia -> candidatos -> seleccion final."""
+    clusters: List[CoMarketingCluster] = []
+    contador = 0
+
+    for audiencia, grupo in cluster_by_audience(startups).items():
+        logger.info(f"Procesando audiencia '{audiencia}' ({len(grupo)} startups)")
+
+        if len(grupo) < min_size:
+            logger.warning(
+                f"  '{audiencia}' tiene solo {len(grupo)} startups (minimo {min_size}). Se omite."
             )
-            clusters.append(co_cluster)
-            logger.info(f"  Created {cluster_id} with {len(candidate)} startups (score: {complementarity_score:.4f})")
+            continue
+
+        candidatos = generate_candidate_clusters(grupo, similitudes, indice, min_size, max_size)
+        if not candidatos:
+            logger.warning(f"  '{audiencia}' no permite ningun cluster sin categorias repetidas")
+            continue
+
+        for cluster, score in select_best_clusters(candidatos, similitudes, indice):
+            contador += 1
+            slug = re.sub(r"[^a-z0-9]+", "_", audiencia.lower()).strip("_")
+            categorias = ", ".join(s.categoria for s in cluster)
+            clusters.append(
+                CoMarketingCluster(
+                    cluster_id=f"cluster_{slug}_{contador}",
+                    audiencia_objetivo=audiencia,
+                    startups=[s.to_dict() for s in cluster],
+                    complementarity_score=score,
+                    rationale=f"Herramientas complementarias para {audiencia}: {categorias}",
+                )
+            )
+            logger.info(
+                f"  {clusters[-1].cluster_id}: {len(cluster)} startups (cohesion {score:.4f})"
+            )
+
     return clusters
 
-def save_clusters(clusters: List[CoMarketingCluster], output_path: str = "clusters_result.json") -> None:
-    """Save clustering results to JSON file."""
-    output_data = {
-        'generated_at': str(Path(__file__).stat().st_mtime),
-        'total_clusters': len(clusters),
-        'clusters': [c.to_dict() for c in clusters]
+
+# --------------------------------------------------------------------------
+# Salida
+# --------------------------------------------------------------------------
+
+
+def save_clusters(clusters: List[CoMarketingCluster], output_path: str) -> None:
+    """Persiste el resultado en JSON."""
+    salida = {
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "total_clusters": len(clusters),
+        "clusters": [c.to_dict() for c in clusters],
     }
-    Path(output_path).write_text(json.dumps(output_data, indent=2, ensure_ascii=False), encoding='utf-8')
-    logger.info(f"Clusters saved to {output_path}")
+    Path(output_path).write_text(
+        json.dumps(salida, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    logger.info(f"Resultado guardado en {output_path}")
+
 
 def print_summary(clusters: List[CoMarketingCluster]) -> None:
-    """Print a summary of clustering results to console."""
-    print("\\n" + "="*70)
-    print("CO-MARKETING CLUSTERING RESULTS")
-    print("="*70)
-    print(f"Total Clusters: {len(clusters)}\\n")
+    """Resumen legible por consola, util en los logs de GitHub Actions."""
+    print("\n" + "=" * 70)
+    print("CLUSTERS DE CO-MARKETING")
+    print("=" * 70)
+    print(f"Total de clusters: {len(clusters)}\n")
     for cluster in clusters:
-        print(f"Cluster ID: {cluster.cluster_id}")
-        print(f"Audience: {cluster.audiencia_objetivo}")
-        print(f"Complementarity Score: {cluster.complementarity_score:.4f}")
-        print(f"Startups:")
+        print(f"{cluster.cluster_id}  ({len(cluster.startups)} startups)")
+        print(f"  Audiencia : {cluster.audiencia_objetivo}")
+        print(f"  Cohesion  : {cluster.complementarity_score:.4f}")
         for startup in cluster.startups:
-            print(f"  - {startup['nombre']} ({startup['categoria']})")
+            print(f"    - {startup['nombre']} ({startup['categoria']})")
         print()
 
-def main(data_source: Optional[str] = None, output_path: str = "clusters_result.json") -> None:
-    """Execute the complete co-marketing clustering pipeline."""
-    logger.info("Starting Co-Marketing Clustering Pipeline...")
-    startups = load_startup_data(data_source)
+
+def main(
+    data_source: Optional[str] = None,
+    rss_feeds: Optional[Sequence[str]] = None,
+    output_path: str = "clusters_result.json",
+) -> List[CoMarketingCluster]:
+    """Ejecuta el pipeline completo de clustering de co-marketing."""
+    logger.info("Iniciando pipeline de clustering de co-marketing...")
+
+    startups = load_startup_data(data_source, rss_feeds)
     startups = generate_embeddings(startups)
-    audience_groups = cluster_by_audience(startups)
-    clusters = build_complementary_clusters(startups, audience_groups)
+    similitudes, indice = build_similarity_index(startups)
+    clusters = build_complementary_clusters(startups, similitudes, indice)
+
     save_clusters(clusters, output_path)
     print_summary(clusters)
-    logger.info(f"Pipeline completed successfully. Generated {len(clusters)} clusters.")
+    logger.info(f"Pipeline completado. Se generaron {len(clusters)} clusters.")
+    return clusters
+
 
 if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser(description="Market Basket Analysis for Co-Marketing Clusters")
-    parser.add_argument("--data", type=str, default=None, help="Path to JSON file with startup data")
-    parser.add_argument("--output", type=str, default="clusters_result.json", help="Path to output JSON file")
+    parser = argparse.ArgumentParser(
+        description="Market Basket Analysis para clusters de co-marketing"
+    )
+    parser.add_argument(
+        "--data",
+        type=str,
+        default=None,
+        help="Path local o URL HTTPS a un JSON con la lista de startups",
+    )
+    parser.add_argument(
+        "--rss",
+        type=str,
+        nargs="*",
+        default=None,
+        help="Uno o mas feeds RSS/Atom publicos (Product Hunt, BetaList, ...)",
+    )
+    parser.add_argument(
+        "--output",
+        type=str,
+        default="clusters_result.json",
+        help="Path del JSON de salida (por defecto, la raiz del repositorio)",
+    )
     args = parser.parse_args()
+
     try:
-        main(data_source=args.data, output_path=args.output)
-    except Exception as e:
-        logger.error(f"Pipeline failed: {e}", exc_info=True)
+        main(data_source=args.data, rss_feeds=args.rss, output_path=args.output)
+    except Exception as exc:
+        logger.error(f"El pipeline fallo: {exc}", exc_info=True)
         sys.exit(1)
