@@ -1,153 +1,133 @@
 {
-  "generated_at": "2026-09-07T20:23:50+00:00",
-  "total_clusters": 3,
+  "generated_at": "2026-09-07T20:49:06+00:00",
+  "total_clusters": 21,
   "clusters": [
     {
-      "cluster_id": "cluster_freelancers_remote_teams_1",
-      "audiencia_objetivo": "Freelancers & Remote Teams",
+      "cluster_id": "cluster_developers_dev_teams_1",
+      "audiencia_objetivo": "Developers & Dev Teams",
       "startups": [
         {
-          "id": "2",
-          "nombre": "TimeLogger",
-          "categoria": "Tracking",
-          "descripcion": "Time tracking automatizado para freelancers",
+          "id": "https://www.producthunt.com/products/openclaw-formerly-clawdbot",
+          "nombre": "OpenClaw 2.0",
+          "categoria": "Developer Tools",
+          "descripcion": "The AI that really does things",
           "tags": [
-            "time-tracking",
-            "facturacion",
-            "freelance"
+            "developer-tools"
           ],
-          "audiencia_objetivo": "Freelancers & Remote Teams",
-          "url": "https://timelogger.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/openclaw-formerly-clawdbot"
         },
         {
-          "id": "4",
-          "nombre": "ClientPortal",
-          "categoria": "CRM",
-          "descripcion": "Portal seguro para la comunicacion cliente-proveedor",
+          "id": "https://www.producthunt.com/products/amami/launches/amami",
+          "nombre": "Amami",
+          "categoria": "Analytics",
+          "descripcion": "Analytics that lives inside your AI assistant",
           "tags": [
-            "comunicacion",
-            "cliente",
-            "gestion"
+            "analytics"
           ],
-          "audiencia_objetivo": "Freelancers & Remote Teams",
-          "url": "https://clientportal.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/amami/launches/amami"
         },
         {
-          "id": "5",
-          "nombre": "InvoiceZen",
-          "categoria": "Facturacion",
-          "descripcion": "Facturacion recurrente y cobros para trabajo independiente",
+          "id": "https://www.producthunt.com/products/tabbitai",
+          "nombre": "Tabbit AI",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "The best AI browser built both for you and your Agents.",
           "tags": [
-            "facturas",
-            "cobros",
-            "freelance"
+            "artificial-intelligence"
           ],
-          "audiencia_objetivo": "Freelancers & Remote Teams",
-          "url": "https://invoicezen.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/tabbitai"
         },
         {
-          "id": "6",
-          "nombre": "FocusRoom",
-          "categoria": "Productividad",
-          "descripcion": "Sesiones de trabajo profundo con bloqueo de distracciones",
+          "id": "https://www.producthunt.com/products/moda-2/launches/moda-2",
+          "nombre": "Moda",
+          "categoria": "Diseno",
+          "descripcion": "Finally, AI designs you can edit",
           "tags": [
-            "foco",
-            "pomodoro",
-            "habitos"
+            "design"
           ],
-          "audiencia_objetivo": "Freelancers & Remote Teams",
-          "url": "https://focusroom.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/moda-2/launches/moda-2"
         },
         {
-          "id": "7",
-          "nombre": "ContractSign",
-          "categoria": "Legal",
-          "descripcion": "Contratos y firma electronica para acuerdos con clientes",
+          "id": "https://www.producthunt.com/products/locus-founder/launches/locus-founder",
+          "nombre": "Locus Founder",
+          "categoria": "No-Code",
+          "descripcion": "Text an AI agent and it builds + runs your business",
           "tags": [
-            "contratos",
-            "firma",
-            "legal"
+            "no-code"
           ],
-          "audiencia_objetivo": "Freelancers & Remote Teams",
-          "url": "https://contractsign.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/locus-founder/launches/locus-founder"
         }
       ],
-      "complementarity_score": 0.5086,
-      "rationale": "Herramientas complementarias para Freelancers & Remote Teams: Tracking, CRM, Facturacion, Productividad, Legal",
+      "complementarity_score": 0.6395,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, Analytics, Inteligencia Artificial, Diseno, No-Code",
       "size": 5
     },
     {
-      "cluster_id": "cluster_e_commerce_stores_2",
-      "audiencia_objetivo": "E-commerce Stores",
+      "cluster_id": "cluster_developers_dev_teams_2",
+      "audiencia_objetivo": "Developers & Dev Teams",
       "startups": [
         {
-          "id": "8",
-          "nombre": "ShopAI",
-          "categoria": "E-commerce",
-          "descripcion": "Plataforma de e-commerce con IA para recomendar productos",
+          "id": "https://www.producthunt.com/products/depthdata/launches/depthdata",
+          "nombre": "Depthdata",
+          "categoria": "Analytics",
+          "descripcion": "The system of analyze your company's AI usage",
           "tags": [
-            "e-commerce",
-            "IA",
-            "recomendaciones"
+            "analytics"
           ],
-          "audiencia_objetivo": "E-commerce Stores",
-          "url": "https://shopai.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/depthdata/launches/depthdata"
         },
         {
-          "id": "9",
-          "nombre": "InvTracker",
-          "categoria": "Inventario",
-          "descripcion": "Gestion de inventario en tiempo real multi-deposito",
+          "id": "https://www.producthunt.com/products/databox",
+          "nombre": "Routines by Databox",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "An AI Analyst that runs analysis and reports on a schedule",
           "tags": [
-            "inventario",
-            "stock",
-            "e-commerce"
+            "artificial-intelligence"
           ],
-          "audiencia_objetivo": "E-commerce Stores",
-          "url": "https://invtracker.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/databox"
         },
         {
-          "id": "11",
-          "nombre": "ShippingPro",
-          "categoria": "Logistica",
-          "descripcion": "Optimizacion de envios y costos multicarrier",
+          "id": "https://www.producthunt.com/products/hot100-ai/launches/hot100-ai",
+          "nombre": "Hot100.ai",
+          "categoria": "Diseno",
+          "descripcion": "The weekly AI project chart judged by AI",
           "tags": [
-            "envios",
-            "logistica",
-            "e-commerce"
+            "design"
           ],
-          "audiencia_objetivo": "E-commerce Stores",
-          "url": "https://shippingpro.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/hot100-ai/launches/hot100-ai"
         },
         {
-          "id": "13",
-          "nombre": "PricePulse",
-          "categoria": "Pricing",
-          "descripcion": "Monitoreo de precios de la competencia y repricing",
+          "id": "https://www.producthunt.com/products/clockwork-5",
+          "nombre": "Clockwork",
+          "categoria": "Developer Tools",
+          "descripcion": "The calendar where your AI agents show up for work",
           "tags": [
-            "precios",
-            "competencia",
-            "margen"
+            "developer-tools"
           ],
-          "audiencia_objetivo": "E-commerce Stores",
-          "url": "https://pricepulse.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/clockwork-5"
         },
         {
-          "id": "14",
-          "nombre": "AdSpark",
-          "categoria": "Marketing",
-          "descripcion": "Creacion y testeo de anuncios para tiendas online",
+          "id": "https://www.producthunt.com/products/jet-admin/launches/jet-ai-agents",
+          "nombre": "Jet AI Agents",
+          "categoria": "No-Code",
+          "descripcion": "Build business AI agents in minutes",
           "tags": [
-            "ads",
-            "creatividades",
-            "performance"
+            "no-code"
           ],
-          "audiencia_objetivo": "E-commerce Stores",
-          "url": "https://adspark.example.com"
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/jet-admin/launches/jet-ai-agents"
         }
       ],
-      "complementarity_score": 0.493,
-      "rationale": "Herramientas complementarias para E-commerce Stores: E-commerce, Inventario, Logistica, Pricing, Marketing",
+      "complementarity_score": 0.6098,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Analytics, Inteligencia Artificial, Diseno, Developer Tools, No-Code",
       "size": 5
     },
     {
@@ -155,73 +135,1215 @@
       "audiencia_objetivo": "Developers & Dev Teams",
       "startups": [
         {
-          "id": "15",
-          "nombre": "CodeDeploy",
-          "categoria": "DevOps",
-          "descripcion": "Pipeline CI/CD simplificado para equipos de desarrollo",
+          "id": "https://www.producthunt.com/products/bitli-st/launches/bitli-st",
+          "nombre": "Bitli.st",
+          "categoria": "No-Code",
+          "descripcion": "Sell your product before you build it",
           "tags": [
-            "CI/CD",
-            "deployment",
-            "DevOps"
+            "no-code"
           ],
           "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://codedeploy.example.com"
+          "url": "https://www.producthunt.com/products/bitli-st/launches/bitli-st"
         },
         {
-          "id": "16",
-          "nombre": "BugTracker",
-          "categoria": "QA",
-          "descripcion": "Seguimiento de errores integrado al flujo de trabajo",
+          "id": "https://www.producthunt.com/products/anyonecanai/launches/anyonecanai",
+          "nombre": "AnyoneCanAI",
+          "categoria": "Diseno",
+          "descripcion": "A simpler & faster way of creating valuable products with AI",
           "tags": [
-            "bugs",
-            "testing",
-            "QA"
+            "design"
           ],
           "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://bugtracker.example.com"
+          "url": "https://www.producthunt.com/products/anyonecanai/launches/anyonecanai"
         },
         {
-          "id": "17",
-          "nombre": "DocHub",
-          "categoria": "Documentacion",
-          "descripcion": "Plataforma colaborativa para documentacion de APIs",
+          "id": "https://www.producthunt.com/products/userlens",
+          "nombre": "Userlens",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "AI agent to improve product adoption",
           "tags": [
-            "documentacion",
-            "API",
-            "colaboracion"
+            "artificial-intelligence"
           ],
           "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://dochub.example.com"
+          "url": "https://www.producthunt.com/products/userlens"
         },
         {
-          "id": "19",
-          "nombre": "SecretVault",
-          "categoria": "Seguridad",
-          "descripcion": "Gestion de secretos y credenciales para entornos cloud",
+          "id": "https://www.producthunt.com/products/scribble-network/launches/scribble-network",
+          "nombre": "Scribble Network",
+          "categoria": "Analytics",
+          "descripcion": "The product that makes AI recommend your brand",
           "tags": [
-            "secretos",
-            "seguridad",
-            "cloud"
+            "analytics"
           ],
           "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://secretvault.example.com"
+          "url": "https://www.producthunt.com/products/scribble-network/launches/scribble-network"
         },
         {
-          "id": "20",
-          "nombre": "APIForge",
-          "categoria": "API Design",
-          "descripcion": "Diseno y mocking de APIs antes de escribir codigo",
+          "id": "https://www.producthunt.com/products/keiki",
+          "nombre": "Keiki",
+          "categoria": "Developer Tools",
+          "descripcion": "Build one customer-facing AI agent and launch it everywhere",
           "tags": [
-            "API",
-            "diseno",
-            "mocking"
+            "developer-tools"
           ],
           "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://apiforge.example.com"
+          "url": "https://www.producthunt.com/products/keiki"
         }
       ],
-      "complementarity_score": 0.3187,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: DevOps, QA, Documentacion, Seguridad, API Design",
+      "complementarity_score": 0.5627,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: No-Code, Diseno, Inteligencia Artificial, Analytics, Developer Tools",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_4",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/airtop",
+          "nombre": "Agent Builder by Airtop",
+          "categoria": "No-Code",
+          "descripcion": "Build agents that heal themselves.",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/airtop"
+        },
+        {
+          "id": "https://www.producthunt.com/products/hyperprobe",
+          "nombre": "Hyperprobe",
+          "categoria": "Developer Tools",
+          "descripcion": "Lets your AI agents debug production without redeploying",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/hyperprobe"
+        },
+        {
+          "id": "https://www.producthunt.com/products/coarena-by-coasty/launches/coarena-by-coasty",
+          "nombre": "Coarena by Coasty",
+          "categoria": "Analytics",
+          "descripcion": "The arena where agents battle on real-world work",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/coarena-by-coasty/launches/coarena-by-coasty"
+        },
+        {
+          "id": "https://www.producthunt.com/products/doop",
+          "nombre": "Doop",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "Design with AI agents - live on the same canvas",
+          "tags": [
+            "artificial-intelligence"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/doop"
+        },
+        {
+          "id": "https://www.producthunt.com/products/wonder-public-alpha/launches/wonder-2000",
+          "nombre": "Wonder",
+          "categoria": "Diseno",
+          "descripcion": "The AI design agent that works on your canvas",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/wonder-public-alpha/launches/wonder-2000"
+        }
+      ],
+      "complementarity_score": 0.553,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: No-Code, Developer Tools, Analytics, Inteligencia Artificial, Diseno",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_5",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/browzer",
+          "nombre": "Browzer",
+          "categoria": "Developer Tools",
+          "descripcion": "Put your technical content on autopilot",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/browzer"
+        },
+        {
+          "id": "https://www.producthunt.com/products/devaito/launches/devaito",
+          "nombre": "Devaito",
+          "categoria": "No-Code",
+          "descripcion": "Build, launch, and grow your business on autopilot",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/devaito/launches/devaito"
+        },
+        {
+          "id": "https://www.producthunt.com/products/basedash/launches/basedash-tasks",
+          "nombre": "Basedash Tasks",
+          "categoria": "Analytics",
+          "descripcion": "Run your business on autopilot",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/basedash/launches/basedash-tasks"
+        },
+        {
+          "id": "https://www.producthunt.com/products/tiles-5",
+          "nombre": "Tiles",
+          "categoria": "Productividad",
+          "descripcion": "Turning desktop chaos into curated spaces.",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/tiles-5"
+        },
+        {
+          "id": "https://www.producthunt.com/products/snitch-4",
+          "nombre": "Snitch",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "Your Slack org chart, built by everyone in it.",
+          "tags": [
+            "artificial-intelligence"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/snitch-4"
+        }
+      ],
+      "complementarity_score": 0.5201,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, No-Code, Analytics, Productividad, Inteligencia Artificial",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_6",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/murfy",
+          "nombre": "Murfy AI",
+          "categoria": "Productividad",
+          "descripcion": "Write, review, and publish to arXiv 10x faster",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/murfy"
+        },
+        {
+          "id": "https://www.producthunt.com/products/openai",
+          "nombre": "GPT-6 Astra",
+          "categoria": "Developer Tools",
+          "descripcion": "OpenAI's most capable model for end-to-end work",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/openai"
+        },
+        {
+          "id": "https://www.producthunt.com/products/albato/launches/albato-ai",
+          "nombre": "Albato AI",
+          "categoria": "No-Code",
+          "descripcion": "Build AI-driven workflows across 1,000+ apps",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/albato/launches/albato-ai"
+        },
+        {
+          "id": "https://www.producthunt.com/products/nex-4",
+          "nombre": "Nex",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "Claude Cowork for high-volume GTM workflows",
+          "tags": [
+            "artificial-intelligence"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/nex-4"
+        },
+        {
+          "id": "https://www.producthunt.com/products/flowith/launches/flowith",
+          "nombre": "Flowith",
+          "categoria": "Diseno",
+          "descripcion": "AI for deep work",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/flowith/launches/flowith"
+        }
+      ],
+      "complementarity_score": 0.4837,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Productividad, Developer Tools, No-Code, Inteligencia Artificial, Diseno",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_7",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/superagent-a-home-for-your-ai-agents",
+          "nombre": "Superagent",
+          "categoria": "Developer Tools",
+          "descripcion": "Claude Code for the rest of us",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/superagent-a-home-for-your-ai-agents"
+        },
+        {
+          "id": "https://www.producthunt.com/products/jotform/launches/jotform-claude-app",
+          "nombre": "Jotform Claude App",
+          "categoria": "No-Code",
+          "descripcion": "Build, edit, and analyze forms directly in Claude",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/jotform/launches/jotform-claude-app"
+        },
+        {
+          "id": "https://www.producthunt.com/products/claude/launches/claude-design-by-anthropic-labs-2",
+          "nombre": "Claude Design by Anthropic Labs",
+          "categoria": "Diseno",
+          "descripcion": "Make prototypes, slides & one-pagers by talking to Claude",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/claude/launches/claude-design-by-anthropic-labs-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/supernova-ai/launches/supernova-6",
+          "nombre": "Supernova",
+          "categoria": "Analytics",
+          "descripcion": "All your data in Claude and Codex",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/supernova-ai/launches/supernova-6"
+        },
+        {
+          "id": "https://www.producthunt.com/products/ponytail",
+          "nombre": "Ponytail",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "Make new code the last resort",
+          "tags": [
+            "artificial-intelligence"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/ponytail"
+        }
+      ],
+      "complementarity_score": 0.4709,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, No-Code, Diseno, Analytics, Inteligencia Artificial",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_8",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/mesoul/launches/mesoul",
+          "nombre": "MeSoul",
+          "categoria": "Diseno",
+          "descripcion": "A journal that answers your questions based on your words",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/mesoul/launches/mesoul"
+        },
+        {
+          "id": "https://www.producthunt.com/products/at8pm",
+          "nombre": "at8pm",
+          "categoria": "Productividad",
+          "descripcion": "Your honest journal",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/at8pm"
+        },
+        {
+          "id": "https://www.producthunt.com/products/particle-5",
+          "nombre": "Radar by Particle",
+          "categoria": "Developer Tools",
+          "descripcion": "The Podcast Search Engine",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/particle-5"
+        },
+        {
+          "id": "https://www.producthunt.com/products/mira-the-ai-moderator/launches/decode-by-entropik-2",
+          "nombre": "Decode by Entropik",
+          "categoria": "Analytics",
+          "descripcion": "Mira, AI moderated interviews that read how people feel",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/mira-the-ai-moderator/launches/decode-by-entropik-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/chalked",
+          "nombre": "Chalked for Mac",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "Your replies ready with your work's full context",
+          "tags": [
+            "artificial-intelligence"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/chalked"
+        }
+      ],
+      "complementarity_score": 0.4553,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Diseno, Productividad, Developer Tools, Analytics, Inteligencia Artificial",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_9",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/revalvo",
+          "nombre": "Revalvo",
+          "categoria": "Developer Tools",
+          "descripcion": "Run prompts on every model at once. Score. Version. Ship.",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/revalvo"
+        },
+        {
+          "id": "https://www.producthunt.com/products/prompt-llama/launches/prompt-llama",
+          "nombre": "Prompt Llama",
+          "categoria": "Diseno",
+          "descripcion": "test the performance of different models with the prompts",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/prompt-llama/launches/prompt-llama"
+        },
+        {
+          "id": "https://www.producthunt.com/products/brickforgerai",
+          "nombre": "BrickForgerAI",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "Turn any prompt into a brick set you can actually build",
+          "tags": [
+            "artificial-intelligence"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/brickforgerai"
+        },
+        {
+          "id": "https://www.producthunt.com/products/parallaxpro/launches/parallaxpro",
+          "nombre": "ParallaxPro",
+          "categoria": "No-Code",
+          "descripcion": "AI tool that turns your prompts into real video games",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/parallaxpro/launches/parallaxpro"
+        },
+        {
+          "id": "https://www.producthunt.com/products/agentx/launches/agentx-4",
+          "nombre": "AgentX",
+          "categoria": "Analytics",
+          "descripcion": "Evaluate AI agent, pinpoint issues, and fix with one click.",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/agentx/launches/agentx-4"
+        }
+      ],
+      "complementarity_score": 0.4461,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, Diseno, Inteligencia Artificial, No-Code, Analytics",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_10",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/commutebar",
+          "nombre": "CommuteBar",
+          "categoria": "Productividad",
+          "descripcion": "Live commute times in your menu bar",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/commutebar"
+        },
+        {
+          "id": "https://www.producthunt.com/products/hyperfocus-2",
+          "nombre": "Hyperfocus",
+          "categoria": "Developer Tools",
+          "descripcion": "Planner that turns goals into daily progress",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/hyperfocus-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/go-club/launches/go-club",
+          "nombre": "GO Club",
+          "categoria": "Diseno",
+          "descripcion": "Step Counter, Water Reminder, AI Health Plans, Habit Tracker",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/go-club/launches/go-club"
+        },
+        {
+          "id": "https://www.producthunt.com/products/finamie-know-your-money-for-real/launches/finamie",
+          "nombre": "Finamie",
+          "categoria": "Analytics",
+          "descripcion": "Speak your expenses and get instant spending insights",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/finamie-know-your-money-for-real/launches/finamie"
+        },
+        {
+          "id": "https://www.producthunt.com/products/flitch/launches/flitch",
+          "nombre": "Flitch",
+          "categoria": "No-Code",
+          "descripcion": "Turn your data into insights",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/flitch/launches/flitch"
+        }
+      ],
+      "complementarity_score": 0.4431,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Productividad, Developer Tools, Diseno, Analytics, No-Code",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_11",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/getmyfolio/launches/getmyfolio",
+          "nombre": "GetMyFolio",
+          "categoria": "Diseno",
+          "descripcion": "CMS for your portfolio website",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/getmyfolio/launches/getmyfolio"
+        },
+        {
+          "id": "https://www.producthunt.com/products/sider-code-customize-any-website",
+          "nombre": "Sider Code",
+          "categoria": "Productividad",
+          "descripcion": "Reshape any website with plain words via Sider extension",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/sider-code-customize-any-website"
+        },
+        {
+          "id": "https://www.producthunt.com/products/staats-3",
+          "nombre": "Staats",
+          "categoria": "Analytics",
+          "descripcion": "Ask your coding agent how your site is doing",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/staats-3"
+        },
+        {
+          "id": "https://www.producthunt.com/products/speakeasydev",
+          "nombre": "Kit by Speakeasy",
+          "categoria": "Developer Tools",
+          "descripcion": "Your coding agent runtime. Claude but fast, cheap, concise.",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/speakeasydev"
+        },
+        {
+          "id": "https://www.producthunt.com/products/kopai-the-marketplace-for-ai-agents/launches/kopai",
+          "nombre": "Kopai",
+          "categoria": "No-Code",
+          "descripcion": "Share your expertise, and let our agents earn for you.",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/kopai-the-marketplace-for-ai-agents/launches/kopai"
+        }
+      ],
+      "complementarity_score": 0.4263,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Diseno, Productividad, Analytics, Developer Tools, No-Code",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_12",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/bauhaus-clock/launches/bauhaus-clock",
+          "nombre": "Bauhaus Clock",
+          "categoria": "Diseno",
+          "descripcion": "Elegant timepiece screensaver for macOS",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/bauhaus-clock/launches/bauhaus-clock"
+        },
+        {
+          "id": "https://www.producthunt.com/products/frameos-3",
+          "nombre": "FrameOS",
+          "categoria": "Productividad",
+          "descripcion": "Record your iOS & Android screen from your Mac.",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/frameos-3"
+        },
+        {
+          "id": "https://www.producthunt.com/products/capacity/launches/capacity-desktop",
+          "nombre": "Capacity Desktop",
+          "categoria": "No-Code",
+          "descripcion": "A free Lovable that lives on your Mac",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/capacity/launches/capacity-desktop"
+        },
+        {
+          "id": "https://www.producthunt.com/products/tidy-6",
+          "nombre": "Tidy",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "Fix grammar in any Mac app with free on-device AI",
+          "tags": [
+            "artificial-intelligence"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/tidy-6"
+        },
+        {
+          "id": "https://www.producthunt.com/products/naseem-2",
+          "nombre": "Naseem",
+          "categoria": "Developer Tools",
+          "descripcion": "A native AI agent that does real work on your Mac",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/naseem-2"
+        }
+      ],
+      "complementarity_score": 0.4129,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Diseno, Productividad, No-Code, Inteligencia Artificial, Developer Tools",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_13",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/codelook",
+          "nombre": "CodeLook",
+          "categoria": "Developer Tools",
+          "descripcion": "Quick Look code previews with 700+ editor themes",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/codelook"
+        },
+        {
+          "id": "https://www.producthunt.com/products/modul/launches/modul-2",
+          "nombre": "Modul",
+          "categoria": "Diseno",
+          "descripcion": "A tool to create good-looking presentations quickly",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/modul/launches/modul-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/jotform/launches/jotform-ai-app-builder",
+          "nombre": "Jotform AI App Builder",
+          "categoria": "No-Code",
+          "descripcion": "Turn ideas into powerful apps within seconds",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/jotform/launches/jotform-ai-app-builder"
+        },
+        {
+          "id": "https://www.producthunt.com/products/topview-ai",
+          "nombre": "Topview Motion Studio",
+          "categoria": "Productividad",
+          "descripcion": "Create launch videos without touching After Effects",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/topview-ai"
+        },
+        {
+          "id": "https://www.producthunt.com/products/causal-2",
+          "nombre": "Causal",
+          "categoria": "Inteligencia Artificial",
+          "descripcion": "AI Powered Canvas for planning visual projects",
+          "tags": [
+            "artificial-intelligence"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/causal-2"
+        }
+      ],
+      "complementarity_score": 0.4092,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, Diseno, No-Code, Productividad, Inteligencia Artificial",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_14",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/x1-2",
+          "nombre": "x1",
+          "categoria": "No-Code",
+          "descripcion": "Lovable for iPhone apps go from idea to App Store",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/x1-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/app-stacks/launches/app-stacks",
+          "nombre": "App Stacks",
+          "categoria": "Diseno",
+          "descripcion": "Stories & stacks behind beautifully crafted apps",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/app-stacks/launches/app-stacks"
+        },
+        {
+          "id": "https://www.producthunt.com/products/fedica/launches/fedica-2-0",
+          "nombre": "Fedica 2.0",
+          "categoria": "Analytics",
+          "descripcion": "Publish and grow your profile across social apps",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/fedica/launches/fedica-2-0"
+        },
+        {
+          "id": "https://www.producthunt.com/products/touchy-3",
+          "nombre": "Touchy",
+          "categoria": "Productividad",
+          "descripcion": "An iOS assistant that understands the world around you",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/touchy-3"
+        },
+        {
+          "id": "https://www.producthunt.com/products/onset-io",
+          "nombre": "Onset MCP",
+          "categoria": "Developer Tools",
+          "descripcion": "Write and publish release notes from your AI assistant",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/onset-io"
+        }
+      ],
+      "complementarity_score": 0.3988,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: No-Code, Diseno, Analytics, Productividad, Developer Tools",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_15",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/offline-js-playground",
+          "nombre": "Offline JS Playground",
+          "categoria": "Developer Tools",
+          "descripcion": "Write, run, and test JavaScript snippets & JSON offline",
+          "tags": [
+            "developer-tools"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/offline-js-playground"
+        },
+        {
+          "id": "https://www.producthunt.com/products/drizz-2/launches/drizz-2",
+          "nombre": "Drizz",
+          "categoria": "No-Code",
+          "descripcion": "Mobile tests that write, run, and fix themselves",
+          "tags": [
+            "no-code"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/drizz-2/launches/drizz-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/novus-4/launches/novus-6",
+          "nombre": "Novus",
+          "categoria": "Analytics",
+          "descripcion": "Catch and fix usability issues automatically as you ship",
+          "tags": [
+            "analytics"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/novus-4/launches/novus-6"
+        },
+        {
+          "id": "https://www.producthunt.com/products/taskly/launches/taskly",
+          "nombre": "Taskly",
+          "categoria": "Diseno",
+          "descripcion": "The incredibly simple todo app",
+          "tags": [
+            "design"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/taskly/launches/taskly"
+        },
+        {
+          "id": "https://www.producthunt.com/products/skud-drag-send-track-in-seconds",
+          "nombre": "Skud",
+          "categoria": "Productividad",
+          "descripcion": "Menubar file delivery with your brand and tracking",
+          "tags": [
+            "productivity"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://www.producthunt.com/products/skud-drag-send-track-in-seconds"
+        }
+      ],
+      "complementarity_score": 0.3751,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, No-Code, Analytics, Diseno, Productividad",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_e_commerce_growth_16",
+      "audiencia_objetivo": "E-commerce & Growth",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/zoodata/launches/zoodata-3",
+          "nombre": "ZooData",
+          "categoria": "E-commerce",
+          "descripcion": "The data layer for AI agents",
+          "tags": [
+            "e-commerce"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/zoodata/launches/zoodata-3"
+        },
+        {
+          "id": "https://www.producthunt.com/products/agent-arena/launches/agent-arena",
+          "nombre": "Agent Arena",
+          "categoria": "Social Media",
+          "descripcion": "The first public arena for AI agents",
+          "tags": [
+            "social-media"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/agent-arena/launches/agent-arena"
+        },
+        {
+          "id": "https://www.producthunt.com/products/sidegent/launches/sidegent",
+          "nombre": "Sidegent",
+          "categoria": "Educacion",
+          "descripcion": "Learn to build AI agents by actually building them",
+          "tags": [
+            "education"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/sidegent/launches/sidegent"
+        },
+        {
+          "id": "https://www.producthunt.com/products/acme-bot/launches/acme-bot",
+          "nombre": "ACME.BOT",
+          "categoria": "Marketing",
+          "descripcion": "No-slop AI SEO agent that interviews you first",
+          "tags": [
+            "marketing"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/acme-bot/launches/acme-bot"
+        },
+        {
+          "id": "https://www.producthunt.com/products/marx-finance/launches/marx-finance",
+          "nombre": "Marx Finance",
+          "categoria": "Finanzas",
+          "descripcion": "AI agents debate the markets",
+          "tags": [
+            "finance"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/marx-finance/launches/marx-finance"
+        }
+      ],
+      "complementarity_score": 0.6218,
+      "rationale": "Herramientas complementarias para E-commerce & Growth: E-commerce, Social Media, Educacion, Marketing, Finanzas",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_e_commerce_growth_17",
+      "audiencia_objetivo": "E-commerce & Growth",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/mulerun/launches/mulerun",
+          "nombre": "MuleRun",
+          "categoria": "E-commerce",
+          "descripcion": "Raise an AI that actually learns how you work",
+          "tags": [
+            "e-commerce"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/mulerun/launches/mulerun"
+        },
+        {
+          "id": "https://www.producthunt.com/products/build-club/launches/solaris-3",
+          "nombre": "Solaris",
+          "categoria": "Educacion",
+          "descripcion": "Your company’s AI adoption and upskilling platform",
+          "tags": [
+            "education"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/build-club/launches/solaris-3"
+        },
+        {
+          "id": "https://www.producthunt.com/products/rippling/launches/ai-spend-console-by-rippling",
+          "nombre": "AI Spend Console by Rippling",
+          "categoria": "Finanzas",
+          "descripcion": "Track your AI spend and connect it to business outcomes",
+          "tags": [
+            "finance"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/rippling/launches/ai-spend-console-by-rippling"
+        },
+        {
+          "id": "https://www.producthunt.com/products/databox/launches/artifacts-by-databox",
+          "nombre": "Artifacts by Databox",
+          "categoria": "Marketing",
+          "descripcion": "Ask your AI Analyst and get back a ready-to-share report",
+          "tags": [
+            "marketing"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/databox/launches/artifacts-by-databox"
+        },
+        {
+          "id": "https://www.producthunt.com/products/creatify/launches/ai-media-buyer-by-creatify",
+          "nombre": "AI Media Buyer By Creatify",
+          "categoria": "Social Media",
+          "descripcion": "Your ads, managed by AI that gets smarter daily.",
+          "tags": [
+            "social-media"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/creatify/launches/ai-media-buyer-by-creatify"
+        }
+      ],
+      "complementarity_score": 0.5763,
+      "rationale": "Herramientas complementarias para E-commerce & Growth: E-commerce, Educacion, Finanzas, Marketing, Social Media",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_e_commerce_growth_18",
+      "audiencia_objetivo": "E-commerce & Growth",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/layerproof-social-content-generation/launches/layerproof-matte-3-0",
+          "nombre": "LayerProof Matte 3.0",
+          "categoria": "Social Media",
+          "descripcion": "Grow your social media content: posts, carousels and stories",
+          "tags": [
+            "social-media"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/layerproof-social-content-generation/launches/layerproof-matte-3-0"
+        },
+        {
+          "id": "https://www.producthunt.com/products/adant-ai/launches/adant-ai",
+          "nombre": "AdAnt AI",
+          "categoria": "Marketing",
+          "descripcion": "Claude for viral, high-converting social ads",
+          "tags": [
+            "marketing"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/adant-ai/launches/adant-ai"
+        },
+        {
+          "id": "https://www.producthunt.com/products/joos/launches/joos",
+          "nombre": "JOOS©",
+          "categoria": "Finanzas",
+          "descripcion": "Invest in content creators, accelerate their growth",
+          "tags": [
+            "finance"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/joos/launches/joos"
+        },
+        {
+          "id": "https://www.producthunt.com/products/yuma-social-ai/launches/yuma-social-ai",
+          "nombre": "Yuma Social AI",
+          "categoria": "E-commerce",
+          "descripcion": "Put your ecommerce social media on auto-pilot",
+          "tags": [
+            "e-commerce"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/yuma-social-ai/launches/yuma-social-ai"
+        },
+        {
+          "id": "https://www.producthunt.com/products/focus-room/launches/focus-room",
+          "nombre": "Focus Room",
+          "categoria": "Educacion",
+          "descripcion": "Turn YouTube into your personal learning platform",
+          "tags": [
+            "education"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/focus-room/launches/focus-room"
+        }
+      ],
+      "complementarity_score": 0.4799,
+      "rationale": "Herramientas complementarias para E-commerce & Growth: Social Media, Marketing, Finanzas, E-commerce, Educacion",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_e_commerce_growth_19",
+      "audiencia_objetivo": "E-commerce & Growth",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/soundgate-guitar-app/launches/soundgate-guitar",
+          "nombre": "SoundGate Guitar",
+          "categoria": "Educacion",
+          "descripcion": "AI Music Tutor that gives real-time feedback on your playing",
+          "tags": [
+            "education"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/soundgate-guitar-app/launches/soundgate-guitar"
+        },
+        {
+          "id": "https://www.producthunt.com/products/stanley-studio/launches/stanley-studio",
+          "nombre": "Stanley Studio",
+          "categoria": "Social Media",
+          "descripcion": "The AI video editor you hire that edits like a human",
+          "tags": [
+            "social-media"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/stanley-studio/launches/stanley-studio"
+        },
+        {
+          "id": "https://www.producthunt.com/products/chatcut-ai-video-editor",
+          "nombre": "ChatCut Desktop",
+          "categoria": "Marketing",
+          "descripcion": "Video editor built for humans & AI. Edit with GPT & Claude.",
+          "tags": [
+            "marketing"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/chatcut-ai-video-editor"
+        },
+        {
+          "id": "https://www.producthunt.com/products/caimera-2/launches/caimera-2",
+          "nombre": "Caimera",
+          "categoria": "E-commerce",
+          "descripcion": "AI Visual Production Platform for Fashion Teams",
+          "tags": [
+            "e-commerce"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/caimera-2/launches/caimera-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/candlestick-ai-2/launches/candlestick-ai-2",
+          "nombre": "Candlestick AI",
+          "categoria": "Finanzas",
+          "descripcion": "Invest in custom portfolio ideas, researched by AI agents",
+          "tags": [
+            "finance"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/candlestick-ai-2/launches/candlestick-ai-2"
+        }
+      ],
+      "complementarity_score": 0.4782,
+      "rationale": "Herramientas complementarias para E-commerce & Growth: Educacion, Social Media, Marketing, E-commerce, Finanzas",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_e_commerce_growth_20",
+      "audiencia_objetivo": "E-commerce & Growth",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/shopeaks/launches/shopeaks",
+          "nombre": "Shopeaks",
+          "categoria": "E-commerce",
+          "descripcion": "Every click deserves its own store",
+          "tags": [
+            "e-commerce"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/shopeaks/launches/shopeaks"
+        },
+        {
+          "id": "https://www.producthunt.com/products/toplify/launches/toplify",
+          "nombre": "Toplify",
+          "categoria": "Marketing",
+          "descripcion": "Track your App Store ranking worldwide",
+          "tags": [
+            "marketing"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/toplify/launches/toplify"
+        },
+        {
+          "id": "https://www.producthunt.com/products/honestly/launches/honestly-2",
+          "nombre": "Honestly",
+          "categoria": "Social Media",
+          "descripcion": "See what Reddit and TikTok honestly think about your product",
+          "tags": [
+            "social-media"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/honestly/launches/honestly-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/wallstreet-wrapped/launches/wallstreet-wrapped",
+          "nombre": "Wallstreet Wrapped",
+          "categoria": "Finanzas",
+          "descripcion": "Spotify wrapped for your stock trades",
+          "tags": [
+            "finance"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/wallstreet-wrapped/launches/wallstreet-wrapped"
+        },
+        {
+          "id": "https://www.producthunt.com/products/brainfeed-scroll-better/launches/brainfeed",
+          "nombre": "BrainFeed",
+          "categoria": "Educacion",
+          "descripcion": "A personalized learning feed that redirects your scroll",
+          "tags": [
+            "education"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/brainfeed-scroll-better/launches/brainfeed"
+        }
+      ],
+      "complementarity_score": 0.4005,
+      "rationale": "Herramientas complementarias para E-commerce & Growth: E-commerce, Marketing, Social Media, Finanzas, Educacion",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_e_commerce_growth_21",
+      "audiencia_objetivo": "E-commerce & Growth",
+      "startups": [
+        {
+          "id": "https://www.producthunt.com/products/tickerbar/launches/tickerbar",
+          "nombre": "TickerBar",
+          "categoria": "Finanzas",
+          "descripcion": "Stock market & crypto prices for macOS",
+          "tags": [
+            "finance"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/tickerbar/launches/tickerbar"
+        },
+        {
+          "id": "https://www.producthunt.com/products/prequel-2",
+          "nombre": "Prequel",
+          "categoria": "Marketing",
+          "descripcion": "Create cinematic screen recordings on your Mac",
+          "tags": [
+            "marketing"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/prequel-2"
+        },
+        {
+          "id": "https://www.producthunt.com/products/postbox",
+          "nombre": "PostBox",
+          "categoria": "Social Media",
+          "descripcion": "Stage and post designs from your mac",
+          "tags": [
+            "social-media"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/postbox"
+        },
+        {
+          "id": "https://www.producthunt.com/products/phantom-6/launches/phantom-8",
+          "nombre": "Phantom",
+          "categoria": "Educacion",
+          "descripcion": "Voice-first AI agent that operates your Mac",
+          "tags": [
+            "education"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/phantom-6/launches/phantom-8"
+        },
+        {
+          "id": "https://www.producthunt.com/products/chat-cash/launches/chat-cash",
+          "nombre": "Chat Cash",
+          "categoria": "E-commerce",
+          "descripcion": "AI commerce OS for WhatsApp and Instagram sales",
+          "tags": [
+            "e-commerce"
+          ],
+          "audiencia_objetivo": "E-commerce & Growth",
+          "url": "https://www.producthunt.com/products/chat-cash/launches/chat-cash"
+        }
+      ],
+      "complementarity_score": 0.3678,
+      "rationale": "Herramientas complementarias para E-commerce & Growth: Finanzas, Marketing, Social Media, Educacion, E-commerce",
       "size": 5
     }
   ]
