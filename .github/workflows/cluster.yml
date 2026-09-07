@@ -11,8 +11,12 @@ on:
         description: "Path local o URL HTTPS a un JSON de startups (vacio = dataset de ejemplo)"
         required: false
         default: ""
+      producthunt:
+        description: "Categorias de Product Hunt separadas por espacio ('all' = todas, vacio = no usar)"
+        required: false
+        default: "all"
       rss:
-        description: "Feeds RSS separados por espacio (vacio = no se usa RSS)"
+        description: "Feeds RSS/Atom genericos separados por espacio (vacio = no se usa)"
         required: false
         default: ""
 
@@ -49,16 +53,30 @@ jobs:
       - name: Ejecutar el clustering
         env:
           INPUT_DATA: ${{ inputs.data }}
+          INPUT_PH: ${{ inputs.producthunt }}
           INPUT_RSS: ${{ inputs.rss }}
+          EVENT: ${{ github.event_name }}
         run: |
+          # La corrida semanal no recibe inputs: por defecto usa Product Hunt
+          # para no clusterizar el dataset de ejemplo.
+          if [ -z "$INPUT_PH" ] && [ "$EVENT" = "schedule" ]; then
+            INPUT_PH="all"
+          fi
+
           ARGS=(--output clusters_result.json)
           if [ -n "$INPUT_DATA" ]; then
             ARGS+=(--data "$INPUT_DATA")
           fi
+          if [ "$INPUT_PH" = "all" ]; then
+            ARGS+=(--producthunt)
+          elif [ -n "$INPUT_PH" ]; then
+            # Sin comillas a proposito: cada slug es un argumento separado.
+            ARGS+=(--producthunt $INPUT_PH)
+          fi
           if [ -n "$INPUT_RSS" ]; then
-            # Sin comillas a proposito: cada feed es un argumento separado.
             ARGS+=(--rss $INPUT_RSS)
           fi
+          echo "Ejecutando: python cluster_apps.py ${ARGS[@]}"
           python cluster_apps.py "${ARGS[@]}"
 
       - name: Verificar que se generaron clusters

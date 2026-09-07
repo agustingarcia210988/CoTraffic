@@ -13,11 +13,15 @@ Entre los grupos que cumplen ambas reglas se elige el de mayor cohesion
 semantica, medida como la similitud coseno promedio entre los embeddings de
 las descripciones (Sentence-Transformers + scikit-learn).
 
-Fuentes de datos (ver --data / --rss), en orden de precedencia:
-  - JSON local o remoto (HTTPS) con la lista de startups.
-  - Feeds RSS/Atom publicos (Product Hunt, BetaList, etc.), infiriendo
-    categoria y audiencia por palabras clave.
-  - Dataset de ejemplo embebido, usado como fallback.
+Fuentes de datos, en orden de precedencia:
+  --data          JSON local o remoto (HTTPS) con la lista de startups.
+  --producthunt   Productos reales de Product Hunt, un feed Atom por categoria.
+                  La categoria y la audiencia salen del feed de origen, no se
+                  adivinan. Es la opcion recomendada para datos reales.
+  --rss           Feeds RSS/Atom genericos. Como no traen categoria ni
+                  audiencia, se infieren por palabras clave: sirve para
+                  prototipar, pero clasifica mal descripciones muy cortas.
+  (sin flags)     Dataset de ejemplo embebido, solo como fallback.
 """
 
 from __future__ import annotations
@@ -85,6 +89,31 @@ AUDIENCE_KEYWORDS: Dict[str, Sequence[str]] = {
 UNKNOWN_CATEGORY = "Sin categoria"
 UNKNOWN_AUDIENCE = "Sin audiencia"
 
+# Product Hunt publica un feed Atom por categoria. Al traer los productos desde
+# feeds separados la categoria deja de inferirse: viene dada por el feed de
+# origen. Varias categorias comparten audiencia a proposito, porque un cluster
+# necesita al menos 5 categorias distintas dentro de la misma audiencia.
+PRODUCT_HUNT_FEED = "https://www.producthunt.com/feed?category={slug}"
+
+PRODUCT_HUNT_TAXONOMY: Dict[str, Tuple[str, str]] = {
+    # slug del feed          (categoria,               audiencia)
+    "developer-tools": ("Developer Tools", "Developers & Dev Teams"),
+    "no-code": ("No-Code", "Developers & Dev Teams"),
+    "artificial-intelligence": ("Inteligencia Artificial", "Developers & Dev Teams"),
+    "analytics": ("Analytics", "Developers & Dev Teams"),
+    "design": ("Diseno", "Developers & Dev Teams"),
+    "productivity": ("Productividad", "Developers & Dev Teams"),
+    "e-commerce": ("E-commerce", "E-commerce & Growth"),
+    "marketing": ("Marketing", "E-commerce & Growth"),
+    "social-media": ("Social Media", "E-commerce & Growth"),
+    "finance": ("Finanzas", "E-commerce & Growth"),
+    "education": ("Educacion", "E-commerce & Growth"),
+}
+
+# Texto que Product Hunt agrega al final de cada resumen y que no aporta nada
+# al embedding.
+PH_BOILERPLATE = re.compile(r"\s*(Discussion|Link)(\s*\|\s*(Discussion|Link))*\s*$")
+
 
 # --------------------------------------------------------------------------
 # Modelo de datos
@@ -144,15 +173,22 @@ class CoMarketingCluster:
 
 def load_startup_data(
     data_source: Optional[str] = None,
+    product_hunt: Optional[Sequence[str]] = None,
     rss_feeds: Optional[Sequence[str]] = None,
 ) -> List[Startup]:
-    """Carga startups desde JSON (local o remoto), RSS o el dataset de ejemplo."""
+    """Carga startups desde JSON, Product Hunt, RSS generico o el dataset de ejemplo."""
     if data_source:
         startups = _load_from_json_source(data_source)
         if startups:
             logger.info(f"{len(startups)} startups cargadas desde {data_source}")
             return startups
         logger.warning("La fuente JSON no devolvio datos; se intenta la siguiente opcion")
+
+    if product_hunt is not None:
+        startups = _load_from_product_hunt(product_hunt)
+        if startups:
+            return startups
+        logger.warning("Product Hunt no devolvio datos; se intenta la siguiente opcion")
 
     if rss_feeds:
         startups = _load_from_rss(rss_feeds)
@@ -201,6 +237,66 @@ def _startup_from_dict(item: Dict) -> Startup:
     )
 
 
+def _load_from_product_hunt(slugs: Sequence[str]) -> List[Startup]:
+    """Trae productos reales de Product Hunt, un feed por categoria.
+
+    A diferencia de _load_from_rss, aca no se adivina nada: la categoria y la
+    audiencia salen de PRODUCT_HUNT_TAXONOMY segun el feed de origen. Un mismo
+    producto puede aparecer en varios feeds, asi que se deduplica por enlace y
+    se queda con la primera categoria en la que aparecio.
+    """
+    try:
+        import feedparser
+    except ImportError:
+        logger.error("feedparser no esta instalado: no se puede consultar Product Hunt")
+        return []
+
+    seleccionados = list(slugs) if slugs else list(PRODUCT_HUNT_TAXONOMY)
+    desconocidos = [s for s in seleccionados if s not in PRODUCT_HUNT_TAXONOMY]
+    if desconocidos:
+        logger.warning(
+            f"Slugs ignorados por no estar en la taxonomia: {', '.join(desconocidos)}. "
+            f"Validos: {', '.join(PRODUCT_HUNT_TAXONOMY)}"
+        )
+        seleccionados = [s for s in seleccionados if s in PRODUCT_HUNT_TAXONOMY]
+
+    startups: List[Startup] = []
+    vistos: set = set()
+
+    for slug in seleccionados:
+        categoria, audiencia = PRODUCT_HUNT_TAXONOMY[slug]
+        url = PRODUCT_HUNT_FEED.format(slug=slug)
+        parsed = feedparser.parse(url)
+        if not parsed.entries:
+            logger.warning(f"El feed de '{slug}' no devolvio entradas")
+            continue
+
+        nuevos = 0
+        for entry in parsed.entries:
+            nombre = (entry.get("title") or "").strip()
+            enlace = entry.get("link") or ""
+            clave = enlace or nombre
+            if not nombre or clave in vistos:
+                continue
+            vistos.add(clave)
+            nuevos += 1
+            startups.append(
+                Startup(
+                    id=str(clave),
+                    nombre=nombre,
+                    categoria=categoria,
+                    descripcion=_clean_summary(_entry_text(entry)),
+                    tags=[slug],
+                    audiencia_objetivo=audiencia,
+                    url=enlace or None,
+                )
+            )
+        logger.info(f"  {slug}: {nuevos} productos nuevos ({categoria} / {audiencia})")
+
+    logger.info(f"{len(startups)} startups obtenidas de Product Hunt")
+    return startups
+
+
 def _load_from_rss(feed_urls: Sequence[str]) -> List[Startup]:
     """Extrae startups de feeds RSS/Atom publicos (Product Hunt, BetaList, ...)."""
     try:
@@ -221,7 +317,7 @@ def _load_from_rss(feed_urls: Sequence[str]) -> List[Startup]:
             nombre = (entry.get("title") or "").strip()
             if not nombre:
                 continue
-            descripcion = _strip_html(entry.get("summary") or entry.get("description") or "")
+            descripcion = _clean_summary(_entry_text(entry))
             tags = [t.get("term", "") for t in entry.get("tags", []) if t.get("term")]
             texto = f"{nombre} {descripcion} {' '.join(tags)}"
             startups.append(
@@ -240,9 +336,24 @@ def _load_from_rss(feed_urls: Sequence[str]) -> List[Startup]:
     return startups
 
 
+def _entry_text(entry) -> str:
+    """Devuelve el mejor texto descriptivo disponible en una entrada de feed."""
+    contenido = entry.get("content")
+    if contenido:
+        return contenido[0].get("value", "")
+    return entry.get("summary") or entry.get("description") or ""
+
+
 def _strip_html(texto: str) -> str:
     """Limpia el HTML que suelen traer los resumenes de RSS."""
-    return re.sub(r"<[^>]+>", " ", texto).replace("&nbsp;", " ").strip()
+    limpio = re.sub(r"<[^>]+>", " ", texto).replace("&nbsp;", " ")
+    return " ".join(limpio.split())
+
+
+def _clean_summary(texto: str) -> str:
+    """Quita el HTML y el 'Discussion | Link' con el que Product Hunt cierra
+    cada resumen, que solo agrega ruido al embedding."""
+    return PH_BOILERPLATE.sub("", _strip_html(texto)).strip()
 
 
 def _infer_label(texto: str, taxonomia: Dict[str, Sequence[str]], default: str) -> str:
@@ -571,13 +682,14 @@ def print_summary(clusters: List[CoMarketingCluster]) -> None:
 
 def main(
     data_source: Optional[str] = None,
+    product_hunt: Optional[Sequence[str]] = None,
     rss_feeds: Optional[Sequence[str]] = None,
     output_path: str = "clusters_result.json",
 ) -> List[CoMarketingCluster]:
     """Ejecuta el pipeline completo de clustering de co-marketing."""
     logger.info("Iniciando pipeline de clustering de co-marketing...")
 
-    startups = load_startup_data(data_source, rss_feeds)
+    startups = load_startup_data(data_source, product_hunt, rss_feeds)
     startups = generate_embeddings(startups)
     similitudes, indice = build_similarity_index(startups)
     clusters = build_complementary_clusters(startups, similitudes, indice)
@@ -599,11 +711,22 @@ if __name__ == "__main__":
         help="Path local o URL HTTPS a un JSON con la lista de startups",
     )
     parser.add_argument(
+        "--producthunt",
+        type=str,
+        nargs="*",
+        default=None,
+        metavar="SLUG",
+        help=(
+            "Trae productos reales de Product Hunt. Sin argumentos usa todas las "
+            f"categorias: {', '.join(PRODUCT_HUNT_TAXONOMY)}"
+        ),
+    )
+    parser.add_argument(
         "--rss",
         type=str,
         nargs="*",
         default=None,
-        help="Uno o mas feeds RSS/Atom publicos (Product Hunt, BetaList, ...)",
+        help="Feeds RSS/Atom genericos. Infiere categoria y audiencia por palabras clave",
     )
     parser.add_argument(
         "--output",
@@ -614,7 +737,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     try:
-        main(data_source=args.data, rss_feeds=args.rss, output_path=args.output)
+        main(
+            data_source=args.data,
+            product_hunt=args.producthunt,
+            rss_feeds=args.rss,
+            output_path=args.output,
+        )
     except Exception as exc:
         logger.error(f"El pipeline fallo: {exc}", exc_info=True)
         sys.exit(1)
