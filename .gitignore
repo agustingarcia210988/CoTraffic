@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+ENV/
+env/
+.venv
+.vscode/
+.idea/
+*.bin
+models/
+.sentence_transformers/
+*.log
+.DS_Store

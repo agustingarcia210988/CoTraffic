@@ -1,0 +1,9 @@
+# Core dependencies for Market Basket Analysis clustering
+sentence-transformers==3.0.1
+scikit-learn==1.5.1
+numpy==1.26.4
+pandas==2.2.3
+torch==2.4.1
+transformers==4.41.2
+tqdm==4.66.4
+scipy==1.14.1
