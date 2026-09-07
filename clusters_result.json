@@ -1,0 +1,228 @@
+{
+  "generated_at": "2026-09-07T20:23:50+00:00",
+  "total_clusters": 3,
+  "clusters": [
+    {
+      "cluster_id": "cluster_freelancers_remote_teams_1",
+      "audiencia_objetivo": "Freelancers & Remote Teams",
+      "startups": [
+        {
+          "id": "2",
+          "nombre": "TimeLogger",
+          "categoria": "Tracking",
+          "descripcion": "Time tracking automatizado para freelancers",
+          "tags": [
+            "time-tracking",
+            "facturacion",
+            "freelance"
+          ],
+          "audiencia_objetivo": "Freelancers & Remote Teams",
+          "url": "https://timelogger.example.com"
+        },
+        {
+          "id": "4",
+          "nombre": "ClientPortal",
+          "categoria": "CRM",
+          "descripcion": "Portal seguro para la comunicacion cliente-proveedor",
+          "tags": [
+            "comunicacion",
+            "cliente",
+            "gestion"
+          ],
+          "audiencia_objetivo": "Freelancers & Remote Teams",
+          "url": "https://clientportal.example.com"
+        },
+        {
+          "id": "5",
+          "nombre": "InvoiceZen",
+          "categoria": "Facturacion",
+          "descripcion": "Facturacion recurrente y cobros para trabajo independiente",
+          "tags": [
+            "facturas",
+            "cobros",
+            "freelance"
+          ],
+          "audiencia_objetivo": "Freelancers & Remote Teams",
+          "url": "https://invoicezen.example.com"
+        },
+        {
+          "id": "6",
+          "nombre": "FocusRoom",
+          "categoria": "Productividad",
+          "descripcion": "Sesiones de trabajo profundo con bloqueo de distracciones",
+          "tags": [
+            "foco",
+            "pomodoro",
+            "habitos"
+          ],
+          "audiencia_objetivo": "Freelancers & Remote Teams",
+          "url": "https://focusroom.example.com"
+        },
+        {
+          "id": "7",
+          "nombre": "ContractSign",
+          "categoria": "Legal",
+          "descripcion": "Contratos y firma electronica para acuerdos con clientes",
+          "tags": [
+            "contratos",
+            "firma",
+            "legal"
+          ],
+          "audiencia_objetivo": "Freelancers & Remote Teams",
+          "url": "https://contractsign.example.com"
+        }
+      ],
+      "complementarity_score": 0.5086,
+      "rationale": "Herramientas complementarias para Freelancers & Remote Teams: Tracking, CRM, Facturacion, Productividad, Legal",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_e_commerce_stores_2",
+      "audiencia_objetivo": "E-commerce Stores",
+      "startups": [
+        {
+          "id": "8",
+          "nombre": "ShopAI",
+          "categoria": "E-commerce",
+          "descripcion": "Plataforma de e-commerce con IA para recomendar productos",
+          "tags": [
+            "e-commerce",
+            "IA",
+            "recomendaciones"
+          ],
+          "audiencia_objetivo": "E-commerce Stores",
+          "url": "https://shopai.example.com"
+        },
+        {
+          "id": "9",
+          "nombre": "InvTracker",
+          "categoria": "Inventario",
+          "descripcion": "Gestion de inventario en tiempo real multi-deposito",
+          "tags": [
+            "inventario",
+            "stock",
+            "e-commerce"
+          ],
+          "audiencia_objetivo": "E-commerce Stores",
+          "url": "https://invtracker.example.com"
+        },
+        {
+          "id": "11",
+          "nombre": "ShippingPro",
+          "categoria": "Logistica",
+          "descripcion": "Optimizacion de envios y costos multicarrier",
+          "tags": [
+            "envios",
+            "logistica",
+            "e-commerce"
+          ],
+          "audiencia_objetivo": "E-commerce Stores",
+          "url": "https://shippingpro.example.com"
+        },
+        {
+          "id": "13",
+          "nombre": "PricePulse",
+          "categoria": "Pricing",
+          "descripcion": "Monitoreo de precios de la competencia y repricing",
+          "tags": [
+            "precios",
+            "competencia",
+            "margen"
+          ],
+          "audiencia_objetivo": "E-commerce Stores",
+          "url": "https://pricepulse.example.com"
+        },
+        {
+          "id": "14",
+          "nombre": "AdSpark",
+          "categoria": "Marketing",
+          "descripcion": "Creacion y testeo de anuncios para tiendas online",
+          "tags": [
+            "ads",
+            "creatividades",
+            "performance"
+          ],
+          "audiencia_objetivo": "E-commerce Stores",
+          "url": "https://adspark.example.com"
+        }
+      ],
+      "complementarity_score": 0.493,
+      "rationale": "Herramientas complementarias para E-commerce Stores: E-commerce, Inventario, Logistica, Pricing, Marketing",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_developers_dev_teams_3",
+      "audiencia_objetivo": "Developers & Dev Teams",
+      "startups": [
+        {
+          "id": "15",
+          "nombre": "CodeDeploy",
+          "categoria": "DevOps",
+          "descripcion": "Pipeline CI/CD simplificado para equipos de desarrollo",
+          "tags": [
+            "CI/CD",
+            "deployment",
+            "DevOps"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://codedeploy.example.com"
+        },
+        {
+          "id": "16",
+          "nombre": "BugTracker",
+          "categoria": "QA",
+          "descripcion": "Seguimiento de errores integrado al flujo de trabajo",
+          "tags": [
+            "bugs",
+            "testing",
+            "QA"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://bugtracker.example.com"
+        },
+        {
+          "id": "17",
+          "nombre": "DocHub",
+          "categoria": "Documentacion",
+          "descripcion": "Plataforma colaborativa para documentacion de APIs",
+          "tags": [
+            "documentacion",
+            "API",
+            "colaboracion"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://dochub.example.com"
+        },
+        {
+          "id": "19",
+          "nombre": "SecretVault",
+          "categoria": "Seguridad",
+          "descripcion": "Gestion de secretos y credenciales para entornos cloud",
+          "tags": [
+            "secretos",
+            "seguridad",
+            "cloud"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://secretvault.example.com"
+        },
+        {
+          "id": "20",
+          "nombre": "APIForge",
+          "categoria": "API Design",
+          "descripcion": "Diseno y mocking de APIs antes de escribir codigo",
+          "tags": [
+            "API",
+            "diseno",
+            "mocking"
+          ],
+          "audiencia_objetivo": "Developers & Dev Teams",
+          "url": "https://apiforge.example.com"
+        }
+      ],
+      "complementarity_score": 0.3187,
+      "rationale": "Herramientas complementarias para Developers & Dev Teams: DevOps, QA, Documentacion, Seguridad, API Design",
+      "size": 5
+    }
+  ]
+}
