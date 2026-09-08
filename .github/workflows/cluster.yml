@@ -11,10 +11,18 @@ on:
         description: "Path local o URL HTTPS a un JSON de startups (vacio = dataset de ejemplo)"
         required: false
         default: ""
-      producthunt:
-        description: "Categorias de Product Hunt separadas por espacio ('all' = todas, vacio = no usar)"
+      yc:
+        description: "Industrias de Y Combinator separadas por espacio ('all' = todas, ej: B2B Fintech). Fuente recomendada"
         required: false
-        default: "all"
+        default: "B2B"
+      top:
+        description: "Dejar solo los N clusters de mayor cohesion (0 = todos)"
+        required: false
+        default: "25"
+      producthunt:
+        description: "Categorias de Product Hunt ('all' = todas, vacio = no usar). Solo si no se usa yc"
+        required: false
+        default: ""
       rss:
         description: "Feeds RSS/Atom genericos separados por espacio (vacio = no se usa)"
         required: false
@@ -53,19 +61,31 @@ jobs:
       - name: Ejecutar el clustering
         env:
           INPUT_DATA: ${{ inputs.data }}
+          INPUT_YC: ${{ inputs.yc }}
+          INPUT_TOP: ${{ inputs.top }}
           INPUT_PH: ${{ inputs.producthunt }}
           INPUT_RSS: ${{ inputs.rss }}
           EVENT: ${{ github.event_name }}
         run: |
-          # La corrida semanal no recibe inputs: por defecto usa Product Hunt
-          # para no clusterizar el dataset de ejemplo.
-          if [ -z "$INPUT_PH" ] && [ "$EVENT" = "schedule" ]; then
-            INPUT_PH="all"
+          # La corrida semanal no recibe inputs: por defecto usa el directorio
+          # de YC para no clusterizar el dataset de ejemplo.
+          if [ -z "$INPUT_YC" ] && [ -z "$INPUT_PH" ] && [ "$EVENT" = "schedule" ]; then
+            INPUT_YC="B2B"
+            INPUT_TOP="25"
           fi
 
           ARGS=(--output clusters_result.json)
+          if [ -n "$INPUT_TOP" ]; then
+            ARGS+=(--top "$INPUT_TOP")
+          fi
           if [ -n "$INPUT_DATA" ]; then
             ARGS+=(--data "$INPUT_DATA")
+          fi
+          if [ "$INPUT_YC" = "all" ]; then
+            ARGS+=(--yc)
+          elif [ -n "$INPUT_YC" ]; then
+            # Sin comillas a proposito: cada industria es un argumento separado.
+            ARGS+=(--yc $INPUT_YC)
           fi
           if [ "$INPUT_PH" = "all" ]; then
             ARGS+=(--producthunt)

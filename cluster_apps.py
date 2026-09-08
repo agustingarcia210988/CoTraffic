@@ -15,12 +15,15 @@ las descripciones (Sentence-Transformers + scikit-learn).
 
 Fuentes de datos, en orden de precedencia:
   --data          JSON local o remoto (HTTPS) con la lista de startups.
-  --producthunt   Productos reales de Product Hunt, un feed Atom por categoria.
-                  La categoria y la audiencia salen del feed de origen, no se
-                  adivinan. Es la opcion recomendada para datos reales.
-  --rss           Feeds RSS/Atom genericos. Como no traen categoria ni
-                  audiencia, se infieren por palabras clave: sirve para
-                  prototipar, pero clasifica mal descripciones muy cortas.
+  --yc            Directorio publico de Y Combinator. RECOMENDADA: ~4.000
+                  empresas activas, descripciones de ~490 caracteres y
+                  taxonomia curada (industry -> audiencia, subindustry ->
+                  categoria). Sin API key.
+  --producthunt   Product Hunt, un feed Atom por categoria. La categoria sale
+                  del feed, pero las descripciones son taglines de ~45
+                  caracteres y los embeddings se agarran de la palabra de moda.
+  --rss           Feeds RSS/Atom genericos. No traen categoria ni audiencia:
+                  se infieren por palabras clave. Solo para prototipar.
   (sin flags)     Dataset de ejemplo embebido, solo como fallback.
 """
 
@@ -34,6 +37,7 @@ import math
 import re
 import sys
 import urllib.request
+from collections import Counter
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -88,6 +92,10 @@ AUDIENCE_KEYWORDS: Dict[str, Sequence[str]] = {
 
 UNKNOWN_CATEGORY = "Sin categoria"
 UNKNOWN_AUDIENCE = "Sin audiencia"
+
+# Directorio publico de Y Combinator: sin API key, ~4.000 empresas activas con
+# descripciones largas e industria/subindustria curadas por YC.
+YC_API_URL = "https://yc-oss.github.io/api/companies/all.json"
 
 # Product Hunt publica un feed Atom por categoria. Al traer los productos desde
 # feeds separados la categoria deja de inferirse: viene dada por el feed de
@@ -173,16 +181,24 @@ class CoMarketingCluster:
 
 def load_startup_data(
     data_source: Optional[str] = None,
+    yc_industries: Optional[Sequence[str]] = None,
     product_hunt: Optional[Sequence[str]] = None,
     rss_feeds: Optional[Sequence[str]] = None,
+    limite: int = 0,
 ) -> List[Startup]:
-    """Carga startups desde JSON, Product Hunt, RSS generico o el dataset de ejemplo."""
+    """Carga startups desde JSON, YC, Product Hunt, RSS o el dataset de ejemplo."""
     if data_source:
         startups = _load_from_json_source(data_source)
         if startups:
             logger.info(f"{len(startups)} startups cargadas desde {data_source}")
             return startups
         logger.warning("La fuente JSON no devolvio datos; se intenta la siguiente opcion")
+
+    if yc_industries is not None:
+        startups = _load_from_yc(yc_industries, limite)
+        if startups:
+            return startups
+        logger.warning("YC no devolvio datos; se intenta la siguiente opcion")
 
     if product_hunt is not None:
         startups = _load_from_product_hunt(product_hunt)
@@ -235,6 +251,74 @@ def _startup_from_dict(item: Dict) -> Startup:
         audiencia_objetivo=item.get("audiencia_objetivo") or UNKNOWN_AUDIENCE,
         url=item.get("url"),
     )
+
+
+def _load_from_yc(industrias: Sequence[str], limite: int = 0) -> List[Startup]:
+    """Trae empresas del directorio publico de Y Combinator.
+
+    Es la fuente recomendada para reclutar: no hace falta API key, las
+    descripciones promedian ~490 caracteres (contra ~45 de Product Hunt) y la
+    taxonomia la cura YC, no nosotros. El mapeo es directo:
+
+        industry     -> audiencia_objetivo   (B2B, Fintech, Healthcare, ...)
+        subindustry  -> categoria            (Marketing, Sales, Operations, ...)
+
+    Se descartan las empresas inactivas y las que no tengan los tres campos.
+    """
+    try:
+        logger.info(f"Descargando el directorio de YC desde {YC_API_URL}")
+        with urllib.request.urlopen(YC_API_URL, timeout=120) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except Exception as exc:
+        logger.error(f"No se pudo descargar el directorio de YC: {exc}")
+        return []
+
+    filtro = {i.strip().lower() for i in industrias} if industrias else None
+    descartadas = Counter()
+    startups: List[Startup] = []
+
+    for empresa in payload:
+        descripcion = (empresa.get("long_description") or "").strip()
+        industria = (empresa.get("industry") or "").strip()
+        subindustria = (empresa.get("subindustry") or "").split("->")[-1].strip()
+        estado = (empresa.get("status") or "").strip()
+
+        if not (descripcion and industria and subindustria):
+            descartadas["sin metadatos completos"] += 1
+            continue
+        if estado != "Active":
+            descartadas[f"estado {estado or 'desconocido'}"] += 1
+            continue
+        if filtro and industria.lower() not in filtro:
+            descartadas["otra industria"] += 1
+            continue
+
+        etiquetas = list(empresa.get("tags") or [])
+        if empresa.get("batch"):
+            etiquetas.append(f"YC {empresa['batch']}")
+
+        startups.append(
+            Startup(
+                id=str(empresa.get("id") or empresa.get("slug") or empresa["name"]),
+                nombre=empresa.get("name") or "Sin nombre",
+                categoria=subindustria,
+                # El one_liner suma contexto sin diluir la descripcion larga.
+                descripcion=" ".join(
+                    x for x in [(empresa.get("one_liner") or "").strip(), descripcion] if x
+                ),
+                tags=etiquetas,
+                audiencia_objetivo=industria,
+                url=empresa.get("website") or None,
+            )
+        )
+        if limite and len(startups) >= limite:
+            logger.info(f"Se alcanzo el limite de {limite} empresas")
+            break
+
+    logger.info(f"{len(startups)} empresas de YC cargadas")
+    for motivo, n in descartadas.most_common():
+        logger.info(f"  descartadas por {motivo}: {n}")
+    return startups
 
 
 def _load_from_product_hunt(slugs: Sequence[str]) -> List[Startup]:
@@ -546,34 +630,39 @@ def _greedy_candidates(
     min_size: int,
     max_size: int,
 ) -> List[List[Startup]]:
-    """Desde cada startup semilla, suma la vecina mas similar de categoria nueva."""
+    """Desde cada startup semilla, suma la vecina mas similar de categoria nueva.
+
+    Esta vectorizado con numpy porque el grupo puede tener miles de startups:
+    la version con bucles anidados en Python es O(n^2) por semilla y no termina
+    en un tiempo razonable a partir de unos cientos de miembros.
+    """
+    filas = np.array([indice[s.id] for s in grupo])
+    sub = similitudes[np.ix_(filas, filas)]  # matriz de similitud local al grupo
+    categorias = np.array([s.categoria for s in grupo])
+
     candidatos: List[List[Startup]] = []
     vistos = set()
 
-    for semilla in grupo:
-        cluster = [semilla]
-        categorias = {semilla.categoria}
+    for semilla in range(len(grupo)):
+        miembros = [semilla]
+        usadas = {categorias[semilla]}
 
-        while len(cluster) < max_size:
-            mejor, mejor_score = None, -1.0
-            for candidata in grupo:
-                if candidata in cluster or candidata.categoria in categorias:
-                    continue
-                score = float(
-                    np.mean([similitudes[indice[candidata.id], indice[m.id]] for m in cluster])
-                )
-                if score > mejor_score:
-                    mejor, mejor_score = candidata, score
-            if mejor is None:
-                break
-            cluster.append(mejor)
-            categorias.add(mejor.categoria)
+        while len(miembros) < max_size:
+            # Similitud media de cada candidata contra los miembros ya elegidos.
+            scores = sub[:, miembros].mean(axis=1)
+            # Se descartan las que repiten categoria o ya estan en el cluster.
+            scores[np.isin(categorias, list(usadas))] = -np.inf
+            mejor = int(np.argmax(scores))
+            if not np.isfinite(scores[mejor]):
+                break  # no queda ninguna categoria nueva disponible
+            miembros.append(mejor)
+            usadas.add(categorias[mejor])
 
-        if len(cluster) >= min_size:
-            firma = frozenset(s.id for s in cluster)
+        if len(miembros) >= min_size:
+            firma = frozenset(grupo[i].id for i in miembros)
             if firma not in vistos:
                 vistos.add(firma)
-                candidatos.append(cluster)
+                candidatos.append([grupo[i] for i in miembros])
 
     return candidatos
 
@@ -682,17 +771,26 @@ def print_summary(clusters: List[CoMarketingCluster]) -> None:
 
 def main(
     data_source: Optional[str] = None,
+    yc_industries: Optional[Sequence[str]] = None,
     product_hunt: Optional[Sequence[str]] = None,
     rss_feeds: Optional[Sequence[str]] = None,
     output_path: str = "clusters_result.json",
+    limite: int = 0,
+    top: int = 0,
 ) -> List[CoMarketingCluster]:
     """Ejecuta el pipeline completo de clustering de co-marketing."""
     logger.info("Iniciando pipeline de clustering de co-marketing...")
 
-    startups = load_startup_data(data_source, product_hunt, rss_feeds)
+    startups = load_startup_data(data_source, yc_industries, product_hunt, rss_feeds, limite)
     startups = generate_embeddings(startups)
     similitudes, indice = build_similarity_index(startups)
     clusters = build_complementary_clusters(startups, similitudes, indice)
+
+    # Para reclutamiento interesa la lista priorizada, no el volcado completo.
+    if top and len(clusters) > top:
+        clusters.sort(key=lambda c: -c.complementarity_score)
+        logger.info(f"Se recortan {len(clusters)} clusters a los {top} de mayor cohesion")
+        clusters = clusters[:top]
 
     save_clusters(clusters, output_path)
     print_summary(clusters)
@@ -709,6 +807,17 @@ if __name__ == "__main__":
         type=str,
         default=None,
         help="Path local o URL HTTPS a un JSON con la lista de startups",
+    )
+    parser.add_argument(
+        "--yc",
+        type=str,
+        nargs="*",
+        default=None,
+        metavar="INDUSTRIA",
+        help=(
+            "Trae empresas activas del directorio de Y Combinator. Sin argumentos usa "
+            "todas las industrias; o filtrar por ej: B2B Fintech Healthcare"
+        ),
     )
     parser.add_argument(
         "--producthunt",
@@ -734,14 +843,29 @@ if __name__ == "__main__":
         default="clusters_result.json",
         help="Path del JSON de salida (por defecto, la raiz del repositorio)",
     )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=0,
+        help="Maximo de startups a ingerir (0 = sin limite)",
+    )
+    parser.add_argument(
+        "--top",
+        type=int,
+        default=0,
+        help="Dejar solo los N clusters de mayor cohesion en la salida (0 = todos)",
+    )
     args = parser.parse_args()
 
     try:
         main(
             data_source=args.data,
+            yc_industries=args.yc,
             product_hunt=args.producthunt,
             rss_feeds=args.rss,
             output_path=args.output,
+            limite=args.limit,
+            top=args.top,
         )
     except Exception as exc:
         logger.error(f"El pipeline fallo: {exc}", exc_info=True)
