@@ -1,1349 +1,2133 @@
 {
-  "generated_at": "2026-09-07T20:49:06+00:00",
-  "total_clusters": 21,
+  "generated_at": "2026-09-08T19:04:36+00:00",
+  "total_clusters": 25,
   "clusters": [
     {
-      "cluster_id": "cluster_developers_dev_teams_1",
-      "audiencia_objetivo": "Developers & Dev Teams",
+      "cluster_id": "cluster_b2b_1",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/openclaw-formerly-clawdbot",
-          "nombre": "OpenClaw 2.0",
-          "categoria": "Developer Tools",
-          "descripcion": "The AI that really does things",
+          "id": "27983",
+          "nombre": "Retape",
+          "categoria": "Sales",
+          "descripcion": "AI Operating System for Debt Settlement We're building an AI Operating System for DSCs. This includes a set of AI agents that can work together to complete a workflow end to end.",
           "tags": [
-            "developer-tools"
+            "Generative AI",
+            "SaaS",
+            "Finance",
+            "B2B",
+            "YC Winter 2023"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/openclaw-formerly-clawdbot"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.retape.ai/",
+          "equipo": 3
         },
         {
-          "id": "https://www.producthunt.com/products/amami/launches/amami",
-          "nombre": "Amami",
+          "id": "30889",
+          "nombre": "Nivara",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI agents for the finance back office. We’re building AI agents for finance teams. They handle repetitive work across email and accounting systems - processing documents, following up on open items, reconciling records, and resolving exceptions while people retain approval and oversight.",
+          "tags": [
+            "B2B",
+            "AI",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://getnivara.com/",
+          "equipo": 2
+        },
+        {
+          "id": "29983",
+          "nombre": "PathPilot",
+          "categoria": "B2B",
+          "descripcion": "AI Agents for Lending Operations Today, onboarding, servicing, and collections still depend on large human teams — which means operations scale linearly with loan volume. PathPilot deploys specialized AI agents that handle 60–80% of high-volume operational workflows, turning human-heavy processes into scalable software. These agents operate alongside internal teams — embedded directly into existing systems. This allows lenders to grow loan volume and revenue without proportional headcount growth.",
+          "tags": [
+            "Finance",
+            "B2B",
+            "Lending",
+            "AI",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.getpathpilot.com/",
+          "equipo": 3
+        },
+        {
+          "id": "29478",
+          "nombre": "Reform",
+          "categoria": "Supply Chain and Logistics",
+          "descripcion": "AI Agents for high-stakes work. At Reform, we’re building a platform for building and managing AI agents that perform high-stakes operational work. Some of the most critical industries today run on outdated systems, spreadsheets, and manual processes — creating friction across every handoff, contract, and invoice. We’re rebuilding this infrastructure from the ground up.",
+          "tags": [
+            "Workflow Automation",
+            "Compliance",
+            "Logistics",
+            "Supply Chain",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.reformhq.com",
+          "equipo": 13
+        },
+        {
+          "id": "30859",
+          "nombre": "Locus",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Payment infrastructure for AI agents We make your agents pay.\r\n\r\nAs agents evolve from tools into dependable, autonomous actors, they’ll need the ability to execute open-ended workflows end-to-end.\r\n\r\nThis inevitably means payments: accessing paywalled data, transacting for services or with other specialist agents. But autonomy requires guardrails. Businesses and developers will need a way to ensure their agents only spend how much and on what they’re supposed to.\r\n\r\nThe machine economy is coming, and Locus (YC F25) is building the connector businesses will need to participate. We connect agents securely to funds, letting you define permissions and limits for every transaction. Each payment is traceable, auditable, and fully reconcilable with your existing financial stack.",
+          "tags": [
+            "Finance",
+            "AI",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://paywithlocus.com",
+          "equipo": 2
+        }
+      ],
+      "complementarity_score": 0.7165,
+      "rationale": "Herramientas complementarias para B2B: Sales, Finance and Accounting, B2B, Supply Chain and Logistics, Engineering, Product and Design",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_2",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "29764",
+          "nombre": "Zeit AI",
           "categoria": "Analytics",
-          "descripcion": "Analytics that lives inside your AI assistant",
+          "descripcion": "The autonomous data engineer for the mid-market Ask a question in plain English and ZeitMind connects SAP, your ERP, CRM, HR systems and 600+ other sources, prepares the messy data, and turns it into the live applications your teams actually make decisions with.\r\n\r\nIt is built for the finance, controlling, procurement, supply chain and sales teams at companies that run enterprise systems without an enterprise data team.",
           "tags": [
-            "analytics"
+            "Artificial Intelligence",
+            "SaaS",
+            "B2B",
+            "Analytics",
+            "Data Engineering",
+            "YC Summer 2024"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/amami/launches/amami"
+          "audiencia_objetivo": "B2B",
+          "url": "https://zeit-ai.com/",
+          "equipo": 12
         },
         {
-          "id": "https://www.producthunt.com/products/tabbitai",
-          "nombre": "Tabbit AI",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "The best AI browser built both for you and your Agents.",
+          "id": "29807",
+          "nombre": "Dataleap",
+          "categoria": "B2B",
+          "descripcion": "AI Employees for the Enterprise At Dataleap we have one single focus - make knowledge work at your computer fun! Give all the other roles in sales, ops, hr the same super powers that engineers get with Cursor and Claude Code. \r\n\r\nDataleap is the agentic operating system for the Enterprise. We enable business teams to automate they work without any help from engineering. No visual workflow builder, no hour long setup or steep learning curve in n8n. Build your AI coworkers in minutes with a fully agent first interface.",
           "tags": [
-            "artificial-intelligence"
+            "Generative AI",
+            "Enterprise Software",
+            "AI",
+            "YC Summer 2024"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/tabbitai"
+          "audiencia_objetivo": "B2B",
+          "url": "https://dataleap.ai/",
+          "equipo": 6
         },
         {
-          "id": "https://www.producthunt.com/products/moda-2/launches/moda-2",
-          "nombre": "Moda",
-          "categoria": "Diseno",
-          "descripcion": "Finally, AI designs you can edit",
+          "id": "30628",
+          "nombre": "Datafruit",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "The AI workspace for software implementations Datafruit helps enterprise delivery teams understand their customers deeply and deliver more profitably. We build AI agents capture every conversation, structure scope from day one, and use past projects to make every engagement sharper.",
           "tags": [
-            "design"
+            "Artificial Intelligence",
+            "Enterprise Software",
+            "YC Summer 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/moda-2/launches/moda-2"
+          "audiencia_objetivo": "B2B",
+          "url": "https://datafruit.ai/",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/locus-founder/launches/locus-founder",
-          "nombre": "Locus Founder",
-          "categoria": "No-Code",
-          "descripcion": "Text an AI agent and it builds + runs your business",
+          "id": "23530",
+          "nombre": "Waydev",
+          "categoria": "Productivity",
+          "descripcion": "Engineering intelligence for AI transformation Waydev maps AI velocity across the SDLC — built on DORA, SPACE, and DX — turning developer tool data into board-ready evidence of adoption, impact, and ROI.",
           "tags": [
-            "no-code"
+            "AIOps",
+            "Artificial Intelligence",
+            "Analytics",
+            "AI",
+            "AI Assistant",
+            "YC Winter 2021"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/locus-founder/launches/locus-founder"
+          "audiencia_objetivo": "B2B",
+          "url": "https://waydev.co/",
+          "equipo": 13
+        },
+        {
+          "id": "27897",
+          "nombre": "TableFlow",
+          "categoria": "Operations",
+          "descripcion": "AI Teammates for Data Tasks TableFlow builds AI teammates for data tasks, helping operations and data teams automate the messy, manual tasks buried in PDFs, spreadsheets, images, and emails.",
+          "tags": [
+            "Documents",
+            "SaaS",
+            "Data Engineering",
+            "Automation",
+            "AI",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://tableflow.com",
+          "equipo": 2
         }
       ],
-      "complementarity_score": 0.6395,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, Analytics, Inteligencia Artificial, Diseno, No-Code",
+      "complementarity_score": 0.7101,
+      "rationale": "Herramientas complementarias para B2B: Analytics, B2B, Engineering, Product and Design, Productivity, Operations",
       "size": 5
     },
     {
-      "cluster_id": "cluster_developers_dev_teams_2",
-      "audiencia_objetivo": "Developers & Dev Teams",
+      "cluster_id": "cluster_b2b_3",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/depthdata/launches/depthdata",
-          "nombre": "Depthdata",
+          "id": "30346",
+          "nombre": "Mercura",
+          "categoria": "Sales",
+          "descripcion": "AI Quote and Order Automation for Distributors & Manufacturers Mercura automates quotes and orders for distributors & manufacturers in the construction supply chain. Our software lets sales teams process requests in minutes instead of days. By eliminating repetitive back-office tasks, we help sales reps focus on winning more deals and driving revenue.",
+          "tags": [
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.mercura.ai",
+          "equipo": 20
+        },
+        {
+          "id": "30698",
+          "nombre": "Comena",
+          "categoria": "Supply Chain and Logistics",
+          "descripcion": "AI agents for distributors and manufacturers to automate order entry. We build AI agents that automate order processing for industrial distributors and manufacturers. Say goodbye to inside sales and customer service teams spending hours on manual data entry. Comena streamlines order and quote entry, from inbox to ERP, freeing up sales teams to focus on high-value activities and proactive selling.",
+          "tags": [
+            "YC Summer 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://comena.ai",
+          "equipo": 8
+        },
+        {
+          "id": "30799",
+          "nombre": "Avent",
+          "categoria": "B2B",
+          "descripcion": "AI agents for industrial commerce Avent helps manufacturers and industrial distributors run quoting and order entry on autopilot. \r\n\r\nOur AI agents manage sales inboxes, build quotes from past pricing and tribal knowledge, and keep records up to date in existing ERPs.",
+          "tags": [
+            "YC Summer 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.aventindustrial.com",
+          "equipo": 5
+        },
+        {
+          "id": "30230",
+          "nombre": "SalesPatriot",
+          "categoria": "Operations",
+          "descripcion": "AI powered operating system for distributors and OEMs SalesPatriot is a back-office operating system for distributors and OEMS. We build custom AI workflows for sales and supply chain teams to manage procurement, requests for quote and purchase orders.\r\n\r\nIn large orgs that operate as key nodes of the supply chain data is scattered across twelve systems. Quotes get lost and Executives lack visibility. Supply chain workflows are time consuming because data isn't where it needs to be in the format it needs to be.\r\n\r\nEmployees are stuck between their email, ERP, CRM, marketplaces, and spreadsheets instead of winning business and protecting margin.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "Sales",
+            "AI",
+            "Industrial",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.salespatriot.com/",
+          "equipo": 15
+        },
+        {
+          "id": "28366",
+          "nombre": "Vendora",
+          "categoria": "Retail",
+          "descripcion": "All-in-One Software for the $1T Grocery Industry Vendora is building a generational company in one of the largest industries out there - grocery. We build software to serve the $1 trillion dollar (over 3% of US GDP) grocery industry. This ranges from point of sale, payments, e-commerce, inventory management, loyalty, and advanced analytics with more on the horizon. \r\n\r\nWe’re taking bleeding edge technology and an AI-focused approach to modernizing an industry stuck in legacy software and practices. Backed by Y Combinator and investors with deep expertise in retail, we are a team of operators from Amazon, Uber, Tesla, Figma and McKinsey in transforming a sector that touches us all.",
+          "tags": [
+            "Artificial Intelligence",
+            "Grocery",
+            "Payments",
+            "B2B",
+            "Retail",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.vendora.io/",
+          "equipo": 4
+        }
+      ],
+      "complementarity_score": 0.6985,
+      "rationale": "Herramientas complementarias para B2B: Sales, Supply Chain and Logistics, B2B, Operations, Retail",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_4",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "28971",
+          "nombre": "Kobalt Labs",
+          "categoria": "Operations",
+          "descripcion": "AI-powered risk and compliance for financial institutions Automate and strengthen manual risk and compliance operations for fintechs and banks. Given a third party contracts and documentation, Kobalt’s reasoning engine ingests internal policies and procedures, legal commitments, past privacy and compliance assessments, and syncs with external legislation to instantly auto-surface and track risks.\r\n\r\nWe're helping community/regional/sponsor banks increase revenue and scale their partnership and vendor volume, and we're helping fintechs conduct their partner diligence in 1/10 the time, all without needing to increase headcount.",
+          "tags": [
+            "Banking as a Service",
+            "Fintech",
+            "YC Summer 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.kobaltlabs.com/",
+          "equipo": 12
+        },
+        {
+          "id": "29973",
+          "nombre": "Arva AI",
+          "categoria": "B2B",
+          "descripcion": "AI Agents to scale AML, KYB and KYC operations Banks and fintechs have large teams of human analysts who conduct manual checks and reviews. We replace those human compliance analysts with AI agents that automate 80% of the manual work for faster and more compliant financial crime (AML) reviews.\r\n\r\nOur first three products are: Screening AI (discount 91% of screening alerts), KYB/C AI (speed up onboarding), Transaction Monitoring AI (handle AML transaction monitoring alerts)\r\n\r\nOur end goal is to have a whole suite of AI workers that can handle manual compliance work for banks and fintechs. A $24B opportunity in the US alone.",
+          "tags": [
+            "Artificial Intelligence",
+            "Fintech",
+            "B2B",
+            "Compliance",
+            "Regtech",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.arva.ai",
+          "equipo": 20
+        },
+        {
+          "id": "30239",
+          "nombre": "Cardamon",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI compliance co-pilot for regulated financial businesses Cardamon is an AI powered platform that ingests relevant regulation, understands what applies to each regulated financial firm, and gets compliance officers from regulation, to obligations, to product requirements in minutes - not weeks.\r\n\r\nFinancial firms face a host of complex regulations that make it incredibly painful to launch and maintain products in a compliant way. As a Product team at Revolut, we felt this pain deeply ourselves - we had products ready to launch but stuck in compliance limbo, often for weeks. Turns out, getting compliant took as long as building the product itself. \r\n\r\nFrustrated, we dug in and were shocked by how manual and inefficient the processes were. That’s when it clicked: there’s a huge opportunity to automate the boring stuff (and solve our own problem!). Compliance teams win because they ditch the tedious tasks. Product teams win because they ship faster. Everyone’s happy.",
+          "tags": [
+            "Fintech",
+            "Compliance",
+            "Regtech",
+            "AI",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://cardamon.ai/",
+          "equipo": 11
+        },
+        {
+          "id": "29291",
+          "nombre": "ROE",
+          "categoria": "Infrastructure",
+          "descripcion": "AI for risk and compliance ROE AI solve risks and compliance problems for financial industry.",
+          "tags": [
+            "Fintech",
+            "Generative AI",
+            "Compliance",
+            "Regtech",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://getroe.ai",
+          "equipo": 9
+        },
+        {
+          "id": "29972",
+          "nombre": "Affil.ai",
+          "categoria": "Marketing",
+          "descripcion": "AI Affiliate Network For Financial Companies We build AI compliance for external marketing. For example, we work with major creators to ensure that their content meets credit card marketing guidelines.",
+          "tags": [
+            "Artificial Intelligence",
+            "SaaS",
+            "B2B",
+            "Compliance",
+            "Marketing",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://affil.ai/",
+          "equipo": 4
+        }
+      ],
+      "complementarity_score": 0.6961,
+      "rationale": "Herramientas complementarias para B2B: Operations, B2B, Finance and Accounting, Infrastructure, Marketing",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_5",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "22742",
+          "nombre": "Axiom.ai",
+          "categoria": "Operations",
+          "descripcion": "No-code Browser RPA Axiom.ai is building a no-code browser automation tool. This lets anyone automate repetitive work by recording clicking and typing actions in their browser.\r\n\r\nWe think the market has huge potential - companies like UiPath built $10 billion+ businesses by automating processes on the desktop - an industry now known as Robotic Process Automation (RPA). We think RPA has a lot more potential outside the Enterprise. \r\n\r\nAxiom is on its way to being the industry-standard RPA tool for the browser. It now ranks alongside Selenium - the historical industry standard - as the top result when searching for ‘Browser Automation’ on Google, and is the top-result on Chrome’s extension store.",
+          "tags": [
+            "Robotic Process Automation",
+            "SaaS",
+            "YC Winter 2021"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://axiom.ai",
+          "equipo": 8
+        },
+        {
+          "id": "27255",
+          "nombre": "Intuned",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Code-first scrapers and RPAs — built and maintained by AI Intuned is a code-first browser automation platform with an AI agent that builds and maintains your automations. Developers use Intuned to deploy scrapers, RPAs, and crawlers as production-ready TypeScript or Python projects — with stealth, CAPTCHA solving, proxies, auth, and scheduling handled out of the box. The agent builds projects from a prompt, fixes failed runs, and can self-heal automations autonomously when websites change.",
+          "tags": [
+            "Developer Tools",
+            "Robotic Process Automation",
+            "B2B",
+            "API",
+            "AI",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://intunedhq.com",
+          "equipo": 15
+        },
+        {
+          "id": "30341",
+          "nombre": "Browser Use",
+          "categoria": "B2B",
+          "descripcion": "Agents that use the browser. We enable AI to control the browser. \r\nBrowser-use is the biggest open-source web agent project with 110k+ Github stars.",
+          "tags": [
+            "Open Source",
+            "API",
+            "Automation",
+            "AI",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://browser-use.com",
+          "equipo": 7
+        },
+        {
+          "id": "24206",
+          "nombre": "Hyperbrowser",
+          "categoria": "Security",
+          "descripcion": "Web infra for AI agents Hyperbrowser.ai is the internet infrastructure for AI agents. We provide instant, scalable browser infra with built-in CAPTCHA solving, proxy management, and anti-bot detection. \r\n\r\nDevelopers use us to power their AI agents for data collection, testing, and web automation at scale. We're backed by YC, Accel, SV Angel, and others.",
+          "tags": [
+            "Developer Tools",
+            "B2B",
+            "AI",
+            "YC Summer 2021"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://hyperbrowser.ai",
+          "equipo": 4
+        },
+        {
+          "id": "28887",
+          "nombre": "Skyvern",
+          "categoria": "Infrastructure",
+          "descripcion": "Open Source AI Agent to automate browser workflows via an API Skyvern helps companies automate browser based workflows using LLMs and Computer Vision, fully automating manual workflows and replacing brittle or unreliable scripts.\r\n\r\nExamples include:\r\n1. Automating materials procurement from commerce websites\r\n2. Completing complex multi-step workflows (ie getting an insurance quote from Geico.com)\r\n3. Automatically logging into portals and downloading invoices\r\n4. Navigating legacy content systems to do data extraction or data entry",
+          "tags": [
+            "Artificial Intelligence",
+            "Robotic Process Automation",
+            "Workflow Automation",
+            "Open Source",
+            "API",
+            "YC Summer 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.skyvern.com/",
+          "equipo": 10
+        }
+      ],
+      "complementarity_score": 0.6927,
+      "rationale": "Herramientas complementarias para B2B: Operations, Engineering, Product and Design, B2B, Security, Infrastructure",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_6",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "29395",
+          "nombre": "Clarum",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI agents for private market diligence, monitoring, and reporting Clarum automates diligence, monitoring, and reporting for private market investors. Our AI agents learn how each firm works and automate their process end to end. Everything is individualized (checklists, templates, scoring models) and adapts as your process changes.\r\n\r\nClarum also acts as a self-updating knowledge base across every document your firm has ever seen, connecting dots no analyst could.",
+          "tags": [
+            "Fintech",
+            "SaaS",
+            "Finance",
+            "B2B",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://clarum.ai",
+          "equipo": 2
+        },
+        {
+          "id": "30439",
+          "nombre": "Clarm",
+          "categoria": "Productivity",
+          "descripcion": "Build governed AI agents on your own data, without code Clarm Atlas 10xes productivity for non-technical operators in high-trust, regulated teams - banks, healthcare, insurance, publicly listed companies - by letting them build their own, fully governed AI agents. Teams build agents on their own approved data: every answer cites its source, all primitives are deterministic and highly governable, every action is logged for audit, and you bring your own AI model.",
+          "tags": [
+            "Artificial Intelligence",
+            "Sales",
+            "Marketing",
+            "Customer Support",
+            "AI",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.clarm.com",
+          "equipo": 2
+        },
+        {
+          "id": "30406",
+          "nombre": "BitBoard",
           "categoria": "Analytics",
-          "descripcion": "The system of analyze your company's AI usage",
+          "descripcion": "Let your agent build dashboards and reporting. Data analysis with AI agents is great until you realize you want to set up a recurring report or collaborate with your team. We built an agent-first workbook so you don’t have to roll your own dashboards or fumble around in a rigid BI tool.\r\n\r\nConnect your agent of choice to BitBoard and it can generate connected charts, SQL, code, and commentary in a notebook-style UI you can share with your team.",
           "tags": [
-            "analytics"
+            "B2B",
+            "Analytics",
+            "Data Visualization",
+            "AI",
+            "YC Spring 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/depthdata/launches/depthdata"
+          "audiencia_objetivo": "B2B",
+          "url": "https://bitboard.work",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/databox",
-          "nombre": "Routines by Databox",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "An AI Analyst that runs analysis and reports on a schedule",
+          "id": "28884",
+          "nombre": "Dialtone",
+          "categoria": "B2B",
+          "descripcion": "AI Agents for Enterprises Connect agentic workflows to all your existing software and data. 100+ first party data, action, and event connectors for the tools and services you already use. Easily configurable custom connectors for your enterprise’s proprietary systems, enterprise grade security, and dedicated infrastructure.",
           "tags": [
-            "artificial-intelligence"
+            "Artificial Intelligence",
+            "B2B",
+            "AI",
+            "YC Summer 2023"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/databox"
+          "audiencia_objetivo": "B2B",
+          "url": "https://usedialtone.com",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/hot100-ai/launches/hot100-ai",
-          "nombre": "Hot100.ai",
-          "categoria": "Diseno",
-          "descripcion": "The weekly AI project chart judged by AI",
+          "id": "30906",
+          "nombre": "Agentic Fabriq",
+          "categoria": "Security",
+          "descripcion": "The control plane for AI agents. Agentic Fabriq helps companies securely manage what AI agents can access and do across business tools, data, and teams. We give each agent an identity, scoped permissions, approval flows, and audit logs, so employees and customer-facing workflows can use agents without relying on shared API keys, overbroad service accounts, or one-off integrations.",
           "tags": [
-            "design"
+            "Artificial Intelligence",
+            "B2B",
+            "Identity",
+            "Cybersecurity",
+            "YC Winter 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/hot100-ai/launches/hot100-ai"
-        },
-        {
-          "id": "https://www.producthunt.com/products/clockwork-5",
-          "nombre": "Clockwork",
-          "categoria": "Developer Tools",
-          "descripcion": "The calendar where your AI agents show up for work",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/clockwork-5"
-        },
-        {
-          "id": "https://www.producthunt.com/products/jet-admin/launches/jet-ai-agents",
-          "nombre": "Jet AI Agents",
-          "categoria": "No-Code",
-          "descripcion": "Build business AI agents in minutes",
-          "tags": [
-            "no-code"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/jet-admin/launches/jet-ai-agents"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.agenticfabriq.com",
+          "equipo": 2
         }
       ],
-      "complementarity_score": 0.6098,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Analytics, Inteligencia Artificial, Diseno, Developer Tools, No-Code",
+      "complementarity_score": 0.6816,
+      "rationale": "Herramientas complementarias para B2B: Finance and Accounting, Productivity, Analytics, B2B, Security",
       "size": 5
     },
     {
-      "cluster_id": "cluster_developers_dev_teams_3",
-      "audiencia_objetivo": "Developers & Dev Teams",
+      "cluster_id": "cluster_b2b_7",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/bitli-st/launches/bitli-st",
-          "nombre": "Bitli.st",
-          "categoria": "No-Code",
-          "descripcion": "Sell your product before you build it",
+          "id": "26693",
+          "nombre": "SigmaMind AI",
+          "categoria": "B2B",
+          "descripcion": "Voice AI platform purpose-built for contact centers. SigmaMind AI is a platform for building voice AI agents purpose-built for call centers. Our agents make and answer calls for lead generation, appointment setting, follow-ups, collections, customer intake, and basic support. Instead of replacing the phone systems a center already uses, we connect on top of them. Because the AI handles many calls at once, a call center can reach far more people than a human team, lower its cost per lead, and stop wasting agent time on calls that go nowhere. Our customers are usually non-technical operators running centers with 25 or more agents, with the strongest traction in insurance, home services, solar, and lending.",
           "tags": [
-            "no-code"
+            "SaaS",
+            "B2B",
+            "Call Center",
+            "AI",
+            "Conversational AI",
+            "YC Summer 2022"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/bitli-st/launches/bitli-st"
+          "audiencia_objetivo": "B2B",
+          "url": "https://sigmamind.ai?utm_source=yc&utm_medium=web",
+          "equipo": 12
         },
         {
-          "id": "https://www.producthunt.com/products/anyonecanai/launches/anyonecanai",
-          "nombre": "AnyoneCanAI",
-          "categoria": "Diseno",
-          "descripcion": "A simpler & faster way of creating valuable products with AI",
+          "id": "32202",
+          "nombre": "Dialogus",
+          "categoria": "Infrastructure",
+          "descripcion": "The AI-native contact center Dialogus builds voice agent infrastructure for enterprises.\r\n\r\nMost companies can demo an AI voice agent, but getting one into production is hard. Enterprise agents need to connect to phone systems, internal tools, databases, CRMs, messaging channels, human escalation flows, monitoring, and compliance processes.\r\n\r\nDialogus provides the infrastructure to deploy production-grade voice agents that don’t just talk but complete real workflows. Our platform lets enterprises launch agents that collect information, validate it against internal systems, update records, send follow-up messages, and escalate edge cases to humans.",
           "tags": [
-            "design"
+            "B2B",
+            "Customer Support",
+            "YC Summer 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/anyonecanai/launches/anyonecanai"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.dialoguslabs.com/",
+          "equipo": 3
         },
         {
-          "id": "https://www.producthunt.com/products/userlens",
-          "nombre": "Userlens",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "AI agent to improve product adoption",
+          "id": "31416",
+          "nombre": "Callab AI",
+          "categoria": "Operations",
+          "descripcion": "AI voice agents for on-prem telephony stack. 58% of the $400B call center industry runs on on-prem phone systems, and until now bringing AI voice automation to them meant ripping out their entire infrastructure first. That's the largest unserved segment in the market. Callab AI connects directly to legacy PBX systems like Avaya, Cisco UCM, and Mitel, and automates up to 70% of call volume with zero migration needed.\r\n\r\nWe plug into these environments without requiring a rip-and-replace. We serve clients across three continents, including brands like Dunkin Donuts.",
           "tags": [
-            "artificial-intelligence"
+            "YC Spring 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/userlens"
+          "audiencia_objetivo": "B2B",
+          "url": "https://callab.ai",
+          "equipo": 7
         },
         {
-          "id": "https://www.producthunt.com/products/scribble-network/launches/scribble-network",
-          "nombre": "Scribble Network",
+          "id": "30046",
+          "nombre": "Cekura",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Voice AI and Chat AI agents: Testing and Observability Cekura helps Conversational AI companies with automated QA. From pre-production simulation and evaluations to production call monitoring, to assisting customers in setting up the CI/CD pipeline, we help in QA across the agent lifecycle.\r\n\r\nWe are working with 75+ customers across healthcare, BFSI, logistics, recruitment, and retail. Some of the largest CCAS players and enterprises use Cekura to ship AI voice and chat agents reliably",
+          "tags": [
+            "Developer Tools",
+            "SaaS",
+            "B2B",
+            "YC Fall 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.cekura.ai/",
+          "equipo": 15
+        },
+        {
+          "id": "29785",
+          "nombre": "Simple AI",
+          "categoria": "Sales",
+          "descripcion": "AI voice that sells Simple AI is building AI voice that sells. Our voice agents know every detail about every product SKU. They’re trained on the best reps, so every call is handled at top-performer quality. Simple AI agents already outperform trained live reps by 30% on conversion and upsell.",
+          "tags": [
+            "Artificial Intelligence",
+            "Sales",
+            "Call Center",
+            "Operations",
+            "AI",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.usesimple.ai",
+          "equipo": 11
+        }
+      ],
+      "complementarity_score": 0.6804,
+      "rationale": "Herramientas complementarias para B2B: B2B, Infrastructure, Operations, Engineering, Product and Design, Sales",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_8",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "25329",
+          "nombre": "PromptLoop",
           "categoria": "Analytics",
-          "descripcion": "The product that makes AI recommend your brand",
+          "descripcion": "AI agents to build B2B datasets PromptLoop helps GTM teams automate account research and data enrichment at scale. We turn manual web scraping and qualification workflows into automated processes, enabling teams to enrich thousands of accounts with detailed company data and buying intent markers in minutes.\r\n\r\nWhy PromptLoop? Sales and marketing teams traditionally spend hours manually researching accounts or rely on outdated data providers. We automatically crawl and extract precise data points from company websites, social profiles, and public sources at 10% the cost of manual research, with built-in quality controls and strict sourcing. Teams can process 10k+ accounts simultaneously, turning raw URLs into actionable qualification data tailored to your goals.",
           "tags": [
-            "analytics"
+            "Artificial Intelligence",
+            "Generative AI",
+            "SaaS",
+            "Sales",
+            "Market Research",
+            "YC Winter 2022"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/scribble-network/launches/scribble-network"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.promptloop.com/",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/keiki",
-          "nombre": "Keiki",
-          "categoria": "Developer Tools",
-          "descripcion": "Build one customer-facing AI agent and launch it everywhere",
+          "id": "30938",
+          "nombre": "Imagine AI",
+          "categoria": "Sales",
+          "descripcion": "We reverse engineer B2B growth, starting with LinkedIn. Imagine AI is a research and software company reverse engineering modern B2B growth, starting with LinkedIn.\r\n\r\nWe build coordinated content systems for executive teams, where the CEO, VP of Sales, and Head of Marketing post aligned narratives from a single calendar, producing compounding reach that single-founder posting cannot reach.\r\n\r\n50+ B2B companies are now using Imagine AI, including MongoDB, Rippling, Slash, and Corgi Insurance. Customers have generated $31M in attributed revenue, 12M impressions, and 1,400 hours of executive time saved.",
           "tags": [
-            "developer-tools"
+            "Artificial Intelligence",
+            "B2B",
+            "Sales",
+            "Marketing",
+            "YC Fall 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/keiki"
+          "audiencia_objetivo": "B2B",
+          "url": "https://imagineai.me",
+          "equipo": 5
+        },
+        {
+          "id": "25732",
+          "nombre": "Sprites",
+          "categoria": "Marketing",
+          "descripcion": "The AI performance marketing agent for entrepreneurs and growth teams Sprites AI automates customer acquisition and demand generation for entrepreneurs and growth teams. Our AI agent handles managing paid ad campaigns on Meta, Google, LinkedIn, Reddit, TikTok, and runs your SEO and AEO gameplan with a content engine —unlocking growth channels that normally require hiring multiple people or agencies. \r\n\r\nTeams using our platform acquire customers much faster and scale their growth funnel without the overhead of hiring large teams of specialists or hiring expensive agencies. \r\n\r\nThe result: heads of marketing, SMBs, and founders can now scale revenue like they have a full marketing department.\r\n\r\nWe're arming businesses with systematic customer acquisition run by AI- so they can focus on the important things that make their offering unique.",
+          "tags": [
+            "B2B",
+            "Marketing",
+            "Advertising",
+            "AI",
+            "YC Winter 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://sprites.ai/",
+          "equipo": 5
+        },
+        {
+          "id": "25679",
+          "nombre": "Sero",
+          "categoria": "B2B",
+          "descripcion": "Intelligent Customer Implementation Platform for B2B We help onboarding, implementation and professional services teams at B2B companies onboard customers faster, more consistently and more efficiently with AI agents.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "Customer Success",
+            "YC Winter 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.sero.so",
+          "equipo": 2
+        },
+        {
+          "id": "29119",
+          "nombre": "Nowadays",
+          "categoria": "Operations",
+          "descripcion": "AI-native platform for corporate meetings and events Nowadays is the AI-native platform for corporate meetings and events. Our AI doesn't just assist planners – it does the work. It emails and calls venues, negotiates rates in 22 languages, parses 50-page hotel proposals into clean apples-to-apples comparisons, and surfaces unmanaged meeting spend across your entire org.\r\n\r\nWe work with companies ranging from ones planning one epic company kickoff a year to ones running thousands of meetings through the platform annually. Clients include Google, Airbnb, BlackRock, Anthropic, Pylon, and Mintlify.\r\n\r\nUnlike legacy platforms like Cvent that bolted AI onto decades-old infrastructure, Nowadays was built from the ground up for the AI era.",
+          "tags": [
+            "Artificial Intelligence",
+            "B2B",
+            "Logistics",
+            "Marketing",
+            "AI",
+            "YC Summer 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "http://nowadays.ai/",
+          "equipo": 6
         }
       ],
-      "complementarity_score": 0.5627,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: No-Code, Diseno, Inteligencia Artificial, Analytics, Developer Tools",
+      "complementarity_score": 0.6747,
+      "rationale": "Herramientas complementarias para B2B: Analytics, Sales, Marketing, B2B, Operations",
       "size": 5
     },
     {
-      "cluster_id": "cluster_developers_dev_teams_4",
-      "audiencia_objetivo": "Developers & Dev Teams",
+      "cluster_id": "cluster_b2b_9",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/airtop",
-          "nombre": "Agent Builder by Airtop",
-          "categoria": "No-Code",
-          "descripcion": "Build agents that heal themselves.",
+          "id": "27039",
+          "nombre": "Cobbery",
+          "categoria": "Legal",
+          "descripcion": "Superpowers for litigators Born out of 9-figure litigation, Cobbery AI agents are staffed on every matter to give your litigation teams superpowers",
           "tags": [
-            "no-code"
+            "Artificial Intelligence",
+            "YC Summer 2022"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/airtop"
+          "audiencia_objetivo": "B2B",
+          "url": "https://cobbery.com",
+          "equipo": 4
         },
         {
-          "id": "https://www.producthunt.com/products/hyperprobe",
-          "nombre": "Hyperprobe",
-          "categoria": "Developer Tools",
-          "descripcion": "Lets your AI agents debug production without redeploying",
+          "id": "27926",
+          "nombre": "Variance",
+          "categoria": "Security",
+          "descripcion": "AI Agents for Fraud Review and Investigations Variance builds AI agents for fraud, identity, and investigations for Fortune 500s, Marketplaces, and regulated financial services.",
           "tags": [
-            "developer-tools"
+            "Artificial Intelligence",
+            "Compliance",
+            "Cybersecurity",
+            "Enterprise Software",
+            "YC Winter 2023"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/hyperprobe"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.variance.com/",
+          "equipo": 12
         },
         {
-          "id": "https://www.producthunt.com/products/coarena-by-coasty/launches/coarena-by-coasty",
-          "nombre": "Coarena by Coasty",
+          "id": "30531",
+          "nombre": "Moby Analytics",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI financial auditors At Moby Analytics, we provide the first AI agentic platform built for financial auditors. Auditors easily create and deploy AI agents to automate audit workflows. No code, just prompts and domain expertise.",
+          "tags": [
+            "Artificial Intelligence",
+            "Automation",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.mobyanalytics.com/",
+          "equipo": 4
+        },
+        {
+          "id": "26654",
+          "nombre": "Wolfia",
+          "categoria": "Sales",
+          "descripcion": "We help security, legal and sales teams answer customer questions We help security, legal and sales teams get answers in seconds without depending on subject-matter experts.\r\n\r\nOur AI agent connects to every source that already holds the truth (Google Drive, Notion, Slack, email, website, trust center, SOC 2 docs, etc.). It keeps that knowledge graph fresh on its own and drafts, validates, and formats responses to customer questions, security questionnaires, and RFPs, all in the background, so your team just reviews and ships.",
+          "tags": [
+            "Generative AI",
+            "Security",
+            "Sales",
+            "LegalTech",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://wolfia.com",
+          "equipo": 5
+        },
+        {
+          "id": "30340",
+          "nombre": "TamLabs",
+          "categoria": "Productivity",
+          "descripcion": "Agent teams for complex work TamLabs agent teams deliver professional work products with speed and precision.",
+          "tags": [
+            "Artificial Intelligence",
+            "Finance",
+            "Workflow Automation",
+            "Legal",
+            "Enterprise",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://tamlabs.ai",
+          "equipo": 2
+        }
+      ],
+      "complementarity_score": 0.6739,
+      "rationale": "Herramientas complementarias para B2B: Legal, Security, Finance and Accounting, Sales, Productivity",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_10",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "29365",
+          "nombre": "Ellipsis",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Cloud platform for coding agents Ellipsis is a cloud platform that allows engineering teams to deploy fleets of coding agents. Each agent gets an isolated sandbox, scoped permissions, and hard budget caps. Full observability included. Get started with a $100 credit at www.ellipsis.dev.\r\n\r\nYou can deploy agents for feature development, code review, and workflow automation. Creating an agent is simple: simply commit a YAML file to Github. Spawn agents from Github/Linear/Slack/etc., or via a REST API or our CLI. \r\n\r\nOrganizations get full observability and governance of their cloud coding agents.  Agent session logs are downloadable so companies own their own data.\r\n\r\nFull documentation: https://www.ellipsis.dev/docs",
+          "tags": [
+            "Artificial Intelligence",
+            "Developer Tools",
+            "Machine Learning",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://ellipsis.dev",
+          "equipo": 2
+        },
+        {
+          "id": "31458",
+          "nombre": "Reason Machines",
+          "categoria": "Productivity",
+          "descripcion": "The coding agent that can access and reason across any machine. Billions of machines are left untouched by agents and work individually. We connect them to unlock multiplayer cloud coding agents for work like engineering, math and research.",
+          "tags": [
+            "Developer Tools",
+            "Enterprise Software",
+            "Cloud Computing",
+            "YC Spring 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://reasonmachines.ai",
+          "equipo": 2
+        },
+        {
+          "id": "27820",
+          "nombre": "infra.new",
+          "categoria": "Infrastructure",
+          "descripcion": "AI Agent for Cloud Infrastructure Our AI agent helps teams save money and ship faster on AWS, GCP, and Azure.\r\n\r\nVisit infra.new to try free without signing up!\r\n\r\n- Generate reliable cloud configuration\r\n- View detailed cost estimates and system diagrams\r\n- Optimize everything with AI",
+          "tags": [
+            "Artificial Intelligence",
+            "Developer Tools",
+            "SaaS",
+            "B2B",
+            "Cloud Computing",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://infra.new",
+          "equipo": 3
+        },
+        {
+          "id": "30903",
+          "nombre": "Kestrel AI",
+          "categoria": "Security",
+          "descripcion": "AI Agents for Platform Engineering Kestrel is the AI automation layer for platform engineering teams.\r\n\r\nPlatform teams use Kestrel to automate incident response, cloud provisioning, CI/CD, security, and developer requests across their stack.\r\n\r\nKestrel turns natural-language prompts into deterministic, production-ready workflows with 40+ integrations, 200+ pre-built actions, and support for custom HTTP and webhook actions.\r\n\r\nDeveloper-first, with a CLI, Python SDK, and MCP server to manage workflows from where platform teams already work.",
+          "tags": [
+            "AIOps",
+            "Developer Tools",
+            "DevOps",
+            "Infrastructure",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://usekestrel.ai/",
+          "equipo": 2
+        },
+        {
+          "id": "29399",
+          "nombre": "Centauri AI",
+          "categoria": "B2B",
+          "descripcion": "Helps teams work effectively with AI coding agents. We build coSlash, a management layer for AI coding agents. Our platform enables teams to orchestrate parallel Claude Code and Codex sessions, track project progress, team knowledge, and seamlessly transfer context between developers.\r\n\r\nhttps://coslash.io/",
+          "tags": [
+            "Developer Tools",
+            "Workflow Automation",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://centauri-ai.tech",
+          "equipo": 5
+        }
+      ],
+      "complementarity_score": 0.6642,
+      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Productivity, Infrastructure, Security, B2B",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_11",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "31424",
+          "nombre": "Lab0",
+          "categoria": "B2B",
+          "descripcion": "AI FDEs to make your B2B SaaS Go Live in Days, not Months Enterprise software implementation is broken,  and it has been for decades. \r\nEvery rollout, whether it's a traditional ERP or a new AI system, requires months of manual integration, configuration, and tuning done by armies of system integrators and forward-deployed engineers. \r\nLab0 builds agentic systems that automate this layer, compressing months-long implementations into weeks.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "Enterprise",
+            "AI",
+            "YC Spring 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://lab0.ai",
+          "equipo": 3
+        },
+        {
+          "id": "31166",
+          "nombre": "Unisson",
+          "categoria": "Productivity",
+          "descripcion": "AI agents that automate B2B software implementation Unisson is building trusted AI subject-matter experts for teams that are responsible for customer deployments (technical customer success, implementation, sales engineering). Within 20 minutes, our agents learn to use any product and can be used by teams in Slack, text, or email. Our agents gather requirements and context from existing tools enabling them to handle complex tasks like customer health audits, onboarding, product administration, and custom integrations. \r\n\r\nWith Unisson, customer-facing teams have 24/7 access to an AI SME, allowing them to scale and save thousands of hours.",
+          "tags": [
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.unisson.ai",
+          "equipo": 2
+        },
+        {
+          "id": "29711",
+          "nombre": "Fazeshift",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI agent for Accounts Receivable Fazeshift is an AI agent for automating Accounts Receivable. What used to take teams of people and hours of manual work can now be fully automated with Fazeshift. \r\n\r\nCaitlin and Timmy met while getting their MBA at Harvard. After graduating, they started a B2B marketing software startup, which is where they first experienced the pain of this process.\r\n\r\nThe problem stems from fragmented data across software platforms like QuickBooks, Stripe, NetSuite, DocuSign, HubSpot, and Salesforce. Fazeshift’s infrastructure connects the data across these software platforms and uses LLMs to automate the previously manual workflow.",
+          "tags": [
+            "Fintech",
+            "B2B",
+            "AI",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.fazeshift.com/",
+          "equipo": 8
+        },
+        {
+          "id": "31018",
+          "nombre": "item",
+          "categoria": "Sales",
+          "descripcion": "The AI-Native CRM that works for you item connects to all your customer tools, gathers and enriches context automatically, and becomes your company’s source of truth — one place where your team and your AI agents share the full picture to act autonomously.\r\n\r\nAt the center is the Assistant — your sidekick for daily work. It can send follow-ups, research leads, or add deals with a simple prompt. No complex UI, drop-downs or fields, simply ask.\r\n\r\nFor repeatable work, you build Agents that you can train like new hires, simply by writing documents that describe your processes. item Agents run business processes across sales, support, and account management autonomously.",
+          "tags": [
+            "B2B",
+            "CRM",
+            "Automation",
+            "AI Assistant",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://item.app",
+          "equipo": 6
+        },
+        {
+          "id": "31437",
+          "nombre": "Sidekick",
+          "categoria": "Operations",
+          "descripcion": "AI agent that manages frontline operations over text Sidekick is an AI agent that manages frontline operations over text. Workers text problems, photos, or voice memos in any language; it answers from the company's own documents, creates and routes the work order, and syncs with the software the company already runs. No app, no login, works on any phone. It watches connected machine data and texts the right worker the moment something starts drifting, before it becomes downtime. And it compounds: most of the industrial world runs on undocumented knowledge, and Sidekick is the first thing that documents it as a byproduct of the work itself. Every interaction contributes to a searchable knowledge base the company owns, so tribal knowledge stops walking out the door when veterans retire.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "Manufacturing",
+            "AI Assistant",
+            "Industrial",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://textsidekick.com/",
+          "equipo": 1
+        }
+      ],
+      "complementarity_score": 0.6561,
+      "rationale": "Herramientas complementarias para B2B: B2B, Productivity, Finance and Accounting, Sales, Operations",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_12",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "11924",
+          "nombre": "Flockjay",
+          "categoria": "Sales",
+          "descripcion": "AI-driven learning, content, and coaching for sales teams Flockjay is an AI-powered platform for sales teams looking to get the knowledge they need, when they need it, to close more deals. We combine learning, content, and performance management in one place, so teams can effectively share best practices, coach faster and more effectively, and drive faster onboarding and productivity times.",
+          "tags": [
+            "Artificial Intelligence",
+            "SaaS",
+            "eLearning",
+            "Productivity",
+            "Sales",
+            "YC Winter 2019"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://flockjay.com",
+          "equipo": 10
+        },
+        {
+          "id": "24391",
+          "nombre": "CoLoop",
+          "categoria": "B2B",
+          "descripcion": "AI Copilot for insights & strategy At CoLoop we’re on a mission to make every company in the world as customer obsessed as Amazon. We’re doing this by giving the next generation of workers immediate, intuitive access to the customer knowledge they need to make better decisions, faster.",
+          "tags": [
+            "Generative AI",
+            "Market Research",
+            "YC Summer 2021"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://coloop.ai/",
+          "equipo": 16
+        },
+        {
+          "id": "28111",
+          "nombre": "Berry",
+          "categoria": "Operations",
+          "descripcion": "Scale customer success and onboarding with AI Berry offers an AI CSM that scales customer success for SaaS companies.\r\n\r\nEvery post-sales organization faces the challenge of scaling customer success without having to hire more. Berry combines the best of the two worlds - taking the white-glove onboarding experience and offering it at scale. \r\n\r\nOur AI CSM onboards, trains and grows accounts for you non-stop. It’s a 10x hire to your team - at a fraction of the cost.",
+          "tags": [
+            "Artificial Intelligence",
+            "Generative AI",
+            "Customer Success",
+            "AI",
+            "Conversational AI",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://berryai.com/",
+          "equipo": 8
+        },
+        {
+          "id": "29957",
+          "nombre": "Anglera",
+          "categoria": "Retail",
+          "descripcion": "AI-Powered Product Data Enrichment At Anglera, we're developing a suite of AI agents to help e-commerce companies run their operations more efficiently. Our flagship agent helps our customers onboard, enrich, and manage their product data, reducing time per product from 15 mins down to 5 seconds.\r\n\r\nWe previously developed ML to automatically enrich millions of products at Uber Eats, and we're now on a mission to automate the most common manual workflows for every e-commerce business.",
+          "tags": [
+            "Artificial Intelligence",
+            "Machine Learning",
+            "SaaS",
+            "B2B",
+            "E-commerce",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.anglera.com/",
+          "equipo": 6
+        },
+        {
+          "id": "29239",
+          "nombre": "ion design",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "AI Website platform that grows revenue automatically We're a website platform for Ecommerce brands. ION pairs your website with AI agents that design, launch, and learn from on-brand experiments that increase revenue per visitor.\r\n\r\nBrands that use ION learn and grow faster than if they were using a traditional CRO team. It's like a growth team working 24/7 to help drive and convert more traffic.\r\n\r\nWe're trusted by $1b+ companies and leading Ecommerce brands.",
+          "tags": [
+            "Design Tools",
+            "Marketing",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.ion.design/",
+          "equipo": 3
+        }
+      ],
+      "complementarity_score": 0.6539,
+      "rationale": "Herramientas complementarias para B2B: Sales, B2B, Operations, Retail, Engineering, Product and Design",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_13",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "30480",
+          "nombre": "Flott HQ",
+          "categoria": "B2B",
+          "descripcion": "AI-native operating system for vehicle fleet management Flott helps transport and logistics companies run leaner, smarter, and more profitable operations. Flott unifies everything transport and logistics teams need in a single, AI-powered control center—bringing planning, live tracking (gps, fuel, etc), invoicing, and payments into one place and delivering true end-to-end visibility. Flott’s AI agents act as an extension of fleet managers — automating repetitive tasks and optimizing workflows.This lets companies focus on what truly matters: growing the business.",
+          "tags": [
+            "Logistics",
+            "Transportation",
+            "Operations",
+            "AI Assistant",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.flotthq.com",
+          "equipo": 2
+        },
+        {
+          "id": "22785",
+          "nombre": "Supadock",
+          "categoria": "Supply Chain and Logistics",
+          "descripcion": "AI workers for logistics operations Supadock builds AI workers for logistics operations. In freight, every call, document, and signature exists to prove diligence — not just save time. Check calls, proof-of-delivery reconciliations, ID verification, and invoice audits all ensure compliance, reduce liability, and protect margins.\r\n\r\nSupadock automates these high-accountability workflows while ensuring accuracy, compliance, and risk reduction. Our AI agents use cameras, voice, email, and document processing to handle tasks like verifying driver IDs, coordinating warehouse entry, assigning shipments to carriers, checking freight status, reconciling pickup and delivery paperwork, and following up on late invoices.",
+          "tags": [
+            "Artificial Intelligence",
+            "Logistics",
+            "Conversational AI",
+            "YC Winter 2021"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://getsupadock.com",
+          "equipo": 1
+        },
+        {
+          "id": "31172",
+          "nombre": "Terminal Use",
+          "categoria": "Operations",
+          "descripcion": "AI-native transformation for operations-heavy companies AI pilots are everywhere. Few organizations can point to a department that actually runs AI-first. Terminal Use changes that.\r\n\r\nWe help operations teams rebuild how work gets done, end to end. We begin with one critical process, map how it runs today and where it breaks, then redesign the workflow around AI agents, existing systems, and people at the right control points.\r\nThe result is a working AI-first process, measurable operational change, and a blueprint for transforming the broader department.\r\n\r\nFounded by ex-Palantir FDEs and engineers working on transformation at scale, Terminal Use works across construction, logistics, manufacturing, retail, and other complex operating environments.",
+          "tags": [
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.terminaluse.com/",
+          "equipo": 4
+        },
+        {
+          "id": "30521",
+          "nombre": "Kairos",
+          "categoria": "Infrastructure",
+          "descripcion": "Specialized AI for Critical Industries Kairos closes the last-mile reliability gap in AI deployments. \r\n\r\nWe bring frontier techniques to companies in critical industries, deploying specialized agents that encode operator expertise and reliably automate their most manual workflows.",
+          "tags": [
+            "AIOps",
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Reinforcement Learning",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.withkairos.co/",
+          "equipo": 3
+        },
+        {
+          "id": "26783",
+          "nombre": "Raven",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "AI Assistants for Manufacturing Operations At Raven, we are building AI assistants for manufacturing plants which can offer intelligent assistance for day-to-day operations like training, job planning, troubleshooting, reporting and also helps with real-time analytics — all while seamlessly integrating with your existing systems.\r\nWe’re taking decades of manufacturing expertise and combining it with AI to solve real operational problems. We’re a small, focused team working to make industrial operations safer, smarter, and more efficient.",
+          "tags": [
+            "AI-Enhanced Learning",
+            "Artificial Intelligence",
+            "Manufacturing",
+            "AI Assistant",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://startraven.com",
+          "equipo": 4
+        }
+      ],
+      "complementarity_score": 0.6425,
+      "rationale": "Herramientas complementarias para B2B: B2B, Supply Chain and Logistics, Operations, Infrastructure, Engineering, Product and Design",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_14",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "13141",
+          "nombre": "Aden",
+          "categoria": "Infrastructure",
+          "descripcion": "Open source agent generation framework https://github.com/adenhq/hive",
+          "tags": [
+            "Artificial Intelligence",
+            "Developer Tools",
+            "Infrastructure",
+            "YC Winter 2020"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://adenhq.com/",
+          "equipo": 5
+        },
+        {
+          "id": "30772",
+          "nombre": "stagewise",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "The Open Source Agentic IDE stagewise is building the open-source agentic IDE: a developer workspace for creating and orchestrating coding agents, previewing running apps, and managing Git workflows. Developers can run agents in parallel, use their preferred models or existing coding subscriptions, and keep agents connected to browser/runtime context as well as the broader codebase, from APIs and tests to docs and deployment paths.",
+          "tags": [
+            "YC Summer 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://stagewise.io",
+          "equipo": 2
+        },
+        {
+          "id": "31199",
+          "nombre": "Emdash",
+          "categoria": "Productivity",
+          "descripcion": "Open-source Agentic Development Environment Agent-first development environment. Emdash enables engineering teams to develop software faster, by running multiple coding agents in parallel. We're an open-source and provider-agnostic desktop application.",
+          "tags": [
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://emdash.com",
+          "equipo": 2
+        },
+        {
+          "id": "29740",
+          "nombre": "Redouble AI",
+          "categoria": "B2B",
+          "descripcion": "Java-native multi-agentic AI operating system for enterprise At Redouble AI we have developed Silverlake, a Java-native agentic AI operating system for enterprise. While other AI solutions force enterprise stakeholders to embrace unfamiliar concepts in an unfamiliar language, we do the opposite: we slot agentic AI right into the enterprise comfort zone - by mapping all agentic concepts onto established enterprise primitives in their own language, their own security model, their own infrastructure. It’s like moving from Bitcoin to Stablecoin, just for agentic AI. \r\n\r\nWhen we did YC we realized there was no framework or platform that gave us as enterprise and workflow automation veterans what we needed to build truly secure, reliable, and scalable agentic solutions for mission-critical workflows. That’s why we spent the past 18 months building Silverlake from the ground up. \r\n\r\nWe empower the 12 million Java engineers worldwide to write and deploy their own AI, securely, at scale. They define an agent in a few lines of code, and our platform does everything else, from orchestration to permission control, from auditability to rate limiting, from long-running agents to autonomous coordinated networks that perform the work of entire departments. \r\n\r\nSilverlake has been developed with design partners across biopharma, insurance and financial services. For example, our agentic workflows write submission-ready Clinical Study Reports that are hundreds of pages long, analyze entire datarooms full of financial and operational data for private equity investors, and automate claims processing for a large insurance player. \r\n\r\nWe are backed by Y Combinator, Exponential, Transpose Platform, Tiny VC, and the Oxford Seed Fund and advised by Java inventor James Gosling and automation guru Professor Christian Terwiesch.",
+          "tags": [
+            "Artificial Intelligence",
+            "Generative AI",
+            "B2B",
+            "Workflow Automation",
+            "Enterprise",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://redouble.ai/",
+          "equipo": 3
+        },
+        {
+          "id": "25995",
+          "nombre": "Workflow86",
+          "categoria": "Operations",
+          "descripcion": "Agentic workflows for complex, long running business operations Workflow86 provides a complete end-to-end platform for building agentic workflows and automating complex business processes and operations. \r\n\r\nWorkflow86 provides users with a complete suite of tools to build and deploy custom agents and orchestrate them to perform complex, long-running workflows including human-in-the-loop steps, custom code, agent tools, and integrations with your existing systems. \r\n\r\nBuild using a visual canvas, or simply describe the workflow in natural language with agents able to self-configure tools, prompts, and integrations, and even build the multi-agent workflows.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "Enterprise",
+            "No-code",
+            "AI",
+            "YC Winter 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.workflow86.com",
+          "equipo": 6
+        }
+      ],
+      "complementarity_score": 0.6401,
+      "rationale": "Herramientas complementarias para B2B: Infrastructure, Engineering, Product and Design, Productivity, B2B, Operations",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_15",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "27814",
+          "nombre": "Narrative",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "AI agents for end-to-end testing Narrative is the easiest way to create end-to-end tests, replacing Playwright, Selenium, and Cypress with self-healing tests.\r\n\r\nRecord your user journeys to deploy tests in minutes, and let our agents handle flaky selectors and timing issues. When a test fails, you get a bug report in plain English that's easy to triage.\r\n\r\nTrusted by Nanonets, Commenda, Drumkit, Metal, and Vega.\r\n\r\nLearn more at www.trynarrative.com",
+          "tags": [
+            "Artificial Intelligence",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.trynarrative.com/",
+          "equipo": 5
+        },
+        {
+          "id": "31216",
+          "nombre": "Archal",
+          "categoria": "Infrastructure",
+          "descripcion": "API sandboxes, built for AI agents Archal provisions sandboxes with the API environments your CI, tests, and evals need. Your coding agent can start the sandbox & environments, connect to your API integrations, run tests, and inspect state changes. Sandboxes and environments are startable within seconds and take milliseconds to reset.",
+          "tags": [
+            "Artificial Intelligence",
+            "Developer Tools",
+            "API",
+            "Infrastructure",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.archal.ai/",
+          "equipo": 2
+        },
+        {
+          "id": "31413",
+          "nombre": "Arga Labs",
+          "categoria": "B2B",
+          "descripcion": "Real-world sandboxes to test and train AI agents We build environments to test your app and agents against the real world.\r\n\r\nDeploy your code/agent into a sandbox that runs against replicas of external services (Stripe, Slack, Google Drive, etc.). Twins support the same APIs, MCP tool calls & SDKs as the real software, and you can spin up thousands of instances in parallel and seed them using natural language. Run real workflows, surface edge cases, and observe how your code/agents actually behave before hitting production.",
+          "tags": [
+            "YC Spring 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.argalabs.com/",
+          "equipo": 4
+        },
+        {
+          "id": "30688",
+          "nombre": "Fulcrum",
           "categoria": "Analytics",
-          "descripcion": "The arena where agents battle on real-world work",
+          "descripcion": "The agentic debugger for AI systems We build red-teaming agents that help developers fix their RL environments and improve their agents.\r\n\r\nOur customers are tired of being bullshitted by their agents.",
           "tags": [
-            "analytics"
+            "YC Summer 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/coarena-by-coasty/launches/coarena-by-coasty"
+          "audiencia_objetivo": "B2B",
+          "url": "https://fulcrumresearch.ai",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/doop",
-          "nombre": "Doop",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "Design with AI agents - live on the same canvas",
+          "id": "30527",
+          "nombre": "MindFort",
+          "categoria": "Security",
+          "descripcion": "Autonomous Security Agents MindFort is building fully autonomous AI agents powered by their in-house models that can find, exploit, and patch complex vulnerabilities in web applications at massive scale. MindFort agents use the same principles as human penetration testers to understand their target and figure out the best ways to work together to exploit it. We can do fully autonomous AI web pentesting and bring offensive security to teams out numbered. \r\n\r\nWhile security teams were already behind with legacy tools and processes, AI coding is make the problem worse. AI generates code far faster than human teams can secure it; MindFort can match that speed and scale. Our agents will become critical as organizations scale up development with AI.",
           "tags": [
-            "artificial-intelligence"
+            "YC Spring 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/doop"
-        },
-        {
-          "id": "https://www.producthunt.com/products/wonder-public-alpha/launches/wonder-2000",
-          "nombre": "Wonder",
-          "categoria": "Diseno",
-          "descripcion": "The AI design agent that works on your canvas",
-          "tags": [
-            "design"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/wonder-public-alpha/launches/wonder-2000"
+          "audiencia_objetivo": "B2B",
+          "url": "https://mindfort.ai/?utm_source=ycombinator&utm_medium=referral&utm_campaign=yc",
+          "equipo": 5
         }
       ],
-      "complementarity_score": 0.553,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: No-Code, Developer Tools, Analytics, Inteligencia Artificial, Diseno",
+      "complementarity_score": 0.6372,
+      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Infrastructure, B2B, Analytics, Security",
       "size": 5
     },
     {
-      "cluster_id": "cluster_developers_dev_teams_5",
-      "audiencia_objetivo": "Developers & Dev Teams",
+      "cluster_id": "cluster_b2b_16",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/browzer",
-          "nombre": "Browzer",
-          "categoria": "Developer Tools",
-          "descripcion": "Put your technical content on autopilot",
+          "id": "30266",
+          "nombre": "Cenote",
+          "categoria": "Sales",
+          "descripcion": "AI agents for conversational commerce Cenote helps online D2C brands convert more shoppers through AI sales reps that can call and text.\r\n\r\nOnline stores rely on static websites, one-way email and SMS campaigns, and inside sales teams with limited availability. But many purchases are better suited to a conversation: shoppers have questions, need guidance, or simply are not excited to buy based on what's on the site alone.\r\n\r\nToday, those shoppers are poorly served. Abandoned-checkout campaigns are generic, call centers close, and slow human follow-up allows high-intent leads to go cold. Our customers often see conversion rates below 1% from traditional abandoned-checkout outreach.\r\n\r\nCenote's AI reps reach shoppers immediately, remember their context, and continue the conversation across channels and over time. This gives every interested shopper access to a personalized sales rep and helps brands recover revenue from leads they have already paid to acquire.",
           "tags": [
-            "developer-tools"
+            "B2B",
+            "Digital Health",
+            "E-commerce",
+            "AI",
+            "YC Winter 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/browzer"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.joincenote.com/",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/devaito/launches/devaito",
-          "nombre": "Devaito",
-          "categoria": "No-Code",
-          "descripcion": "Build, launch, and grow your business on autopilot",
+          "id": "30982",
+          "nombre": "Boom AI",
+          "categoria": "B2B",
+          "descripcion": "AI agents that recover lost revenue through real conversations. Boom reaches out to your customers before you lose them.\r\n\r\nWe run proactive outbound conversations at scale: recovering churned users, re-engaging drop-offs, and protecting revenue you thought was gone. AI agents hold real conversations with your customers over SMS, email, WhatsApp, or phone, in their language, on the channel they actually answer.\r\n\r\nEvery month, companies lose 5-15% of revenue to churn, and more walks out through abandoned signups and failed onboarding. The tools built to fix this don't work. Win-back emails get ignored. Cancel flows only catch people at the door. Hiring humans doesn't scale. Boom does the one thing that works: a real conversation. 1,000x the reach of manual outreach, and the customer can reply.",
           "tags": [
-            "no-code"
+            "Artificial Intelligence",
+            "B2B",
+            "E-commerce",
+            "SMB",
+            "AI",
+            "YC Fall 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/devaito/launches/devaito"
+          "audiencia_objetivo": "B2B",
+          "url": "https://useboom.ai",
+          "equipo": 3
         },
         {
-          "id": "https://www.producthunt.com/products/basedash/launches/basedash-tasks",
-          "nombre": "Basedash Tasks",
+          "id": "28921",
+          "nombre": "Surface Labs",
+          "categoria": "Marketing",
+          "descripcion": "Building the AI-powered marketing ops platform that turns website… Surface Labs helps B2B companies capture, qualify, and convert inbound leads through intelligent contact forms. We replace tools like HubSpot Forms, Zapier, and Chili Piper with a single platform that embeds on any site with one line of code.\r\n\r\nOur AI agents handle lead capture, enrichment, routing, follow-up, and CRO testing — automating what used to require full marketing ops teams. Customers see a 30% lift in conversions in under 2 weeks, and our partial response capture feature collects 50% more emails from form drop-offs.",
+          "tags": [
+            "Sales",
+            "Marketing",
+            "Advertising",
+            "AI",
+            "Conversational AI",
+            "YC Summer 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://withsurface.com",
+          "equipo": 6
+        },
+        {
+          "id": "27892",
+          "nombre": "ShortLoop",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Phone AI that Captures Every Dealership Revenue Opportunity Dealerships leave significant revenue every year because they are unable to effectively answer calls or run campaigns due to staffing issues. \r\n\r\nShortLoop fixes this with human-like AI phone agents that answer calls instantly, book appointments and test drives, and also help run outbound campaigns. It ensures that our customers never miss a revenue opportunity, inbound or outbound. \r\n\r\nOur AI is integrated with CDK, Reynolds, Tekion, Xtime, Auto/Mate, DealerFX, VinSolutions, myKaarma and other popular dealership tools. It handles thousands of calls each week for U.S. dealerships across service, sales, and outbound campaigns.\r\n\r\nOur mission is to help dealerships transition their phone operations to the AI world and capture the revenue they leave on the table today.",
+          "tags": [
+            "Generative AI",
+            "B2B",
+            "AI",
+            "Automotive",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://shortloop.dev/",
+          "equipo": 8
+        },
+        {
+          "id": "25681",
+          "nombre": "SpadeWorks",
+          "categoria": "Operations",
+          "descripcion": "AI agents that turn every call into revenue for trade businesses Spadeworks transforms how trade contractors handle customer service through AI agents that work 24/7. We answer every call, schedule every job, send every reminder, and follow up with every customer - turning missed opportunities into booked revenue. Trade businesses grow faster because they never miss a lead again.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "YC Winter 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.spadeworks.co",
+          "equipo": 13
+        }
+      ],
+      "complementarity_score": 0.6367,
+      "rationale": "Herramientas complementarias para B2B: Sales, B2B, Marketing, Engineering, Product and Design, Operations",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_17",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "13472",
+          "nombre": "Oda",
+          "categoria": "Marketing",
+          "descripcion": "AI Agent for Home Design Oda is an AI agent for home design. Homebuyers and renters alike can use Oda to discover their interior design preferences, apply those preferences to their new home, and then find the best furniture, décor, and appliances aggregated from many different online retailers. Oda distributes its product to homebuyers and renters through partnerships with real estate companies and platforms. Real estate partners add Oda AI iFrames to their websites to showcase listed homes with AI-generated designs. Each AI iFrame is directly linked to an Oda board, allowing consumers to transition from an iFrame to Oda to further personalize the designs and create their dream home.",
+          "tags": [
+            "Machine Learning",
+            "Computer Vision",
+            "E-commerce",
+            "AI Assistant",
+            "YC Winter 2020"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.odastudio.ai/?ref=yc",
+          "equipo": 9
+        },
+        {
+          "id": "30229",
+          "nombre": "Maive",
+          "categoria": "B2B",
+          "descripcion": "AI for Home Services Maive is an AI automation platform for contractors providing home services",
+          "tags": [
+            "Artificial Intelligence",
+            "Home Services",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://maive.ai",
+          "equipo": 2
+        },
+        {
+          "id": "29350",
+          "nombre": "Feldy",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Field-First AI for home services Feldy is field-first AI for home service businesses helping teams capture jobsites, create take-offs & estimates, and documentation.\r\n\r\nWith Feldy, teams capture the physical world using photos, videos, AI jobsite walkthroughs, and 3D scans using your mobile phone. It turns field information into takeoffs & estimates, visual designs, and project documentation. Feldy works across home services such as roofing, exteriors, remodeling, painting, cleaning, landscaping, handymen, and other home services.\r\n\r\nWe’re building a new way for more than 2 million U.S. home service businesses operating in an $800B+ market to capture, understand, and complete work in the field.\r\n\r\nFeldy is available on iOS, Android, and the web.",
+          "tags": [
+            "Artificial Intelligence",
+            "Construction",
+            "Home Services",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://feldy.ai",
+          "equipo": 8
+        },
+        {
+          "id": "30835",
+          "nombre": "Brickanta",
+          "categoria": "Infrastructure",
+          "descripcion": "Agentic AI for Society Builders Brickanta  – agentic AI for society builders. Hundreds of construction-specific AI agents for project analysis, insights, tenders, procurement, and more. Combine the latest AI technology with your organization's project data, templates, and workflows to identify risks and opportunities early and produce better decision support. Brickanta has raised $8 million from leading AI, construction, and real estate investors behind companies like OpenAI/ChatGPT, Airbnb, Klarna, Spotify, and Plangrid-Autodesk, as well as star investors such as Mario Götze, Anton Osika, and Northzone (see movie and press). The founding team has been building and implementing AI in construction and industry since 2018 at companies such as ABB, Fabege, Husqvarna, IKEA and Konecranes.",
+          "tags": [
+            "Machine Learning",
+            "Construction",
+            "AI",
+            "AI Assistant",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.brickanta.com",
+          "equipo": 11
+        },
+        {
+          "id": "31130",
+          "nombre": "AutoSitu",
+          "categoria": "Legal",
+          "descripcion": "The AI operating system for the built world At AutoSitu, we’re building the AI operating system for the built world—coordinated AI agents that work across development, design, review, and construction.\r\n\r\nOur agents analyze complex plans, requirements, and project documentation in minutes—surfacing critical issues, doing the heavy lifting, and escalating the decisions that require human expertise.\r\n\r\nFrom site feasibility and entitlement risk to QA/QC, code compliance, constructability, quantity takeoff, and scope analysis, AutoSitu helps cities, architects, engineers, developers, and construction teams identify problems earlier and move projects forward with greater speed and confidence.\r\n\r\nWe serve as a strategic AI partner to forward-thinking public agencies and AEC organizations across the country and are backed by Y Combinator (W26).",
+          "tags": [
+            "Real Estate",
+            "Construction",
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://autositu.com/",
+          "equipo": 2
+        }
+      ],
+      "complementarity_score": 0.6355,
+      "rationale": "Herramientas complementarias para B2B: Marketing, B2B, Engineering, Product and Design, Infrastructure, Legal",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_18",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "32191",
+          "nombre": "Lyon",
           "categoria": "Analytics",
-          "descripcion": "Run your business on autopilot",
+          "descripcion": "Foundation models on enterprise transaction data. Lyon builds private foundation models for banks, insurance companies, and fintechs. Each model learns from the company’s proprietary transactions, payments, clicks, and customer interactions to predict credit, fraud, collections, income, churn, and lifetime value; and runs inside the company’s cloud, so its data and intelligence remain under its control. Lyon is already working with a major insurer and trained a model on 28B transactions for a fintech serving tens of millions of active users, identifying premium-card converters 4x more precisely than its existing rules; the model is now being deployed for credit.",
           "tags": [
-            "analytics"
+            "Machine Learning",
+            "Finance",
+            "Data Science",
+            "Big Data",
+            "YC Summer 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/basedash/launches/basedash-tasks"
+          "audiencia_objetivo": "B2B",
+          "url": "https://lyon.so",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/tiles-5",
-          "nombre": "Tiles",
-          "categoria": "Productividad",
-          "descripcion": "Turning desktop chaos into curated spaces.",
+          "id": "27038",
+          "nombre": "Fini",
+          "categoria": "Operations",
+          "descripcion": "Fini | Automate 80% of enterprise support with AI agents Fini builds AI agents that autonomously resolve up to 80% of customer support tickets for enterprises specially in Fintech, E-commerce, Gaming and Fitness tech.\r\n\r\nOur agents understand complex workflows, take real actions (like refunds or KYC checks), and improve in real-time. Built on a proprietary knowledge engine, our agents deliver 98%+ accuracy and integrate deeply with tools like Zendesk, Salesforce, and internal APIs.\r\n\r\nEnterprises like Bitdefender and Training Peaks use Fini to slash support costs by 50% while boosting CSAT by 10%.",
           "tags": [
-            "productivity"
+            "Generative AI",
+            "Machine Learning",
+            "SaaS",
+            "B2B",
+            "AI",
+            "YC Summer 2022"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/tiles-5"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.usefini.com",
+          "equipo": 14
         },
         {
-          "id": "https://www.producthunt.com/products/snitch-4",
-          "nombre": "Snitch",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "Your Slack org chart, built by everyone in it.",
+          "id": "30513",
+          "nombre": "Eloquent AI",
+          "categoria": "B2B",
+          "descripcion": "The AI Operator for Financial Services We automate complex, regulated operations in financial services—no APIs, no engineering required.\r\nWe hit $500K ARR in just four weeks because customers deploy instantly.\r\nOur AI Operator learns by observing existing workflows and SOPs, securely controlling browser and desktop applications to automate up to 96% of tasks.",
           "tags": [
-            "artificial-intelligence"
+            "Fintech",
+            "B2B",
+            "Enterprise",
+            "AI",
+            "YC Spring 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/snitch-4"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.eloquentai.co/",
+          "equipo": 5
+        },
+        {
+          "id": "30716",
+          "nombre": "Finto",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI accounting for enterprise finance teams Finto builds AI accounting software for enterprise finance teams. We automate the invoice-to-pay process from their email inbox to their ERP. Cutting out 80% of the accountants daily work in invoice recording, account coding and  invoice approvals.",
+          "tags": [
+            "Artificial Intelligence",
+            "Fintech",
+            "B2B",
+            "Enterprise",
+            "AI",
+            "YC Summer 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.gofinto.com/",
+          "equipo": 10
+        },
+        {
+          "id": "23958",
+          "nombre": "Abstra",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Automate finance operations with Python and AI Abstra is a platform that allows finance teams to build, run, and automate their workflows using Python and AI.\r\n\r\nInstead of relying on spreadsheets, ERPs, and manual processes, teams can create programmable workflows for tasks like reporting, reconciliations, approvals, and integrations with systems like SAP.\r\n\r\nWe provide a developer-friendly environment where finance and technical teams can turn business processes into code, connect to their existing tools, and run everything in a controlled, auditable way.\r\n\r\nOur goal is to become the operating system for finance operations, where workflows are not static or manual, but versioned, automated, and continuously improved.",
+          "tags": [
+            "Artificial Intelligence",
+            "SaaS",
+            "Finance",
+            "B2B",
+            "Automation",
+            "YC Summer 2021"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://abstra.io",
+          "equipo": 18
         }
       ],
-      "complementarity_score": 0.5201,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, No-Code, Analytics, Productividad, Inteligencia Artificial",
+      "complementarity_score": 0.6355,
+      "rationale": "Herramientas complementarias para B2B: Analytics, Operations, B2B, Finance and Accounting, Engineering, Product and Design",
       "size": 5
     },
     {
-      "cluster_id": "cluster_developers_dev_teams_6",
-      "audiencia_objetivo": "Developers & Dev Teams",
+      "cluster_id": "cluster_b2b_19",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/murfy",
-          "nombre": "Murfy AI",
-          "categoria": "Productividad",
-          "descripcion": "Write, review, and publish to arXiv 10x faster",
+          "id": "24444",
+          "nombre": "Protex AI",
+          "categoria": "Supply Chain and Logistics",
+          "descripcion": "Computer vision that makes the industrial workplace, safer Tl;dr: We’re building software that monitors existing cameras in the port, logistics, and manufacturing industries to ensure compliance and identify safety issues.\r\n\r\nAt Protex AI, we’re on a mission to protect the industrial workforce! We’re building a proactive computer vision tool for workplace safety - empowering industrial Health and Safety (HS) teams to identify risk and danger before it becomes a problem.\r\n\r\n🤕 The Problem:\r\nKeeping people safe at work is extremely hard. In the U.S. alone, there were over 5,000 deaths in the workplace in 2019, mainly in the heavy industry space.\r\n\r\nSerious workplace injuries cost U.S. businesses circa $62 Billion annually. Until now, safety has been reactive, someone has to get injured, and in some cases fatally before something is done about it.\r\n\r\n✅ Problem Solved:\r\nProtex AI’s platform uses privacy-preserving camera monitoring software to provide companies with an always-on guardian angel, protecting their workforce.\r\n\r\nThe platform plugs into existing CCTV infrastructure and enables HS teams to flexibly translate their document-based safety rules into the real world.\r\n\r\nProtex AI takes these rules and autonomously audits the customer’s facility to identify areas of high risk and non-compliance.\r\n\r\nHS teams can access this data via a reporting engine and use it in weekly safety meetings, external safety audits, insurance discussions, and legal claims.\r\n\r\nThe tool integrates seamlessly with existing safety workflows to augment data produced by any manual incident logging system in place.",
           "tags": [
-            "productivity"
+            "Industrial Workplace Safety",
+            "Machine Learning",
+            "B2B",
+            "YC Summer 2021"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/murfy"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.protex.ai",
+          "equipo": 5
         },
         {
-          "id": "https://www.producthunt.com/products/openai",
-          "nombre": "GPT-6 Astra",
-          "categoria": "Developer Tools",
-          "descripcion": "OpenAI's most capable model for end-to-end work",
+          "id": "31094",
+          "nombre": "Lexius",
+          "categoria": "Security",
+          "descripcion": "AI for Corporate Security Cameras Lexius turns existing security cameras into an AI security guard that detects, documents, and alerts incidents like shoplifting and slip-and-falls.\r\n\r\nMillions of locations already have cameras but no intelligence. Replacing them costs $50K to $100K per site. Lexius upgrades every camera instantly, no rip and replace, no new hardware.\r\n\r\nReal-world camera systems are messy, fragmented, and decades old, and AI breaks on low-quality CCTV. The hard part isn’t the model, it’s making unreliable systems work at scale with accuracy high enough for real decisions.\r\n\r\nLexius starts with security and liability, and becomes the operating system for physical spaces.",
           "tags": [
-            "developer-tools"
+            "YC Winter 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/openai"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.lexius.ai",
+          "equipo": 3
         },
         {
-          "id": "https://www.producthunt.com/products/albato/launches/albato-ai",
-          "nombre": "Albato AI",
-          "categoria": "No-Code",
-          "descripcion": "Build AI-driven workflows across 1,000+ apps",
+          "id": "31301",
+          "nombre": "OpenVector",
+          "categoria": "Infrastructure",
+          "descripcion": "AI that turns any camera to an autonomous worker with real-time vision OpenVector transforms any existing camera into an automated 24/7 workforce without requiring new hardware. Users simply describe a task in plain English, and OpenVector automatically builds a custom AI vision model to monitor the feed. When it detects an important physical event—like a stalled production cycle, a safety violation, or a waiting customer—it operates a computer just like a human to take immediate action. It integrates with legacy systems to make calls, send emails, update a POS/CRM, or trigger webhooks in real time. OpenVector enables any camera to do real work.",
           "tags": [
-            "no-code"
+            "Robotics",
+            "Computer Vision",
+            "Infrastructure",
+            "Industrial",
+            "YC Summer 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/albato/launches/albato-ai"
+          "audiencia_objetivo": "B2B",
+          "url": "https://openvector.com",
+          "equipo": 4
         },
         {
-          "id": "https://www.producthunt.com/products/nex-4",
-          "nombre": "Nex",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "Claude Cowork for high-volume GTM workflows",
+          "id": "31258",
+          "nombre": "Dream",
+          "categoria": "B2B",
+          "descripcion": "AI cameras that catch asset damage Dream makes AI cameras that catch damage teams miss. Car dealerships, equipment rental companies, fleets, and more move expensive assets in and out all day, and undocumented damage is a costly leak.\r\n\r\nDream cameras are simple to set up and work automatically. Each vehicle or machine that passes is photographed from every angle, identified, and reconstructed into a complete condition record. On return or intake, Dream instantly flags new dents, scrapes, and changes your team might miss, giving one source of truth for every asset's condition over time.\r\n\r\nRyland worked at X/xAI and built aerial damage-detection vision at Vexcel Imaging. Alexander worked at AWS and trained edge-camera models deployed in the wild across Africa and India to detect poachers.",
           "tags": [
-            "artificial-intelligence"
+            "Hardware",
+            "Machine Learning",
+            "Computer Vision",
+            "B2B",
+            "AI",
+            "YC Summer 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/nex-4"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.pingdream.com/",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/flowith/launches/flowith",
-          "nombre": "Flowith",
-          "categoria": "Diseno",
-          "descripcion": "AI for deep work",
+          "id": "30652",
+          "nombre": "OnDeck AI",
+          "categoria": "Analytics",
+          "descripcion": "Analyze any footage, without training a model OnDeck is the infrastructure layer that makes Vision Language Models accessible and scalable for enterprise. Our model, Perception-0, let organizations instantly find any object, behavior or event, in any footage, without needing to train a model or collect any training data.\r\n\r\nThe Pain: Creating vision models usually takes months: collecting training data, training, then deployment.  Worse yet: \r\n+ it’s often impossible to get enough data for a specific task, and \r\n+ even the best cv models struggle to generalize across diverse camera setups, workflows and environments. \r\n\r\nTo overcome these blockers, we bet early on the power of VLMs and built a vision engine that can generalize across any task and doesn’t need any training data. We published a NeurIPS workshop paper showing our new methods with VLMs beat traditional CV even at niche tasks. Now, our model Perception-0 beats the best VLMs including Gemini at long video understanding.\r\n\r\nOur current customers include:\r\n- National Defense Organizations\r\n- Robotics Research\r\n- Security cameras\r\n- Behaviour analysis for port monitoring\r\n- Off-shore oil & gas monitoring",
           "tags": [
-            "design"
+            "Machine Learning",
+            "SaaS",
+            "Computer Vision",
+            "B2B",
+            "Video",
+            "YC Summer 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/flowith/launches/flowith"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.ondeckai.com",
+          "equipo": 7
         }
       ],
-      "complementarity_score": 0.4837,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Productividad, Developer Tools, No-Code, Inteligencia Artificial, Diseno",
+      "complementarity_score": 0.6328,
+      "rationale": "Herramientas complementarias para B2B: Supply Chain and Logistics, Security, Infrastructure, B2B, Analytics",
       "size": 5
     },
     {
-      "cluster_id": "cluster_developers_dev_teams_7",
-      "audiencia_objetivo": "Developers & Dev Teams",
+      "cluster_id": "cluster_b2b_20",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/superagent-a-home-for-your-ai-agents",
+          "id": "30188",
+          "nombre": "Hey Telo",
+          "categoria": "B2B",
+          "descripcion": "Voice AI for Home Services Voice AI for Home Services",
+          "tags": [
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.heytelo.com",
+          "equipo": 2
+        },
+        {
+          "id": "30314",
+          "nombre": "Pinch",
+          "categoria": "Productivity",
+          "descripcion": "AI Voice Translation for live conversations or media Video/audio dubbing that preserves your tone and timing.  Real-time speech translation for any online meeting.",
+          "tags": [
+            "Telecommunications",
+            "AI",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://startpinch.com",
+          "equipo": 3
+        },
+        {
+          "id": "30770",
+          "nombre": "Button Computer",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "The tiny computer built for voice AI. We’re launching a small hardware device: a button that you clip to your shirt. You press it to talk to AI, and it responds instantly.",
+          "tags": [
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://buttoncomputer.com",
+          "equipo": 1
+        },
+        {
+          "id": "30038",
+          "nombre": "Lightscreen AI",
+          "categoria": "Recruiting and Talent",
+          "descripcion": "Voice + video AI interviewer Lightscreen’s voice + video AI interviewer enables companies to identify and invest in genuinely skilled candidates. It's already being used by high-growth startups and recruiting agencies to screen technical candidates. \r\n\r\nWe provide companies with a voicebot that can run a full-length technical interview, does smart interruptions, and multi-modal cheating detection. The AI provides the company rubric-based, rich candidate evaluation in minutes and can be fully customized to ask questions and evaluate based on the company's needs.",
+          "tags": [
+            "YC Fall 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://lightscreen.ai",
+          "equipo": 2
+        },
+        {
+          "id": "30182",
+          "nombre": "Flowtel",
+          "categoria": "Infrastructure",
+          "descripcion": "The AI Voice agents for hotels Flowtel is building the next generation operating system for hospitality, powered by modern AI agents that can handle everything from booking to room service.",
+          "tags": [
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://flowtel.ai",
+          "equipo": 5
+        }
+      ],
+      "complementarity_score": 0.6308,
+      "rationale": "Herramientas complementarias para B2B: B2B, Productivity, Engineering, Product and Design, Recruiting and Talent, Infrastructure",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_21",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "13334",
+          "nombre": "DeepSource",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Unified DevSecOps platform, helping developers ship good code. DeepSource helps developers ship clean and secure software by automatically scanning their code and fixing it with Autofix™ AI. We're trusted by 7,000+ teams, from startups to Fortune 500s.",
+          "tags": [
+            "Artificial Intelligence",
+            "Developer Tools",
+            "SaaS",
+            "AI Assistant",
+            "YC Winter 2020"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://deepsource.com/",
+          "equipo": 12
+        },
+        {
+          "id": "29374",
           "nombre": "Superagent",
-          "categoria": "Developer Tools",
-          "descripcion": "Claude Code for the rest of us",
+          "categoria": "Security",
+          "descripcion": "Security for AI-native developers Superagent helps AI-native developers trust what they merge, control what their agents do, and show users it's safe.\r\n\r\nWe work in your coding agent and on GitHub:\r\n\r\n- Trust the change: checks on every pull request, before merge\r\n- Control it where it runs: boundaries around what your agents can see, say, and do\r\n- Break it before it ships: red teaming against what you actually run\r\n\r\nFree for open source.",
           "tags": [
-            "developer-tools"
+            "Artificial Intelligence",
+            "Security",
+            "Open Source",
+            "AI",
+            "YC Winter 2024"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/superagent-a-home-for-your-ai-agents"
+          "audiencia_objetivo": "B2B",
+          "url": "https://superagent.sh/",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/jotform/launches/jotform-claude-app",
-          "nombre": "Jotform Claude App",
-          "categoria": "No-Code",
-          "descripcion": "Build, edit, and analyze forms directly in Claude",
+          "id": "28836",
+          "nombre": "CORE",
+          "categoria": "Productivity",
+          "descripcion": "Your AI butler that understands you really well and proactively acts… CORE is your AI personal assistant that learns who you are, connects to your apps, and does the work before you ask. \r\n\r\nOpen source. Self-hostable. Fully yours.",
           "tags": [
-            "no-code"
+            "Artificial Intelligence",
+            "Developer Tools",
+            "Generative AI",
+            "SaaS",
+            "YC Summer 2023"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/jotform/launches/jotform-claude-app"
+          "audiencia_objetivo": "B2B",
+          "url": "https://getcore.me",
+          "equipo": 3
         },
         {
-          "id": "https://www.producthunt.com/products/claude/launches/claude-design-by-anthropic-labs-2",
-          "nombre": "Claude Design by Anthropic Labs",
-          "categoria": "Diseno",
-          "descripcion": "Make prototypes, slides & one-pagers by talking to Claude",
+          "id": "31165",
+          "nombre": "IncidentFox",
+          "categoria": "Infrastructure",
+          "descripcion": "AI SRE agent that triages, coordinates, and fixes production incidents AI SRE agents that automatically learn each customer’s system so they work just like an in-house engineer.",
           "tags": [
-            "design"
+            "AIOps",
+            "Artificial Intelligence",
+            "Developer Tools",
+            "YC Winter 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/claude/launches/claude-design-by-anthropic-labs-2"
+          "audiencia_objetivo": "B2B",
+          "url": "https://incidentfox.ai",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/supernova-ai/launches/supernova-6",
-          "nombre": "Supernova",
+          "id": "31184",
+          "nombre": "Assemble",
+          "categoria": "B2B",
+          "descripcion": "Autonomous IT Delivery Assemble accelerates IT teams by performing development work inside core enterprise systems like ERP, CRM, and HRIS. Our agents help IT teams scope dependencies, build logic, and validate changes across your systems.",
+          "tags": [
+            "Artificial Intelligence",
+            "SaaS",
+            "Enterprise Software",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.assemble.ai/",
+          "equipo": 4
+        }
+      ],
+      "complementarity_score": 0.62,
+      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Security, Productivity, Infrastructure, B2B",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_22",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "30466",
+          "nombre": "Labric",
           "categoria": "Analytics",
-          "descripcion": "All your data in Claude and Codex",
+          "descripcion": "The data layer for scientific research Labric is building the data layer that makes AI work for science. We capture messy lab data from instruments and tools, clean it, and connect it—so researchers can actually use AI to accelerate discovery.",
           "tags": [
-            "analytics"
+            "YC Spring 2025"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/supernova-ai/launches/supernova-6"
+          "audiencia_objetivo": "B2B",
+          "url": "https://labric.co",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/ponytail",
-          "nombre": "Ponytail",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "Make new code the last resort",
+          "id": "34794",
+          "nombre": "Qokedas",
+          "categoria": "B2B",
+          "descripcion": "Data for AI Science Models are trained on the entire internet, but most of what happens on Earth is never written down. We turn those signals into training data so labs can make models better at science",
           "tags": [
-            "artificial-intelligence"
+            "Artificial Intelligence",
+            "Deep Learning",
+            "YC Fall 2026"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/ponytail"
+          "audiencia_objetivo": "B2B",
+          "url": "https://qokedas.com/",
+          "equipo": 3
+        },
+        {
+          "id": "31181",
+          "nombre": "Synthetic Sciences",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Infrastructure for Autonomous Science Synthetic Sciences is a research lab building infrastructure for scientific superintelligence. Empirical science is bottlenecked by verification that is slow, expensive, and imperfect. We work on tooling, evals, training environments, algorithms, and models that make autonomous science possible.",
+          "tags": [
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://syntheticsciences.ai/",
+          "equipo": 2
+        },
+        {
+          "id": "31555",
+          "nombre": "rekursiv.ai",
+          "categoria": "Productivity",
+          "descripcion": "Scale AI scientists whose own breakthroughs accelerate the next. We're scaling self-improving AI scientist teams to ideate/experiment/discover, generating new knowledge autonomously. Their discoveries reduced ARC-1/2 costs by 10,000× while maintaining state-of-the-art accuracy and yielded material advances on combinatorial ML problems.\r\n\r\nWe believe that AI is bounded not by compute, but ideas. Scaling to millions of sessions of discovery enables leveraging its own discoveries and presents a novel training source capable of ushering a new era of self-reliant foundational models.",
+          "tags": [
+            "Artificial Intelligence",
+            "Deep Learning",
+            "Machine Learning",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://rekursiv.ai",
+          "equipo": 2
+        },
+        {
+          "id": "30899",
+          "nombre": "Sciloop",
+          "categoria": "Infrastructure",
+          "descripcion": "Expert STEM reasoning data for frontier AI labs. Sciloop creates expert-level math and physics problems that frontier AI models can't solve, then sells the data to AI labs for training and evaluation. Our problems are created by IPhO and IMO medalists — the top 0.01% of STEM talent globally. On our benchmark, models like GPT 5.4 Pro and Gemini 3.1 Pro score 0-5% on our hardest problems. We work with AI labs to supply continuous, fresh training data that pushes the frontier of mathematical and scientific reasoning. Founded by Bilal and Osman, International Physics Olympiad medalists from MIT with hands-on ML research experience at MIT CSAIL.",
+          "tags": [
+            "Marketplace",
+            "Data Labeling",
+            "Big Data",
+            "AI",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://sciloop.dev",
+          "equipo": 6
         }
       ],
-      "complementarity_score": 0.4709,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, No-Code, Diseno, Analytics, Inteligencia Artificial",
+      "complementarity_score": 0.615,
+      "rationale": "Herramientas complementarias para B2B: Analytics, B2B, Engineering, Product and Design, Productivity, Infrastructure",
       "size": 5
     },
     {
-      "cluster_id": "cluster_developers_dev_teams_8",
-      "audiencia_objetivo": "Developers & Dev Teams",
+      "cluster_id": "cluster_b2b_23",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/mesoul/launches/mesoul",
-          "nombre": "MeSoul",
-          "categoria": "Diseno",
-          "descripcion": "A journal that answers your questions based on your words",
+          "id": "24040",
+          "nombre": "Affogato AI",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Affogato AI — Your Agent for instant TikToks, Reels, and ads. Affogato AI is your all-in-one AI Video Agent, designed to help businesses, eCommerce sellers, agencies, and creators produce professional short-form videos instantly. From TikTok ads and Instagram Reels to YouTube Shorts, UGC content, and branded campaigns, Affogato makes high-quality video creation simple, fast, and scalable. No editing skills required — just type an idea and get campaign-ready videos that look studio-made, in minutes.",
           "tags": [
-            "design"
+            "Artificial Intelligence",
+            "Generative AI",
+            "AI",
+            "YC Summer 2021"
           ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/mesoul/launches/mesoul"
+          "audiencia_objetivo": "B2B",
+          "url": "https://affogato.ai",
+          "equipo": 15
         },
         {
-          "id": "https://www.producthunt.com/products/at8pm",
-          "nombre": "at8pm",
-          "categoria": "Productividad",
-          "descripcion": "Your honest journal",
-          "tags": [
-            "productivity"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/at8pm"
-        },
-        {
-          "id": "https://www.producthunt.com/products/particle-5",
-          "nombre": "Radar by Particle",
-          "categoria": "Developer Tools",
-          "descripcion": "The Podcast Search Engine",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/particle-5"
-        },
-        {
-          "id": "https://www.producthunt.com/products/mira-the-ai-moderator/launches/decode-by-entropik-2",
-          "nombre": "Decode by Entropik",
-          "categoria": "Analytics",
-          "descripcion": "Mira, AI moderated interviews that read how people feel",
-          "tags": [
-            "analytics"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/mira-the-ai-moderator/launches/decode-by-entropik-2"
-        },
-        {
-          "id": "https://www.producthunt.com/products/chalked",
-          "nombre": "Chalked for Mac",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "Your replies ready with your work's full context",
-          "tags": [
-            "artificial-intelligence"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/chalked"
-        }
-      ],
-      "complementarity_score": 0.4553,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Diseno, Productividad, Developer Tools, Analytics, Inteligencia Artificial",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_developers_dev_teams_9",
-      "audiencia_objetivo": "Developers & Dev Teams",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/revalvo",
-          "nombre": "Revalvo",
-          "categoria": "Developer Tools",
-          "descripcion": "Run prompts on every model at once. Score. Version. Ship.",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/revalvo"
-        },
-        {
-          "id": "https://www.producthunt.com/products/prompt-llama/launches/prompt-llama",
-          "nombre": "Prompt Llama",
-          "categoria": "Diseno",
-          "descripcion": "test the performance of different models with the prompts",
-          "tags": [
-            "design"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/prompt-llama/launches/prompt-llama"
-        },
-        {
-          "id": "https://www.producthunt.com/products/brickforgerai",
-          "nombre": "BrickForgerAI",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "Turn any prompt into a brick set you can actually build",
-          "tags": [
-            "artificial-intelligence"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/brickforgerai"
-        },
-        {
-          "id": "https://www.producthunt.com/products/parallaxpro/launches/parallaxpro",
-          "nombre": "ParallaxPro",
-          "categoria": "No-Code",
-          "descripcion": "AI tool that turns your prompts into real video games",
-          "tags": [
-            "no-code"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/parallaxpro/launches/parallaxpro"
-        },
-        {
-          "id": "https://www.producthunt.com/products/agentx/launches/agentx-4",
-          "nombre": "AgentX",
-          "categoria": "Analytics",
-          "descripcion": "Evaluate AI agent, pinpoint issues, and fix with one click.",
-          "tags": [
-            "analytics"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/agentx/launches/agentx-4"
-        }
-      ],
-      "complementarity_score": 0.4461,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, Diseno, Inteligencia Artificial, No-Code, Analytics",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_developers_dev_teams_10",
-      "audiencia_objetivo": "Developers & Dev Teams",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/commutebar",
-          "nombre": "CommuteBar",
-          "categoria": "Productividad",
-          "descripcion": "Live commute times in your menu bar",
-          "tags": [
-            "productivity"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/commutebar"
-        },
-        {
-          "id": "https://www.producthunt.com/products/hyperfocus-2",
-          "nombre": "Hyperfocus",
-          "categoria": "Developer Tools",
-          "descripcion": "Planner that turns goals into daily progress",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/hyperfocus-2"
-        },
-        {
-          "id": "https://www.producthunt.com/products/go-club/launches/go-club",
-          "nombre": "GO Club",
-          "categoria": "Diseno",
-          "descripcion": "Step Counter, Water Reminder, AI Health Plans, Habit Tracker",
-          "tags": [
-            "design"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/go-club/launches/go-club"
-        },
-        {
-          "id": "https://www.producthunt.com/products/finamie-know-your-money-for-real/launches/finamie",
-          "nombre": "Finamie",
-          "categoria": "Analytics",
-          "descripcion": "Speak your expenses and get instant spending insights",
-          "tags": [
-            "analytics"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/finamie-know-your-money-for-real/launches/finamie"
-        },
-        {
-          "id": "https://www.producthunt.com/products/flitch/launches/flitch",
-          "nombre": "Flitch",
-          "categoria": "No-Code",
-          "descripcion": "Turn your data into insights",
-          "tags": [
-            "no-code"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/flitch/launches/flitch"
-        }
-      ],
-      "complementarity_score": 0.4431,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Productividad, Developer Tools, Diseno, Analytics, No-Code",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_developers_dev_teams_11",
-      "audiencia_objetivo": "Developers & Dev Teams",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/getmyfolio/launches/getmyfolio",
-          "nombre": "GetMyFolio",
-          "categoria": "Diseno",
-          "descripcion": "CMS for your portfolio website",
-          "tags": [
-            "design"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/getmyfolio/launches/getmyfolio"
-        },
-        {
-          "id": "https://www.producthunt.com/products/sider-code-customize-any-website",
-          "nombre": "Sider Code",
-          "categoria": "Productividad",
-          "descripcion": "Reshape any website with plain words via Sider extension",
-          "tags": [
-            "productivity"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/sider-code-customize-any-website"
-        },
-        {
-          "id": "https://www.producthunt.com/products/staats-3",
-          "nombre": "Staats",
-          "categoria": "Analytics",
-          "descripcion": "Ask your coding agent how your site is doing",
-          "tags": [
-            "analytics"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/staats-3"
-        },
-        {
-          "id": "https://www.producthunt.com/products/speakeasydev",
-          "nombre": "Kit by Speakeasy",
-          "categoria": "Developer Tools",
-          "descripcion": "Your coding agent runtime. Claude but fast, cheap, concise.",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/speakeasydev"
-        },
-        {
-          "id": "https://www.producthunt.com/products/kopai-the-marketplace-for-ai-agents/launches/kopai",
-          "nombre": "Kopai",
-          "categoria": "No-Code",
-          "descripcion": "Share your expertise, and let our agents earn for you.",
-          "tags": [
-            "no-code"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/kopai-the-marketplace-for-ai-agents/launches/kopai"
-        }
-      ],
-      "complementarity_score": 0.4263,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Diseno, Productividad, Analytics, Developer Tools, No-Code",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_developers_dev_teams_12",
-      "audiencia_objetivo": "Developers & Dev Teams",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/bauhaus-clock/launches/bauhaus-clock",
-          "nombre": "Bauhaus Clock",
-          "categoria": "Diseno",
-          "descripcion": "Elegant timepiece screensaver for macOS",
-          "tags": [
-            "design"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/bauhaus-clock/launches/bauhaus-clock"
-        },
-        {
-          "id": "https://www.producthunt.com/products/frameos-3",
-          "nombre": "FrameOS",
-          "categoria": "Productividad",
-          "descripcion": "Record your iOS & Android screen from your Mac.",
-          "tags": [
-            "productivity"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/frameos-3"
-        },
-        {
-          "id": "https://www.producthunt.com/products/capacity/launches/capacity-desktop",
-          "nombre": "Capacity Desktop",
-          "categoria": "No-Code",
-          "descripcion": "A free Lovable that lives on your Mac",
-          "tags": [
-            "no-code"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/capacity/launches/capacity-desktop"
-        },
-        {
-          "id": "https://www.producthunt.com/products/tidy-6",
-          "nombre": "Tidy",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "Fix grammar in any Mac app with free on-device AI",
-          "tags": [
-            "artificial-intelligence"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/tidy-6"
-        },
-        {
-          "id": "https://www.producthunt.com/products/naseem-2",
-          "nombre": "Naseem",
-          "categoria": "Developer Tools",
-          "descripcion": "A native AI agent that does real work on your Mac",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/naseem-2"
-        }
-      ],
-      "complementarity_score": 0.4129,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Diseno, Productividad, No-Code, Inteligencia Artificial, Developer Tools",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_developers_dev_teams_13",
-      "audiencia_objetivo": "Developers & Dev Teams",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/codelook",
-          "nombre": "CodeLook",
-          "categoria": "Developer Tools",
-          "descripcion": "Quick Look code previews with 700+ editor themes",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/codelook"
-        },
-        {
-          "id": "https://www.producthunt.com/products/modul/launches/modul-2",
-          "nombre": "Modul",
-          "categoria": "Diseno",
-          "descripcion": "A tool to create good-looking presentations quickly",
-          "tags": [
-            "design"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/modul/launches/modul-2"
-        },
-        {
-          "id": "https://www.producthunt.com/products/jotform/launches/jotform-ai-app-builder",
-          "nombre": "Jotform AI App Builder",
-          "categoria": "No-Code",
-          "descripcion": "Turn ideas into powerful apps within seconds",
-          "tags": [
-            "no-code"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/jotform/launches/jotform-ai-app-builder"
-        },
-        {
-          "id": "https://www.producthunt.com/products/topview-ai",
-          "nombre": "Topview Motion Studio",
-          "categoria": "Productividad",
-          "descripcion": "Create launch videos without touching After Effects",
-          "tags": [
-            "productivity"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/topview-ai"
-        },
-        {
-          "id": "https://www.producthunt.com/products/causal-2",
-          "nombre": "Causal",
-          "categoria": "Inteligencia Artificial",
-          "descripcion": "AI Powered Canvas for planning visual projects",
-          "tags": [
-            "artificial-intelligence"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/causal-2"
-        }
-      ],
-      "complementarity_score": 0.4092,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, Diseno, No-Code, Productividad, Inteligencia Artificial",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_developers_dev_teams_14",
-      "audiencia_objetivo": "Developers & Dev Teams",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/x1-2",
-          "nombre": "x1",
-          "categoria": "No-Code",
-          "descripcion": "Lovable for iPhone apps go from idea to App Store",
-          "tags": [
-            "no-code"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/x1-2"
-        },
-        {
-          "id": "https://www.producthunt.com/products/app-stacks/launches/app-stacks",
-          "nombre": "App Stacks",
-          "categoria": "Diseno",
-          "descripcion": "Stories & stacks behind beautifully crafted apps",
-          "tags": [
-            "design"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/app-stacks/launches/app-stacks"
-        },
-        {
-          "id": "https://www.producthunt.com/products/fedica/launches/fedica-2-0",
-          "nombre": "Fedica 2.0",
-          "categoria": "Analytics",
-          "descripcion": "Publish and grow your profile across social apps",
-          "tags": [
-            "analytics"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/fedica/launches/fedica-2-0"
-        },
-        {
-          "id": "https://www.producthunt.com/products/touchy-3",
-          "nombre": "Touchy",
-          "categoria": "Productividad",
-          "descripcion": "An iOS assistant that understands the world around you",
-          "tags": [
-            "productivity"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/touchy-3"
-        },
-        {
-          "id": "https://www.producthunt.com/products/onset-io",
-          "nombre": "Onset MCP",
-          "categoria": "Developer Tools",
-          "descripcion": "Write and publish release notes from your AI assistant",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/onset-io"
-        }
-      ],
-      "complementarity_score": 0.3988,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: No-Code, Diseno, Analytics, Productividad, Developer Tools",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_developers_dev_teams_15",
-      "audiencia_objetivo": "Developers & Dev Teams",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/offline-js-playground",
-          "nombre": "Offline JS Playground",
-          "categoria": "Developer Tools",
-          "descripcion": "Write, run, and test JavaScript snippets & JSON offline",
-          "tags": [
-            "developer-tools"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/offline-js-playground"
-        },
-        {
-          "id": "https://www.producthunt.com/products/drizz-2/launches/drizz-2",
-          "nombre": "Drizz",
-          "categoria": "No-Code",
-          "descripcion": "Mobile tests that write, run, and fix themselves",
-          "tags": [
-            "no-code"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/drizz-2/launches/drizz-2"
-        },
-        {
-          "id": "https://www.producthunt.com/products/novus-4/launches/novus-6",
-          "nombre": "Novus",
-          "categoria": "Analytics",
-          "descripcion": "Catch and fix usability issues automatically as you ship",
-          "tags": [
-            "analytics"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/novus-4/launches/novus-6"
-        },
-        {
-          "id": "https://www.producthunt.com/products/taskly/launches/taskly",
-          "nombre": "Taskly",
-          "categoria": "Diseno",
-          "descripcion": "The incredibly simple todo app",
-          "tags": [
-            "design"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/taskly/launches/taskly"
-        },
-        {
-          "id": "https://www.producthunt.com/products/skud-drag-send-track-in-seconds",
-          "nombre": "Skud",
-          "categoria": "Productividad",
-          "descripcion": "Menubar file delivery with your brand and tracking",
-          "tags": [
-            "productivity"
-          ],
-          "audiencia_objetivo": "Developers & Dev Teams",
-          "url": "https://www.producthunt.com/products/skud-drag-send-track-in-seconds"
-        }
-      ],
-      "complementarity_score": 0.3751,
-      "rationale": "Herramientas complementarias para Developers & Dev Teams: Developer Tools, No-Code, Analytics, Diseno, Productividad",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_e_commerce_growth_16",
-      "audiencia_objetivo": "E-commerce & Growth",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/zoodata/launches/zoodata-3",
-          "nombre": "ZooData",
-          "categoria": "E-commerce",
-          "descripcion": "The data layer for AI agents",
-          "tags": [
-            "e-commerce"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/zoodata/launches/zoodata-3"
-        },
-        {
-          "id": "https://www.producthunt.com/products/agent-arena/launches/agent-arena",
-          "nombre": "Agent Arena",
-          "categoria": "Social Media",
-          "descripcion": "The first public arena for AI agents",
-          "tags": [
-            "social-media"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/agent-arena/launches/agent-arena"
-        },
-        {
-          "id": "https://www.producthunt.com/products/sidegent/launches/sidegent",
-          "nombre": "Sidegent",
-          "categoria": "Educacion",
-          "descripcion": "Learn to build AI agents by actually building them",
-          "tags": [
-            "education"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/sidegent/launches/sidegent"
-        },
-        {
-          "id": "https://www.producthunt.com/products/acme-bot/launches/acme-bot",
-          "nombre": "ACME.BOT",
+          "id": "27843",
+          "nombre": "Gooseworks",
           "categoria": "Marketing",
-          "descripcion": "No-slop AI SEO agent that interviews you first",
+          "descripcion": "Self-Improving Ad Creative Engines Goose is an AI creative engine that turns your brand into a continuous stream of on-brand ads. \r\n\r\nWe index your existing materials — videos, product shots, testimonials, ad performance data — into a context layer, then generate short-form creative for Meta and TikTok at the volume performance marketing actually requires.\r\n\r\nThe engine compounds: the agent learns from ad performance, competitors, trends, and human feedback, so your creative gets better every month. Run as a human-guided, done-for-you service.",
           "tags": [
-            "marketing"
+            "Artificial Intelligence",
+            "Video",
+            "Marketing",
+            "Advertising",
+            "AI",
+            "YC Winter 2023"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/acme-bot/launches/acme-bot"
+          "audiencia_objetivo": "B2B",
+          "url": "https://gooseworks.ai/",
+          "equipo": 5
         },
         {
-          "id": "https://www.producthunt.com/products/marx-finance/launches/marx-finance",
-          "nombre": "Marx Finance",
-          "categoria": "Finanzas",
-          "descripcion": "AI agents debate the markets",
+          "id": "29513",
+          "nombre": "GetCrux",
+          "categoria": "Analytics",
+          "descripcion": "AI Creative Strategist GetCrux is the AI Creative Strategist to launch winning ads.\r\n\r\nCreatives have become the biggest lever to win on ad platforms. Yet, there is no clear way to figure out why something works. Marketers end up guessing and replicating the best performing ad, only to see it fail - with high CAC & wasted dollars.\r\n\r\nGetCrux helps performance marketers find winning patterns in their ad creatives across 100+ parameters like hooks, messaging, storyline, music, pacing, and recommend exactly what to launch next.",
           "tags": [
-            "finance"
+            "Artificial Intelligence",
+            "SaaS",
+            "Analytics",
+            "Marketing",
+            "Automation",
+            "YC Winter 2024"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/marx-finance/launches/marx-finance"
+          "audiencia_objetivo": "B2B",
+          "url": "http://getcrux.ai/",
+          "equipo": 9
+        },
+        {
+          "id": "27097",
+          "nombre": "Ad Army",
+          "categoria": "B2B",
+          "descripcion": "Generate, iterate, and ship AI ad creatives faster Ad Army is an AI creative tool for brands that need a constant supply of ad creative.\r\n\r\nYou build your brand's world once — characters, products, locations — each with locked descriptors and reference images. Then you generate against it: @-mention an entity in a prompt and its references are pulled into the model call, so the same product, the same face and the same location hold across images, video, and dozens of variants. Save any chain of steps as a recipe and replay it on the next campaign.\r\n\r\nWe're model-agnostic by design — video, image, text and audio providers sit behind one interface, and new models land as they ship. For a full narrative spot, the same world scripts, storyboards, animates, voices, captions and exports multi-scene ads in every aspect ratio.",
+          "tags": [
+            "Generative AI",
+            "B2B",
+            "Marketing",
+            "Creator Economy",
+            "AI",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://ad.army/",
+          "equipo": 5
+        },
+        {
+          "id": "30650",
+          "nombre": "Imprezia",
+          "categoria": "Infrastructure",
+          "descripcion": "The World's First AI Ad Network. The first advertising infrastructure designed specifically for AI apps. Seamlessly integrate contextual brands & products that enhance user experience while generating revenue to pay the inference bills.",
+          "tags": [
+            "YC Summer 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://imprezia.ai",
+          "equipo": 4
         }
       ],
-      "complementarity_score": 0.6218,
-      "rationale": "Herramientas complementarias para E-commerce & Growth: E-commerce, Social Media, Educacion, Marketing, Finanzas",
+      "complementarity_score": 0.6105,
+      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Marketing, Analytics, B2B, Infrastructure",
       "size": 5
     },
     {
-      "cluster_id": "cluster_e_commerce_growth_17",
-      "audiencia_objetivo": "E-commerce & Growth",
+      "cluster_id": "cluster_b2b_24",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/mulerun/launches/mulerun",
-          "nombre": "MuleRun",
-          "categoria": "E-commerce",
-          "descripcion": "Raise an AI that actually learns how you work",
+          "id": "30283",
+          "nombre": "Confident AI",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "The LLM Eval and Observability Platform for AI Quality Confident AI provides enterprises an all-in-one platform to evaluate, observe, red team, and govern AI applications. Built by the creators of DeepEval (16k stars, 8m monthly downloads), Confident AI is able to offer battle-tested, open-source evaluation algorithms while providing the infrastructure needed for teams to stay confident their AI systems.",
           "tags": [
-            "e-commerce"
+            "Developer Tools",
+            "Generative AI",
+            "Open Source",
+            "AI",
+            "YC Winter 2025"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/mulerun/launches/mulerun"
+          "audiencia_objetivo": "B2B",
+          "url": "https://confident-ai.com",
+          "equipo": 7
         },
         {
-          "id": "https://www.producthunt.com/products/build-club/launches/solaris-3",
-          "nombre": "Solaris",
-          "categoria": "Educacion",
-          "descripcion": "Your company’s AI adoption and upskilling platform",
+          "id": "30625",
+          "nombre": "LLM Stats",
+          "categoria": "Infrastructure",
+          "descripcion": "Independent AI evaluations lab We build independent and contamination-proof benchmarks that measure real world performance.\r\n\r\nLLM Stats is the most complete LLM leaderboard. We have the most complete archive of LLM benchmark results and also run independent evaluations that are not the classical ones that are already in the training data of most models.\r\n\r\nOur mission: become the biggest community dedicated to AI transparency.",
           "tags": [
-            "education"
+            "Infrastructure",
+            "AI",
+            "YC Summer 2025"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/build-club/launches/solaris-3"
+          "audiencia_objetivo": "B2B",
+          "url": "https://llm-stats.com",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/rippling/launches/ai-spend-console-by-rippling",
-          "nombre": "AI Spend Console by Rippling",
-          "categoria": "Finanzas",
-          "descripcion": "Track your AI spend and connect it to business outcomes",
+          "id": "848",
+          "nombre": "Tara AI",
+          "categoria": "Productivity",
+          "descripcion": "Meet Tara AI, your new engineering efficiency co-pilot. Tara AI helps engineering leaders measure and improve engineering efficiency, with fine-tuned, secure LLMs trained on source control and project data. \r\n\r\nOur customers include MongoDB, Clearbit and Prometric. Our platform generates all-in-one views on cycle times, benchmarks, investments and overall size and velocity of engineering activity. We're helping customers achieve 30% reduction in time to customer deployment.",
           "tags": [
-            "finance"
+            "Artificial Intelligence",
+            "Generative AI",
+            "SaaS",
+            "DevOps",
+            "AI",
+            "YC Winter 2015"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/rippling/launches/ai-spend-console-by-rippling"
+          "audiencia_objetivo": "B2B",
+          "url": "http://www.tara.ai",
+          "equipo": 13
         },
         {
-          "id": "https://www.producthunt.com/products/databox/launches/artifacts-by-databox",
-          "nombre": "Artifacts by Databox",
-          "categoria": "Marketing",
-          "descripcion": "Ask your AI Analyst and get back a ready-to-share report",
+          "id": "28846",
+          "nombre": "Parea",
+          "categoria": "Operations",
+          "descripcion": "Test, evaluate & observe your LLM applications Parea AI is the essential developer platform for debugging and monitoring every stage of LLM application development. We provide testing, evaluation, and monitoring in one unified platform. These capabilities help developers get visibility into LLM responses, quickly test and optimize prompts, and ensure customers get the best user experience.",
           "tags": [
-            "marketing"
+            "Developer Tools",
+            "Generative AI",
+            "SaaS",
+            "DevOps",
+            "Monitoring",
+            "YC Summer 2023"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/databox/launches/artifacts-by-databox"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.parea.ai",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/creatify/launches/ai-media-buyer-by-creatify",
-          "nombre": "AI Media Buyer By Creatify",
-          "categoria": "Social Media",
-          "descripcion": "Your ads, managed by AI that gets smarter daily.",
+          "id": "30858",
+          "nombre": "Deeptrace",
+          "categoria": "B2B",
+          "descripcion": "AI agents for on-call At Deeptrace, we’re building AI agents that investigate and resolve production alerts end-to-end. Deeptrace cuts through the noise, pinpoints root causes instantly, and gives engineering teams back what they need most: the freedom to build instead of firefighting.\r\n\r\nIn production, we're already seeing a reduction in time spent triaging, investigating, and resolving alerts with some of the fastest growing companies in the world.",
           "tags": [
-            "social-media"
+            "YC Fall 2025"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/creatify/launches/ai-media-buyer-by-creatify"
+          "audiencia_objetivo": "B2B",
+          "url": "https://deeptrace.com/",
+          "equipo": 4
         }
       ],
-      "complementarity_score": 0.5763,
-      "rationale": "Herramientas complementarias para E-commerce & Growth: E-commerce, Educacion, Finanzas, Marketing, Social Media",
+      "complementarity_score": 0.6102,
+      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Infrastructure, Productivity, Operations, B2B",
       "size": 5
     },
     {
-      "cluster_id": "cluster_e_commerce_growth_18",
-      "audiencia_objetivo": "E-commerce & Growth",
+      "cluster_id": "cluster_b2b_25",
+      "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "https://www.producthunt.com/products/layerproof-social-content-generation/launches/layerproof-matte-3-0",
-          "nombre": "LayerProof Matte 3.0",
-          "categoria": "Social Media",
-          "descripcion": "Grow your social media content: posts, carousels and stories",
+          "id": "29723",
+          "nombre": "Aluna",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Data for biomedical AI We work with health organizations, to build curated datasets and evals for health AI. Currently focused on Oncology.",
           "tags": [
-            "social-media"
+            "Artificial Intelligence",
+            "YC Summer 2024"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/layerproof-social-content-generation/launches/layerproof-matte-3-0"
+          "audiencia_objetivo": "B2B",
+          "url": "https://alunadata.com",
+          "equipo": 3
         },
         {
-          "id": "https://www.producthunt.com/products/adant-ai/launches/adant-ai",
-          "nombre": "AdAnt AI",
-          "categoria": "Marketing",
-          "descripcion": "Claude for viral, high-converting social ads",
+          "id": "33540",
+          "nombre": "Osseus",
+          "categoria": "B2B",
+          "descripcion": "The frontier data platform for health and biological AI In an era of cheap intelligence, the most important application of AI will be to improving human health, globally. Osseus provides off-the-shelf or custom medical and biological datasets and RL environments to frontier labs.\r\n\r\nWe work with hospitals and clinics to provide our EHR and deploy AI models within clinical workflows, with models from both our frontier lab partners and our own research.",
           "tags": [
-            "marketing"
+            "Artificial Intelligence",
+            "Robotics",
+            "B2B",
+            "Biotech",
+            "Healthcare",
+            "YC Summer 2026"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/adant-ai/launches/adant-ai"
+          "audiencia_objetivo": "B2B",
+          "url": "https://osseus.ai/",
+          "equipo": 2
         },
         {
-          "id": "https://www.producthunt.com/products/joos/launches/joos",
-          "nombre": "JOOS©",
-          "categoria": "Finanzas",
-          "descripcion": "Invest in content creators, accelerate their growth",
+          "id": "30683",
+          "nombre": "Theora",
+          "categoria": "Analytics",
+          "descripcion": "Building medical school for AI Agents Datasets and environments to help healthcare agents succeed at complex tasks.",
           "tags": [
-            "finance"
+            "Marketing",
+            "Market Research",
+            "YC Summer 2025"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/joos/launches/joos"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.theorahq.com",
+          "equipo": 3
         },
         {
-          "id": "https://www.producthunt.com/products/yuma-social-ai/launches/yuma-social-ai",
-          "nombre": "Yuma Social AI",
-          "categoria": "E-commerce",
-          "descripcion": "Put your ecommerce social media on auto-pilot",
+          "id": "31002",
+          "nombre": "Clicks Health",
+          "categoria": "Productivity",
+          "descripcion": "AI agents for your healthcare back-office operations. Clicks Health builds AI agents that automate back-office operations for RCM companies and healthcare providers. Our agents work across EHRs, payer portals, desktop applications, and legacy systems, following existing processes, handling exceptions, and escalating when human judgment is needed. Backed by Y Combinator, Clicks helps teams improve accuracy, shorten turnaround times, and reduce operating costs, with SOC 2 Type II and HIPAA compliance built in.",
           "tags": [
-            "e-commerce"
+            "Artificial Intelligence",
+            "Health Tech",
+            "Healthcare",
+            "Health Insurance",
+            "YC Fall 2025"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/yuma-social-ai/launches/yuma-social-ai"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.goclicks.ai/",
+          "equipo": 8
         },
         {
-          "id": "https://www.producthunt.com/products/focus-room/launches/focus-room",
-          "nombre": "Focus Room",
-          "categoria": "Educacion",
-          "descripcion": "Turn YouTube into your personal learning platform",
+          "id": "29790",
+          "nombre": "YouShift",
+          "categoria": "Human Resources",
+          "descripcion": "The OS for hospital workforce management YouShift uses AI to automate hospital shift scheduling, replacing legacy software and eliminating the need for full-time schedulers. And scheduling is just the beginning — we're building the future of healthcare workforce management.",
           "tags": [
-            "education"
+            "Artificial Intelligence",
+            "Health Tech",
+            "Healthcare",
+            "HR Tech",
+            "Operations",
+            "YC Winter 2025"
           ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/focus-room/launches/focus-room"
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.you-shift.com/",
+          "equipo": 10
         }
       ],
-      "complementarity_score": 0.4799,
-      "rationale": "Herramientas complementarias para E-commerce & Growth: Social Media, Marketing, Finanzas, E-commerce, Educacion",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_e_commerce_growth_19",
-      "audiencia_objetivo": "E-commerce & Growth",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/soundgate-guitar-app/launches/soundgate-guitar",
-          "nombre": "SoundGate Guitar",
-          "categoria": "Educacion",
-          "descripcion": "AI Music Tutor that gives real-time feedback on your playing",
-          "tags": [
-            "education"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/soundgate-guitar-app/launches/soundgate-guitar"
-        },
-        {
-          "id": "https://www.producthunt.com/products/stanley-studio/launches/stanley-studio",
-          "nombre": "Stanley Studio",
-          "categoria": "Social Media",
-          "descripcion": "The AI video editor you hire that edits like a human",
-          "tags": [
-            "social-media"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/stanley-studio/launches/stanley-studio"
-        },
-        {
-          "id": "https://www.producthunt.com/products/chatcut-ai-video-editor",
-          "nombre": "ChatCut Desktop",
-          "categoria": "Marketing",
-          "descripcion": "Video editor built for humans & AI. Edit with GPT & Claude.",
-          "tags": [
-            "marketing"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/chatcut-ai-video-editor"
-        },
-        {
-          "id": "https://www.producthunt.com/products/caimera-2/launches/caimera-2",
-          "nombre": "Caimera",
-          "categoria": "E-commerce",
-          "descripcion": "AI Visual Production Platform for Fashion Teams",
-          "tags": [
-            "e-commerce"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/caimera-2/launches/caimera-2"
-        },
-        {
-          "id": "https://www.producthunt.com/products/candlestick-ai-2/launches/candlestick-ai-2",
-          "nombre": "Candlestick AI",
-          "categoria": "Finanzas",
-          "descripcion": "Invest in custom portfolio ideas, researched by AI agents",
-          "tags": [
-            "finance"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/candlestick-ai-2/launches/candlestick-ai-2"
-        }
-      ],
-      "complementarity_score": 0.4782,
-      "rationale": "Herramientas complementarias para E-commerce & Growth: Educacion, Social Media, Marketing, E-commerce, Finanzas",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_e_commerce_growth_20",
-      "audiencia_objetivo": "E-commerce & Growth",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/shopeaks/launches/shopeaks",
-          "nombre": "Shopeaks",
-          "categoria": "E-commerce",
-          "descripcion": "Every click deserves its own store",
-          "tags": [
-            "e-commerce"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/shopeaks/launches/shopeaks"
-        },
-        {
-          "id": "https://www.producthunt.com/products/toplify/launches/toplify",
-          "nombre": "Toplify",
-          "categoria": "Marketing",
-          "descripcion": "Track your App Store ranking worldwide",
-          "tags": [
-            "marketing"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/toplify/launches/toplify"
-        },
-        {
-          "id": "https://www.producthunt.com/products/honestly/launches/honestly-2",
-          "nombre": "Honestly",
-          "categoria": "Social Media",
-          "descripcion": "See what Reddit and TikTok honestly think about your product",
-          "tags": [
-            "social-media"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/honestly/launches/honestly-2"
-        },
-        {
-          "id": "https://www.producthunt.com/products/wallstreet-wrapped/launches/wallstreet-wrapped",
-          "nombre": "Wallstreet Wrapped",
-          "categoria": "Finanzas",
-          "descripcion": "Spotify wrapped for your stock trades",
-          "tags": [
-            "finance"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/wallstreet-wrapped/launches/wallstreet-wrapped"
-        },
-        {
-          "id": "https://www.producthunt.com/products/brainfeed-scroll-better/launches/brainfeed",
-          "nombre": "BrainFeed",
-          "categoria": "Educacion",
-          "descripcion": "A personalized learning feed that redirects your scroll",
-          "tags": [
-            "education"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/brainfeed-scroll-better/launches/brainfeed"
-        }
-      ],
-      "complementarity_score": 0.4005,
-      "rationale": "Herramientas complementarias para E-commerce & Growth: E-commerce, Marketing, Social Media, Finanzas, Educacion",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_e_commerce_growth_21",
-      "audiencia_objetivo": "E-commerce & Growth",
-      "startups": [
-        {
-          "id": "https://www.producthunt.com/products/tickerbar/launches/tickerbar",
-          "nombre": "TickerBar",
-          "categoria": "Finanzas",
-          "descripcion": "Stock market & crypto prices for macOS",
-          "tags": [
-            "finance"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/tickerbar/launches/tickerbar"
-        },
-        {
-          "id": "https://www.producthunt.com/products/prequel-2",
-          "nombre": "Prequel",
-          "categoria": "Marketing",
-          "descripcion": "Create cinematic screen recordings on your Mac",
-          "tags": [
-            "marketing"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/prequel-2"
-        },
-        {
-          "id": "https://www.producthunt.com/products/postbox",
-          "nombre": "PostBox",
-          "categoria": "Social Media",
-          "descripcion": "Stage and post designs from your mac",
-          "tags": [
-            "social-media"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/postbox"
-        },
-        {
-          "id": "https://www.producthunt.com/products/phantom-6/launches/phantom-8",
-          "nombre": "Phantom",
-          "categoria": "Educacion",
-          "descripcion": "Voice-first AI agent that operates your Mac",
-          "tags": [
-            "education"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/phantom-6/launches/phantom-8"
-        },
-        {
-          "id": "https://www.producthunt.com/products/chat-cash/launches/chat-cash",
-          "nombre": "Chat Cash",
-          "categoria": "E-commerce",
-          "descripcion": "AI commerce OS for WhatsApp and Instagram sales",
-          "tags": [
-            "e-commerce"
-          ],
-          "audiencia_objetivo": "E-commerce & Growth",
-          "url": "https://www.producthunt.com/products/chat-cash/launches/chat-cash"
-        }
-      ],
-      "complementarity_score": 0.3678,
-      "rationale": "Herramientas complementarias para E-commerce & Growth: Finanzas, Marketing, Social Media, Educacion, E-commerce",
+      "complementarity_score": 0.6054,
+      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, B2B, Analytics, Productivity, Human Resources",
       "size": 5
     }
   ]
