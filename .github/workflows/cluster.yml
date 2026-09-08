@@ -15,6 +15,10 @@ on:
         description: "Industrias de Y Combinator separadas por espacio ('all' = todas, ej: B2B Fintech). Fuente recomendada"
         required: false
         default: "B2B"
+      max_team:
+        description: "Solo empresas con equipo de hasta N personas (0 = sin tope). Clave para reclutar"
+        required: false
+        default: "20"
       top:
         description: "Dejar solo los N clusters de mayor cohesion (0 = todos)"
         required: false
@@ -63,6 +67,7 @@ jobs:
           INPUT_DATA: ${{ inputs.data }}
           INPUT_YC: ${{ inputs.yc }}
           INPUT_TOP: ${{ inputs.top }}
+          INPUT_MAXTEAM: ${{ inputs.max_team }}
           INPUT_PH: ${{ inputs.producthunt }}
           INPUT_RSS: ${{ inputs.rss }}
           EVENT: ${{ github.event_name }}
@@ -72,11 +77,15 @@ jobs:
           if [ -z "$INPUT_YC" ] && [ -z "$INPUT_PH" ] && [ "$EVENT" = "schedule" ]; then
             INPUT_YC="B2B"
             INPUT_TOP="25"
+            INPUT_MAXTEAM="20"
           fi
 
           ARGS=(--output clusters_result.json)
           if [ -n "$INPUT_TOP" ]; then
             ARGS+=(--top "$INPUT_TOP")
+          fi
+          if [ -n "$INPUT_MAXTEAM" ] && [ "$INPUT_MAXTEAM" != "0" ]; then
+            ARGS+=(--max-team "$INPUT_MAXTEAM")
           fi
           if [ -n "$INPUT_DATA" ]; then
             ARGS+=(--data "$INPUT_DATA")

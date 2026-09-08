@@ -140,6 +140,9 @@ class Startup:
     tags: List[str]
     audiencia_objetivo: str
     url: Optional[str] = None
+    # Tamano del equipo, cuando la fuente lo informa. Es el filtro que separa a
+    # quien le podes escribir de quien no te va a contestar.
+    equipo: Optional[int] = None
     embedding: Optional[np.ndarray] = None
 
     def to_dict(self) -> Dict:
@@ -185,6 +188,8 @@ def load_startup_data(
     product_hunt: Optional[Sequence[str]] = None,
     rss_feeds: Optional[Sequence[str]] = None,
     limite: int = 0,
+    max_equipo: int = 0,
+    min_equipo: int = 0,
 ) -> List[Startup]:
     """Carga startups desde JSON, YC, Product Hunt, RSS o el dataset de ejemplo."""
     if data_source:
@@ -195,7 +200,7 @@ def load_startup_data(
         logger.warning("La fuente JSON no devolvio datos; se intenta la siguiente opcion")
 
     if yc_industries is not None:
-        startups = _load_from_yc(yc_industries, limite)
+        startups = _load_from_yc(yc_industries, limite, max_equipo, min_equipo)
         if startups:
             return startups
         logger.warning("YC no devolvio datos; se intenta la siguiente opcion")
@@ -253,7 +258,12 @@ def _startup_from_dict(item: Dict) -> Startup:
     )
 
 
-def _load_from_yc(industrias: Sequence[str], limite: int = 0) -> List[Startup]:
+def _load_from_yc(
+    industrias: Sequence[str],
+    limite: int = 0,
+    max_equipo: int = 0,
+    min_equipo: int = 0,
+) -> List[Startup]:
     """Trae empresas del directorio publico de Y Combinator.
 
     Es la fuente recomendada para reclutar: no hace falta API key, las
@@ -264,6 +274,9 @@ def _load_from_yc(industrias: Sequence[str], limite: int = 0) -> List[Startup]:
         subindustry  -> categoria            (Marketing, Sales, Operations, ...)
 
     Se descartan las empresas inactivas y las que no tengan los tres campos.
+    El filtro por tamano de equipo es clave para reclutamiento: una empresa de
+    500 personas no va a poner tu link en su newsletter. Cuando hay filtro, las
+    que no informan team_size se descartan en vez de colarse.
     """
     try:
         logger.info(f"Descargando el directorio de YC desde {YC_API_URL}")
@@ -293,6 +306,18 @@ def _load_from_yc(industrias: Sequence[str], limite: int = 0) -> List[Startup]:
             descartadas["otra industria"] += 1
             continue
 
+        equipo = empresa.get("team_size")
+        if max_equipo or min_equipo:
+            if not equipo:
+                descartadas["sin tamano de equipo"] += 1
+                continue
+            if max_equipo and equipo > max_equipo:
+                descartadas[f"equipo mayor a {max_equipo}"] += 1
+                continue
+            if min_equipo and equipo < min_equipo:
+                descartadas[f"equipo menor a {min_equipo}"] += 1
+                continue
+
         etiquetas = list(empresa.get("tags") or [])
         if empresa.get("batch"):
             etiquetas.append(f"YC {empresa['batch']}")
@@ -309,6 +334,7 @@ def _load_from_yc(industrias: Sequence[str], limite: int = 0) -> List[Startup]:
                 tags=etiquetas,
                 audiencia_objetivo=industria,
                 url=empresa.get("website") or None,
+                equipo=equipo or None,
             )
         )
         if limite and len(startups) >= limite:
@@ -765,7 +791,8 @@ def print_summary(clusters: List[CoMarketingCluster]) -> None:
         print(f"  Audiencia : {cluster.audiencia_objetivo}")
         print(f"  Cohesion  : {cluster.complementarity_score:.4f}")
         for startup in cluster.startups:
-            print(f"    - {startup['nombre']} ({startup['categoria']})")
+            equipo = f"{startup['equipo']} pers." if startup.get("equipo") else "s/d"
+            print(f"    - {startup['nombre']:<22} {equipo:>9}  {startup['categoria']}")
         print()
 
 
@@ -777,11 +804,15 @@ def main(
     output_path: str = "clusters_result.json",
     limite: int = 0,
     top: int = 0,
+    max_equipo: int = 0,
+    min_equipo: int = 0,
 ) -> List[CoMarketingCluster]:
     """Ejecuta el pipeline completo de clustering de co-marketing."""
     logger.info("Iniciando pipeline de clustering de co-marketing...")
 
-    startups = load_startup_data(data_source, yc_industries, product_hunt, rss_feeds, limite)
+    startups = load_startup_data(
+        data_source, yc_industries, product_hunt, rss_feeds, limite, max_equipo, min_equipo
+    )
     startups = generate_embeddings(startups)
     similitudes, indice = build_similarity_index(startups)
     clusters = build_complementary_clusters(startups, similitudes, indice)
@@ -844,6 +875,18 @@ if __name__ == "__main__":
         help="Path del JSON de salida (por defecto, la raiz del repositorio)",
     )
     parser.add_argument(
+        "--max-team",
+        type=int,
+        default=0,
+        help="Solo empresas con equipo de hasta N personas (0 = sin tope). Solo con --yc",
+    )
+    parser.add_argument(
+        "--min-team",
+        type=int,
+        default=0,
+        help="Solo empresas con equipo de al menos N personas (0 = sin minimo). Solo con --yc",
+    )
+    parser.add_argument(
         "--limit",
         type=int,
         default=0,
@@ -866,6 +909,8 @@ if __name__ == "__main__":
             output_path=args.output,
             limite=args.limit,
             top=args.top,
+            max_equipo=args.max_team,
+            min_equipo=args.min_team,
         )
     except Exception as exc:
         logger.error(f"El pipeline fallo: {exc}", exc_info=True)
