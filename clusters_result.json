@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T18:54:18+00:00",
+  "generated_at": "2026-10-19T16:25:29+00:00",
   "total_clusters": 25,
   "clusters": [
     {
@@ -7,13 +7,117 @@
       "audiencia_objetivo": "B2B",
       "startups": [
         {
+          "id": "29455",
+          "nombre": "CommodityAI",
+          "categoria": "Operations",
+          "descripcion": "The AI operating system for commodity operations CommodityAI builds intelligent automation agents for some of the most operationally complex businesses in the world: physical commodity traders.\r\n\r\nIn trading operations, critical data is often buried in spreadsheets, emails, PDFs, and legacy systems — making workflows slow, error-prone, and overly manual. CommodityAI acts as a digital operator, continuously reading, interpreting, and updating information across the trade lifecycle to keep records accurate and systems in sync.\r\n\r\nOur agents extract and validate key details from trade confirmations, contracts, vessel updates, and more — turning scattered, unstructured data into clean, structured records that flow directly into CTRMs, ERPs, and other core platforms. No manual entry required.\r\n\r\nBy automating what others still do by hand, we help trading teams move faster, reduce risk, and focus on the decisions that matter most.",
+          "tags": [
+            "B2B",
+            "Workflow Automation",
+            "Enterprise Software",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://commodityai.io/",
+          "equipo": 6
+        },
+        {
+          "id": "29478",
+          "nombre": "Reform",
+          "categoria": "Supply Chain and Logistics",
+          "descripcion": "AI Agents for high-stakes work. At Reform, we’re building a platform for building and managing AI agents that perform high-stakes operational work. Some of the most critical industries today run on outdated systems, spreadsheets, and manual processes - creating friction across every handoff, contract, and invoice. We’re rebuilding this infrastructure from the ground up.",
+          "tags": [
+            "Workflow Automation",
+            "Compliance",
+            "Logistics",
+            "Supply Chain",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.reformhq.com",
+          "equipo": 13
+        },
+        {
+          "id": "30877",
+          "nombre": "Trelium",
+          "categoria": "B2B",
+          "descripcion": "AI Agents for Enterprise Wide Operations Trelium lets enterprise teams build AI agents in simple English to automate back-office work. We serve companies handling custom and bulk operations, including distributors, suppliers, and decorators across the print, merch, and apparel industries, automating workflows like order entry, purchase order creation, PO-invoice matching, order-status follow-ups, and many more.",
+          "tags": [
+            "B2B",
+            "Workflow Automation",
+            "Enterprise Software",
+            "AI",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.trelium.com",
+          "equipo": 11
+        },
+        {
+          "id": "33672",
+          "nombre": "Grep AI",
+          "categoria": "Productivity",
+          "descripcion": "Self-improving agents that automate tedious operational work Grep AI is the fastest way to create, optimize, and deploy agents for tedious, complex operational work that slows down your business. Our self-improving agents learn from every run, making them smarter and cheaper as you scale. IG.com a global retail brokerage used our agents to review compliance alerts and now 80% of their customers onboad without manual intervention, doubling first trades and propelling them to a FTSE 100 company. \r\n\r\nCustomers including Airwallex, Worldpay, Citizens Bank, FV Bank and Shopmonkey have used our agents to automate over 250,000 of operational work across compliance, onboarding, underwriting, corporate due diligence, document verification, merchant categorization, market and competitive research, rev ops and much more.\r\n\r\nWe founded Grep AI after experiencing firsthand how manual workflows can prevent a business from growing when we ran the platform team at Brex. We're now on a mission to rid businesses of tedious, repetitive so their employees can focus on the most high leverage tasks that matter.",
+          "tags": [
+            "Fintech",
+            "AI",
+            "YC Fall 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://grep.ai",
+          "equipo": 6
+        },
+        {
+          "id": "23958",
+          "nombre": "Abstra",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Automate finance operations with Python and AI Abstra is a platform that allows finance teams to build, run, and automate their workflows using Python and AI.\r\n\r\nInstead of relying on spreadsheets, ERPs, and manual processes, teams can create programmable workflows for tasks like reporting, reconciliations, approvals, and integrations with systems like SAP.\r\n\r\nWe provide a developer-friendly environment where finance and technical teams can turn business processes into code, connect to their existing tools, and run everything in a controlled, auditable way.\r\n\r\nOur goal is to become the operating system for finance operations, where workflows are not static or manual, but versioned, automated, and continuously improved.",
+          "tags": [
+            "SaaS",
+            "Finance",
+            "B2B",
+            "Automation",
+            "AI",
+            "YC Summer 2021"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://abstra.io",
+          "equipo": 18
+        }
+      ],
+      "complementarity_score": 0.7122,
+      "rationale": "Herramientas complementarias para B2B: Operations, Supply Chain and Logistics, B2B, Productivity, Engineering, Product and Design",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_2",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "32198",
+          "nombre": "Riften",
+          "categoria": "Infrastructure",
+          "descripcion": "Earned intelligence for every company Riften builds model routing, evaluations, private models, and training environments for AI labs, AI-native companies, and enterprises.\r\n\r\nWe help teams choose models for their workloads, evaluate how they perform, and build private models around company-specific work. We’re also developing coding environments where agents learn through backend engineering tasks.",
+          "tags": [
+            "Developer Tools",
+            "Reinforcement Learning",
+            "Infrastructure",
+            "AI",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://riften.ai",
+          "equipo": 5
+        },
+        {
           "id": "23530",
           "nombre": "Waydev",
           "categoria": "Productivity",
           "descripcion": "Engineering intelligence for AI transformation Waydev maps AI velocity across the SDLC — built on DORA, SPACE, and DX — turning developer tool data into board-ready evidence of adoption, impact, and ROI.",
           "tags": [
             "AIOps",
-            "Artificial Intelligence",
             "Analytics",
             "AI",
             "AI Assistant",
@@ -29,8 +133,8 @@
           "categoria": "Engineering, Product and Design",
           "descripcion": "The AI workspace for software implementations Datafruit helps enterprise delivery teams understand their customers deeply and deliver more profitably. We build AI agents capture every conversation, structure scope from day one, and use past projects to make every engagement sharper.",
           "tags": [
-            "Artificial Intelligence",
             "Enterprise Software",
+            "AI",
             "YC Summer 2025"
           ],
           "audiencia_objetivo": "B2B",
@@ -68,117 +172,10 @@
           "audiencia_objetivo": "B2B",
           "url": "https://tableflow.com",
           "equipo": 2
-        },
-        {
-          "id": "29478",
-          "nombre": "Reform",
-          "categoria": "Supply Chain and Logistics",
-          "descripcion": "AI Agents for high-stakes work. At Reform, we’re building a platform for building and managing AI agents that perform high-stakes operational work. Some of the most critical industries today run on outdated systems, spreadsheets, and manual processes - creating friction across every handoff, contract, and invoice. We’re rebuilding this infrastructure from the ground up.",
-          "tags": [
-            "Artificial Intelligence",
-            "Workflow Automation",
-            "Compliance",
-            "Logistics",
-            "Supply Chain",
-            "YC Winter 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.reformhq.com",
-          "equipo": 13
         }
       ],
-      "complementarity_score": 0.7161,
-      "rationale": "Herramientas complementarias para B2B: Productivity, Engineering, Product and Design, B2B, Operations, Supply Chain and Logistics",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_2",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "23958",
-          "nombre": "Abstra",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "Automate finance operations with Python and AI Abstra is a platform that allows finance teams to build, run, and automate their workflows using Python and AI.\r\n\r\nInstead of relying on spreadsheets, ERPs, and manual processes, teams can create programmable workflows for tasks like reporting, reconciliations, approvals, and integrations with systems like SAP.\r\n\r\nWe provide a developer-friendly environment where finance and technical teams can turn business processes into code, connect to their existing tools, and run everything in a controlled, auditable way.\r\n\r\nOur goal is to become the operating system for finance operations, where workflows are not static or manual, but versioned, automated, and continuously improved.",
-          "tags": [
-            "Artificial Intelligence",
-            "SaaS",
-            "Finance",
-            "B2B",
-            "Automation",
-            "YC Summer 2021"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://abstra.io",
-          "equipo": 18
-        },
-        {
-          "id": "30716",
-          "nombre": "Finto",
-          "categoria": "Finance and Accounting",
-          "descripcion": "AI accounting for enterprise finance teams Finto builds AI accounting software for enterprise finance teams. We automate the invoice-to-pay process from their email inbox to their ERP. Cutting out 80% of the accountants daily work in invoice recording, account coding and  invoice approvals.",
-          "tags": [
-            "Artificial Intelligence",
-            "Fintech",
-            "B2B",
-            "Enterprise",
-            "AI",
-            "YC Summer 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.gofinto.com/",
-          "equipo": 10
-        },
-        {
-          "id": "30513",
-          "nombre": "Eloquent AI",
-          "categoria": "B2B",
-          "descripcion": "The AI Operator for Financial Services We automate complex, regulated operations in financial services—no APIs, no engineering required.\r\nWe hit $500K ARR in just four weeks because customers deploy instantly.\r\nOur AI Operator learns by observing existing workflows and SOPs, securely controlling browser and desktop applications to automate up to 96% of tasks.",
-          "tags": [
-            "Fintech",
-            "B2B",
-            "Enterprise",
-            "AI",
-            "YC Spring 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.eloquentai.co/",
-          "equipo": 5
-        },
-        {
-          "id": "30243",
-          "nombre": "Cifrato",
-          "categoria": "Operations",
-          "descripcion": "AI Accountant for Accounting Firms End-to-end accounting workflows executed by AI agents.\r\n- Invoice capture + upload to ERP/POS\r\n- Invoice payment + reconciliation\r\n- Tax filings\r\n- CFO insights on demand",
-          "tags": [
-            "FinOps",
-            "SaaS",
-            "AI",
-            "YC Winter 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://cifrato.ai",
-          "equipo": 17
-        },
-        {
-          "id": "27983",
-          "nombre": "Retape",
-          "categoria": "Sales",
-          "descripcion": "AI Operating System for Debt Settlement We're building an AI Operating System for DSCs. This includes a set of AI agents that can work together to complete a workflow end to end.",
-          "tags": [
-            "Generative AI",
-            "SaaS",
-            "Finance",
-            "B2B",
-            "YC Winter 2023"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.retape.ai/",
-          "equipo": 3
-        }
-      ],
-      "complementarity_score": 0.7103,
-      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Finance and Accounting, B2B, Operations, Sales",
+      "complementarity_score": 0.7036,
+      "rationale": "Herramientas complementarias para B2B: Infrastructure, Productivity, Engineering, Product and Design, B2B, Operations",
       "size": 5
     },
     {
@@ -253,111 +250,24 @@
           "categoria": "Infrastructure",
           "descripcion": "Open Source AI Agent to automate browser workflows via an API Skyvern helps companies automate browser based workflows using LLMs and Computer Vision, fully automating manual workflows and replacing brittle or unreliable scripts.\r\n\r\nExamples include:\r\n1. Automating materials procurement from commerce websites\r\n2. Completing complex multi-step workflows (ie getting an insurance quote from Geico.com)\r\n3. Automatically logging into portals and downloading invoices\r\n4. Navigating legacy content systems to do data extraction or data entry",
           "tags": [
-            "Artificial Intelligence",
             "Robotic Process Automation",
             "Workflow Automation",
             "Open Source",
             "API",
+            "AI",
             "YC Summer 2023"
           ],
           "audiencia_objetivo": "B2B",
           "url": "https://www.skyvern.com/",
-          "equipo": 10
+          "equipo": 11
         }
       ],
-      "complementarity_score": 0.6927,
+      "complementarity_score": 0.6925,
       "rationale": "Herramientas complementarias para B2B: Operations, Engineering, Product and Design, B2B, Security, Infrastructure",
       "size": 5
     },
     {
       "cluster_id": "cluster_b2b_4",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "26654",
-          "nombre": "Wolfia",
-          "categoria": "Sales",
-          "descripcion": "We help security, legal and sales teams answer customer questions We help security, legal and sales teams get answers in seconds without depending on subject-matter experts.\r\n\r\nOur AI agent connects to every source that already holds the truth (Google Drive, Notion, Slack, email, website, trust center, SOC 2 docs, etc.). It keeps that knowledge graph fresh on its own and drafts, validates, and formats responses to customer questions, security questionnaires, and RFPs, all in the background, so your team just reviews and ships.",
-          "tags": [
-            "Generative AI",
-            "Security",
-            "Sales",
-            "LegalTech",
-            "YC Summer 2022"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://wolfia.com",
-          "equipo": 5
-        },
-        {
-          "id": "27926",
-          "nombre": "Variance",
-          "categoria": "Security",
-          "descripcion": "AI Agents for Fraud Review and Investigations Variance builds AI agents for fraud, identity, and investigations for Fortune 500s, Marketplaces, and regulated financial services.",
-          "tags": [
-            "Compliance",
-            "Cybersecurity",
-            "Enterprise Software",
-            "AI",
-            "YC Winter 2023"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.variance.com/",
-          "equipo": 12
-        },
-        {
-          "id": "30531",
-          "nombre": "Moby Analytics",
-          "categoria": "Finance and Accounting",
-          "descripcion": "AI financial auditors At Moby Analytics, we provide the first AI agentic platform built for financial auditors. Auditors easily create and deploy AI agents to automate audit workflows. No code, just prompts and domain expertise.",
-          "tags": [
-            "Artificial Intelligence",
-            "Automation",
-            "YC Spring 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.mobyanalytics.com/",
-          "equipo": 4
-        },
-        {
-          "id": "29972",
-          "nombre": "Affil.ai",
-          "categoria": "Marketing",
-          "descripcion": "AI Affiliate Network For Financial Companies We build AI compliance for external marketing. For example, we work with major creators to ensure that their content meets credit card marketing guidelines.",
-          "tags": [
-            "Artificial Intelligence",
-            "SaaS",
-            "B2B",
-            "Compliance",
-            "Marketing",
-            "YC Summer 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://affil.ai/",
-          "equipo": 4
-        },
-        {
-          "id": "28884",
-          "nombre": "Dialtone",
-          "categoria": "B2B",
-          "descripcion": "AI Agents for Enterprises Connect agentic workflows to all your existing software and data. 100+ first party data, action, and event connectors for the tools and services you already use. Easily configurable custom connectors for your enterprise’s proprietary systems, enterprise grade security, and dedicated infrastructure.",
-          "tags": [
-            "Artificial Intelligence",
-            "B2B",
-            "AI",
-            "YC Summer 2023"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://usedialtone.com",
-          "equipo": 2
-        }
-      ],
-      "complementarity_score": 0.6906,
-      "rationale": "Herramientas complementarias para B2B: Sales, Security, Finance and Accounting, Marketing, B2B",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_5",
       "audiencia_objetivo": "B2B",
       "startups": [
         {
@@ -397,65 +307,129 @@
           "equipo": 5
         },
         {
-          "id": "31437",
-          "nombre": "Sidekick",
+          "id": "31511",
+          "nombre": "Arzana",
           "categoria": "Operations",
-          "descripcion": "AI agent that manages manufacturing operations over text Sidekick is an AI agent that runs custom manufacturing operations over text. Workers text a problem, photo, video, or voice memo and get an answer from the shop's own documents. It reads live machine data and acts on its own: flagging issues before they become downtime, opening and routing work orders, and placing purchase orders. No app, no login.\r\n\r\nThese shops run on tribal knowledge: a handful of veterans know how every job is set up, and they are retiring. Sidekick learns from every message it handles, so answers outlive the people who gave them, and shops run 15% more jobs with the same crew. Sidekick captures it as a byproduct of the work, in an industry that was never documented.",
+          "descripcion": "Adaptive AI built for manufacturers Arzana trains custom models on manufacturers' operational data to automate their quoting, order entry, invoicing, and other repetitive office work. We've saved our customers over $1.5M in avoided staff costs.\r\n\r\nIn the future, we'll expand into shop-floor automation, sending instructions to machinery and robots to produce the orders that our office agents processed. By 2035, we aim to fully automate 10,000 American factories.",
           "tags": [
-            "SaaS",
-            "B2B",
-            "Manufacturing",
-            "AI Assistant",
-            "Industrial",
-            "YC Summer 2026"
+            "YC Spring 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://textsidekick.com/",
-          "equipo": 1
+          "url": "https://www.arzana.com/",
+          "equipo": 13
         },
         {
-          "id": "28366",
-          "nombre": "Vendora",
+          "id": "30103",
+          "nombre": "Metreecs",
           "categoria": "Retail",
-          "descripcion": "All-in-One Software for the $1T Grocery Industry Vendora is building a generational company in one of the largest industries out there - grocery. We build software to serve the $1 trillion dollar (over 3% of US GDP) grocery industry. This ranges from point of sale, payments, e-commerce, inventory management, loyalty, and advanced analytics with more on the horizon. \r\n\r\nWe’re taking bleeding edge technology and an AI-focused approach to modernizing an industry stuck in legacy software and practices. Backed by Y Combinator and investors with deep expertise in retail, we are a team of operators from Amazon, Uber, Tesla, Figma and McKinsey in transforming a sector that touches us all.",
+          "descripcion": "AI-powered demand forecasting for retail Metreecs helps retailers plan, buy, and allocate products using AI-demand forecasting. We prevent overstock and out-of-stock situations, allowing clients to eliminate waste, free up capital, and drive higher sales.",
           "tags": [
-            "Artificial Intelligence",
-            "Grocery",
+            "Machine Learning",
+            "Retail Tech",
+            "AI",
+            "YC Fall 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.metreecs.com",
+          "equipo": 20
+        }
+      ],
+      "complementarity_score": 0.6895,
+      "rationale": "Herramientas complementarias para B2B: Sales, Supply Chain and Logistics, B2B, Operations, Retail",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_5",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "29003",
+          "nombre": "DisputeNinja",
+          "categoria": "B2B",
+          "descripcion": "Automate your chargebacks with AI agents DisputeNinja helps software and AI startups automate their chargebacks and recover revenue.",
+          "tags": [
+            "SaaS",
             "Payments",
             "B2B",
-            "Retail",
+            "AI",
+            "YC Summer 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.disputeninja.ai",
+          "equipo": 2
+        },
+        {
+          "id": "29702",
+          "nombre": "LedgerUp",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI agents that handles complex billing and revenue LedgerUp is your AI billing teammate for B2B SaaS, transforming contract-based billing from a chore into a frictionless, revenue-accelerating process. We parse contracts, issue invoices, and collect payments in real-time, all while surfacing actionable analytics, allowing your finance team to escape spreadsheet chaos and focus on strategic growth. Just close deals and let us handle your billing for you.",
+          "tags": [
+            "Finance",
+            "Billing",
+            "AI",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://ledgerup.ai/",
+          "equipo": 5
+        },
+        {
+          "id": "27983",
+          "nombre": "Retape",
+          "categoria": "Sales",
+          "descripcion": "AI Operating System for Debt Settlement We're building an AI Operating System for DSCs. This includes a set of AI agents that can work together to complete a workflow end to end.",
+          "tags": [
+            "Generative AI",
+            "SaaS",
+            "Finance",
+            "B2B",
             "YC Winter 2023"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.vendora.io/",
+          "url": "https://www.retape.ai/",
+          "equipo": 3
+        },
+        {
+          "id": "30243",
+          "nombre": "Cifrato",
+          "categoria": "Operations",
+          "descripcion": "AI Accountant for Accounting Firms End-to-end accounting workflows executed by AI agents.\r\n- Invoice capture + upload to ERP/POS\r\n- Invoice payment + reconciliation\r\n- Tax filings\r\n- CFO insights on demand",
+          "tags": [
+            "FinOps",
+            "SaaS",
+            "AI",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://cifrato.ai",
+          "equipo": 17
+        },
+        {
+          "id": "29972",
+          "nombre": "Affil.ai",
+          "categoria": "Marketing",
+          "descripcion": "AI Affiliate Network For Financial Companies We build AI compliance for external marketing. For example, we work with major creators to ensure that their content meets credit card marketing guidelines.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "Compliance",
+            "Marketing",
+            "AI",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://affil.ai/",
           "equipo": 4
         }
       ],
-      "complementarity_score": 0.6824,
-      "rationale": "Herramientas complementarias para B2B: Sales, Supply Chain and Logistics, B2B, Operations, Retail",
+      "complementarity_score": 0.6874,
+      "rationale": "Herramientas complementarias para B2B: B2B, Finance and Accounting, Sales, Operations, Marketing",
       "size": 5
     },
     {
       "cluster_id": "cluster_b2b_6",
       "audiencia_objetivo": "B2B",
       "startups": [
-        {
-          "id": "29119",
-          "nombre": "Nowadays",
-          "categoria": "Operations",
-          "descripcion": "AI-native platform for corporate meetings and events Nowadays is the AI-native platform for corporate meetings and events. Our AI doesn't just assist planners – it does the work. It emails and calls venues, negotiates rates in 22 languages, parses 50-page hotel proposals into clean apples-to-apples comparisons, and surfaces unmanaged meeting spend across your entire org.\r\n\r\nWe work with companies ranging from ones planning one epic company kickoff a year to ones running thousands of meetings through the platform annually. Clients include Google, Airbnb, BlackRock, Anthropic, Pylon, and Mintlify.\r\n\r\nUnlike legacy platforms like Cvent that bolted AI onto decades-old infrastructure, Nowadays was built from the ground up for the AI era.",
-          "tags": [
-            "Artificial Intelligence",
-            "B2B",
-            "Logistics",
-            "Marketing",
-            "AI",
-            "YC Summer 2023"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "http://nowadays.ai/",
-          "equipo": 6
-        },
         {
           "id": "25679",
           "nombre": "Sero",
@@ -500,51 +474,27 @@
           "equipo": 6
         },
         {
-          "id": "29702",
-          "nombre": "LedgerUp",
-          "categoria": "Finance and Accounting",
-          "descripcion": "AI agents that handles complex billing and revenue LedgerUp is your AI billing teammate for B2B SaaS, transforming contract-based billing from a chore into a frictionless, revenue-accelerating process. We parse contracts, issue invoices, and collect payments in real-time, all while surfacing actionable analytics, allowing your finance team to escape spreadsheet chaos and focus on strategic growth. Just close deals and let us handle your billing for you.",
-          "tags": [
-            "Finance",
-            "Billing",
-            "AI",
-            "YC Summer 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://ledgerup.ai/",
-          "equipo": 5
-        }
-      ],
-      "complementarity_score": 0.6798,
-      "rationale": "Herramientas complementarias para B2B: Operations, B2B, Productivity, Sales, Finance and Accounting",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_7",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "26693",
-          "nombre": "SigmaMind AI",
-          "categoria": "B2B",
-          "descripcion": "Voice AI platform purpose-built for contact centers. SigmaMind AI is a platform for building voice AI agents purpose-built for call centers. Our agents make and answer calls for lead generation, appointment setting, follow-ups, collections, customer intake, and basic support. Instead of replacing the phone systems a center already uses, we connect on top of them. Because the AI handles many calls at once, a call center can reach far more people than a human team, lower its cost per lead, and stop wasting agent time on calls that go nowhere. Our customers are usually non-technical operators running centers with 25 or more agents, with the strongest traction in insurance, home services, solar, and lending.",
+          "id": "31437",
+          "nombre": "Sidekick",
+          "categoria": "Operations",
+          "descripcion": "AI agent that manages manufacturing operations over text Sidekick is an AI agent that runs custom manufacturing operations over text. Workers text a problem, photo, video, or voice memo and get an answer from the shop's own documents. It reads live machine data and acts on its own: flagging issues before they become downtime, opening and routing work orders, and placing purchase orders. No app, no login.\r\n\r\nThese shops run on tribal knowledge: a handful of veterans know how every job is set up, and they are retiring. Sidekick learns from every message it handles, so answers outlive the people who gave them, and shops run 15% more jobs with the same crew. Sidekick captures it as a byproduct of the work, in an industry that was never documented.",
           "tags": [
             "SaaS",
             "B2B",
-            "Call Center",
-            "AI",
-            "Conversational AI",
-            "YC Summer 2022"
+            "Manufacturing",
+            "AI Assistant",
+            "Industrial",
+            "YC Summer 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://sigmamind.ai?utm_source=yc&utm_medium=web",
-          "equipo": 12
+          "url": "https://textsidekick.com/",
+          "equipo": 1
         },
         {
           "id": "32202",
           "nombre": "Dialogus",
           "categoria": "Infrastructure",
-          "descripcion": "The AI-native contact center Dialogus builds self-improving AI voice agents for enterprise operations.\r\n\r\nOur agents handle high-volume workflows across customer support, sales, collections, and other operational functions, integrating directly with the systems enterprises already use.\r\n\r\nOur agents continuously learn from real conversations and business outcomes: identifying where interactions fail, proposing improvements, testing those changes across thousands of simulated conversations, and deploying better versions with human oversight.\r\n\r\nThe result is AI that doesn’t just automate calls, it gets better at doing the job over time.",
+          "descripcion": "AI agents that learn how your company actually works Dialogus builds Duet, the operating layer for companies run by people and agents.\r\n\r\nEvery company now has an AI mandate, but most stall after one or two automations. The rest of operations is a long tail of workflows like claims, disputes, approvals and exceptions that run on rules nobody ever wrote down.\r\n\r\nDuet learns how your company actually works, from the tools your team uses and the way they really do the work. It turns those workflows into agents, proves each one alongside your team before it acts, and runs it with hard limits and full audit.\r\n\r\nEvery workflow teaches Duet more about your company, so the next one goes live faster. The result: companies automate dozens of workflows, not one or two.",
           "tags": [
             "B2B",
             "Customer Support",
@@ -553,71 +503,31 @@
           "audiencia_objetivo": "B2B",
           "url": "https://www.dialoguslabs.com/",
           "equipo": 3
-        },
-        {
-          "id": "31416",
-          "nombre": "Callab AI",
-          "categoria": "Operations",
-          "descripcion": "AI voice agents for on-prem telephony stack. 58% of the $400B call center industry runs on on-prem phone systems, and until now bringing AI voice automation to them meant ripping out their entire infrastructure first. That's the largest unserved segment in the market. Callab AI connects directly to legacy PBX systems like Avaya, Cisco UCM, and Mitel, and automates up to 70% of call volume with zero migration needed.\r\n\r\nWe plug into these environments without requiring a rip-and-replace. We serve clients across three continents, including brands like Dunkin Donuts.",
-          "tags": [
-            "YC Spring 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://callab.ai",
-          "equipo": 7
-        },
-        {
-          "id": "30046",
-          "nombre": "Cekura",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "Voice AI and Chat AI agents: Testing and Observability Cekura helps Conversational AI companies with automated QA. From pre-production simulation and evaluations to production call monitoring, to assisting customers in setting up the CI/CD pipeline, we help in QA across the agent lifecycle.\r\n\r\nWe are working with 75+ customers across healthcare, BFSI, logistics, recruitment, and retail. Some of the largest CCAS players and enterprises use Cekura to ship AI voice and chat agents reliably",
-          "tags": [
-            "Developer Tools",
-            "SaaS",
-            "B2B",
-            "YC Fall 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.cekura.ai/",
-          "equipo": 15
-        },
-        {
-          "id": "29785",
-          "nombre": "Simple AI",
-          "categoria": "Sales",
-          "descripcion": "AI voice that sells Simple AI is building AI voice that sells. Our voice agents know every detail about every product SKU. They’re trained on the best reps, so every call is handled at top-performer quality. Simple AI agents already outperform trained live reps by 30% on conversion and upsell.",
-          "tags": [
-            "Artificial Intelligence",
-            "Sales",
-            "Call Center",
-            "Operations",
-            "AI",
-            "YC Summer 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.usesimple.ai",
-          "equipo": 11
         }
       ],
-      "complementarity_score": 0.6778,
-      "rationale": "Herramientas complementarias para B2B: B2B, Infrastructure, Operations, Engineering, Product and Design, Sales",
+      "complementarity_score": 0.6795,
+      "rationale": "Herramientas complementarias para B2B: B2B, Productivity, Sales, Operations, Infrastructure",
       "size": 5
     },
     {
-      "cluster_id": "cluster_b2b_8",
+      "cluster_id": "cluster_b2b_7",
       "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "29384",
-          "nombre": "Shiboleth",
-          "categoria": "Security",
-          "descripcion": "Shiboleth automates lending compliance for financial institutions… Shiboleth automates consumer lending compliance for financial institutions using AI.\r\nBanks and fintechs use us to save months of manual work by automating audits and drafting reports for the governments. \r\n\r\nLLMs allow whole categories of manual compliance processes to be automated in ways that weren’t possible until recently.\r\n\r\nWe are excited to automate back-office operations and enhance consumer protection in one of the most litigious industries.",
+          "id": "26882",
+          "nombre": "Coris",
+          "categoria": "Infrastructure",
+          "descripcion": "AI risk and ops platform for Payment Processors, Banks, SaaS… Coris is the AI platform for payments risk and operations. We work with the most ambitious companies around the globe such as GoFundMe, Kajabi, Clio and Cherry to automate merchant onboarding, monitoring, and payment operations. What risk teams only imagined two years ago, Coris is delivering today with our risk platform and AI agents.\r\n\r\nWe’re backed by Y Combinator, Lux Capital, Pathlight Ventures, and other world-class investors — and we’re just getting started !",
           "tags": [
-            "YC Winter 2024"
+            "Fintech",
+            "B2B",
+            "Compliance",
+            "AI",
+            "YC Summer 2022"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.shiboleth.ai/",
-          "equipo": 5
+          "url": "https://coris.ai/",
+          "equipo": 10
         },
         {
           "id": "28971",
@@ -631,60 +541,148 @@
           ],
           "audiencia_objetivo": "B2B",
           "url": "https://www.kobaltlabs.com/",
-          "equipo": 12
+          "equipo": 13
         },
         {
-          "id": "30239",
-          "nombre": "Cardamon",
-          "categoria": "Finance and Accounting",
-          "descripcion": "AI compliance co-pilot for regulated financial businesses Cardamon is an AI powered platform that ingests relevant regulation, understands what applies to each regulated financial firm, and gets compliance officers from regulation, to obligations, to product requirements in minutes - not weeks.\r\n\r\nFinancial firms face a host of complex regulations that make it incredibly painful to launch and maintain products in a compliant way. As a Product team at Revolut, we felt this pain deeply ourselves - we had products ready to launch but stuck in compliance limbo, often for weeks. Turns out, getting compliant took as long as building the product itself. \r\n\r\nFrustrated, we dug in and were shocked by how manual and inefficient the processes were. That’s when it clicked: there’s a huge opportunity to automate the boring stuff (and solve our own problem!). Compliance teams win because they ditch the tedious tasks. Product teams win because they ship faster. Everyone’s happy.",
+          "id": "30859",
+          "nombre": "Locus",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Payment infrastructure for AI agents We make your agents pay.\r\n\r\nAs agents evolve from tools into dependable, autonomous actors, they’ll need the ability to execute open-ended workflows end-to-end.\r\n\r\nThis inevitably means payments: accessing paywalled data, transacting for services or with other specialist agents. But autonomy requires guardrails. Businesses and developers will need a way to ensure their agents only spend how much and on what they’re supposed to.\r\n\r\nThe machine economy is coming, and Locus (YC F25) is building the connector businesses will need to participate. We connect agents securely to funds, letting you define permissions and limits for every transaction. Each payment is traceable, auditable, and fully reconcilable with your existing financial stack.",
+          "tags": [
+            "Finance",
+            "AI",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://paywithlocus.com",
+          "equipo": 2
+        },
+        {
+          "id": "30513",
+          "nombre": "Eloquent AI",
+          "categoria": "B2B",
+          "descripcion": "The AI Operator for Financial Services We automate complex, regulated operations in financial services—no APIs, no engineering required.\r\nWe hit $500K ARR in just four weeks because customers deploy instantly.\r\nOur AI Operator learns by observing existing workflows and SOPs, securely controlling browser and desktop applications to automate up to 96% of tasks.",
           "tags": [
             "Fintech",
-            "Compliance",
-            "Regtech",
+            "B2B",
+            "Enterprise",
             "AI",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.eloquentai.co/",
+          "equipo": 5
+        },
+        {
+          "id": "30716",
+          "nombre": "Finto",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI accounting for enterprise finance teams Finto builds AI accounting software for enterprise finance teams. We automate the invoice-to-pay process from their email inbox to their ERP. Cutting out 80% of the accountants daily work in invoice recording, account coding and  invoice approvals.",
+          "tags": [
+            "Fintech",
+            "B2B",
+            "Enterprise",
+            "AI",
+            "YC Summer 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.gofinto.com/",
+          "equipo": 10
+        }
+      ],
+      "complementarity_score": 0.6764,
+      "rationale": "Herramientas complementarias para B2B: Infrastructure, Operations, Engineering, Product and Design, B2B, Finance and Accounting",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_8",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "28844",
+          "nombre": "Alguna",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI-Native CPQ & Billing for Modern Pricing Models We are Alguna, building a modern platform that helps B2B companies price deals, send quotes, bill customers, and collect payments - all in one place.\r\n\r\nOur mission is to create the most efficient revenue engine for B2B SaaS.\r\n\r\nToday, many companies run these processes with spreadsheets and a patchwork of separate tools. That leads to slow approvals, manual work, mistakes, and missed revenue—especially as pricing gets more complex.\r\n\r\nAlguna replaces that mess by connecting the entire flow from **quote to cash**: what sales sells becomes what finance bills, automatically. We help teams automate invoicing, handle usage-based or custom pricing, and reduce back-and-forth between sales, finance, and engineering.\r\n\r\nThe result: growth-stage startups and enterprises can close deals faster, bill accurately, and scale revenue operations without adding headcount or building internal systems.",
+          "tags": [
+            "Fintech",
+            "SaaS",
+            "B2B",
+            "Enterprise",
+            "AI",
+            "YC Summer 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://alguna.com",
+          "equipo": 10
+        },
+        {
+          "id": "29748",
+          "nombre": "Titanio",
+          "categoria": "B2B",
+          "descripcion": "AI Employees for Distributors Titanio is a suite of AI Employees for Wholesalers & Distributors. Instead of relying on humans to quote, take orders, collect payments, place purchase orders and enter data into ERPs. We build AI Employees that do these manual repetitive tasks for the 700k wholesalers in the US.\r\n\r\nWe’re a team of three Computer Science majors, and Fernando launched and grew AT&T in Mexico to $120M ARR. Previously, we all worked together at our last YC-backed startup, building it to over $6M in revenue. It was there that we placed thousands of purchase orders with wholesalers.\r\n\r\nWe realized that almost every physical product comes from B2B sales in the supply chain. However, it turns out that most of these operations are still done manually through phone and email, involving tasks like quoting, taking orders, collecting payments, entering data into ERPs, and providing support. By automating these tasks with AI agents in a human-like manner, we are creating a massive opportunity to convert $100B of payroll expenses into software spending.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "AI",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.titanio.ai/",
+          "equipo": 4
+        },
+        {
+          "id": "28366",
+          "nombre": "Vendora",
+          "categoria": "Retail",
+          "descripcion": "All-in-One Software for the $1T Grocery Industry Vendora is building a generational company in one of the largest industries out there - grocery. We build software to serve the $1 trillion dollar (over 3% of US GDP) grocery industry. This ranges from point of sale, payments, e-commerce, inventory management, loyalty, and advanced analytics with more on the horizon. \r\n\r\nWe’re taking bleeding edge technology and an AI-focused approach to modernizing an industry stuck in legacy software and practices. Backed by Y Combinator and investors with deep expertise in retail, we are a team of operators from Amazon, Uber, Tesla, Figma and McKinsey in transforming a sector that touches us all.",
+          "tags": [
+            "Grocery",
+            "Payments",
+            "B2B",
+            "Retail",
+            "AI",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.vendora.io/",
+          "equipo": 4
+        },
+        {
+          "id": "30230",
+          "nombre": "SalesPatriot",
+          "categoria": "Operations",
+          "descripcion": "Supply chain superintelligence for distribution and procurement SalesPatriot deploys supply chain superintelligence into distribution, original equipment manufacturing, and procurement. By embedding AI in the teams that run quote to cash workflows, we turn email chains, ERPs, websites, spreadsheets, and portals into a unified transactional layer, so critical parts reach the production line faster.\r\n\r\nThe West’s advantage depends on supply chains that work. We build and deploy the software that makes them work.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "Sales",
+            "AI",
+            "Industrial",
             "YC Winter 2025"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://cardamon.ai/",
-          "equipo": 11
+          "url": "https://www.salespatriot.com/",
+          "equipo": 15
         },
         {
-          "id": "29291",
-          "nombre": "ROE",
-          "categoria": "Infrastructure",
-          "descripcion": "AI for risk and compliance ROE AI solve risks and compliance problems for financial industry.",
+          "id": "32617",
+          "nombre": "Whitespace",
+          "categoria": "Supply Chain and Logistics",
+          "descripcion": "AI Operating System for Wholesale Distribution Whitespace builds AI agents that run the entire operation of supply chain businesses, starting with wholesale distributors. We give them self-improving AI agents that learn their business and do work like inventory planning and customer service.\r\n\r\nWe're building towards a world where all supply chain operations run through our agents, and all physical goods purchases can happen across businesses without human touch.",
           "tags": [
-            "Fintech",
-            "Generative AI",
-            "Compliance",
-            "Regtech",
-            "YC Winter 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://getroe.ai",
-          "equipo": 9
-        },
-        {
-          "id": "30057",
-          "nombre": "Luthor",
-          "categoria": "B2B",
-          "descripcion": "Real-time governance for enterprise communications Luthor replaces fragmented compliance workflows with a single system that reviews, enforces, and logs every piece of marketing content the moment it’s created.\r\n\r\nGenerative AI has made content production effortless. Manual compliance review has not kept up. This gap is now the largest and fastest-growing source of risk in the enterprise.\r\n\r\nLuthor closes that gap completely. Every claim is checked against your policies, your regulations, and your approved sources before it goes live. Marketing teams move faster. Compliance teams gain complete confidence, with every message verified and fully auditable.\r\n\r\nTrusted by asset managers, RIAs, lenders, banks, and credit unions to operate at AI-era volume while meeting SEC, FINRA, FTC, UDAAP, and more.\r\n\r\nLuthor eliminates the gap between what companies say and what they can stand behind.",
-          "tags": [
+            "SaaS",
             "B2B",
-            "Compliance",
-            "Marketing",
-            "Regtech",
+            "Supply Chain",
             "AI",
-            "YC Fall 2024"
+            "YC Summer 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://luthor.ai",
-          "equipo": 3
+          "url": "https://whitespacehq.ai/",
+          "equipo": 2
         }
       ],
-      "complementarity_score": 0.667,
-      "rationale": "Herramientas complementarias para B2B: Security, Operations, Finance and Accounting, Infrastructure, B2B",
+      "complementarity_score": 0.6745,
+      "rationale": "Herramientas complementarias para B2B: Finance and Accounting, B2B, Retail, Operations, Supply Chain and Logistics",
       "size": 5
     },
     {
@@ -692,83 +690,84 @@
       "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "29805",
-          "nombre": "Handled",
-          "categoria": "Retail",
-          "descripcion": "AI teammate for finance and operations teams at consumer brands Consumer brands run finance and operations across ERPs, commerce platforms, 3PLs, accounting systems, email, and spreadsheets. Because these systems do not share context or complete work, teams still spend hours assembling reports, reconciling numbers, entering orders, monitoring inventory, processing invoices, and chasing exceptions. Problems are often discovered only after they have cost the business time, margin, or revenue.\r\n\r\nHandled is an AI teammate for finance and operations. It connects to the systems and unstructured information a brand already uses and learns its data, rules, and workflows. Handled answers questions about the business, proactively catches issues, and takes on recurring manual work across financial reporting, inventory, procurement, wholesale order-to-cash, and AP/AR. It works across systems and brings a person in when judgment or approval is required.\r\n\r\nHandled gives lean teams more operating capacity without adding another tool to manage, more outsourced support, or more headcount.",
+          "id": "33014",
+          "nombre": "Inkbox",
+          "categoria": "Infrastructure",
+          "descripcion": "The identity and communication layer for AI agents For your AI agents to behave like teammates, we give them persistent identities with their own email, phone, and iMessage. We also provide them an agent-to-agent channel, so they can communicate for task delegation.",
           "tags": [
-            "B2B",
-            "Workflow Automation",
-            "Logistics",
-            "E-commerce",
+            "Developer Tools",
+            "Infrastructure",
             "AI",
-            "YC Summer 2024"
+            "YC Summer 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.itshandled.ai",
+          "url": "https://inkbox.ai",
           "equipo": 3
         },
         {
-          "id": "31112",
-          "nombre": "Burt",
-          "categoria": "Supply Chain and Logistics",
-          "descripcion": "AI teammates for logistics We're building for the people that keep the world moving. \r\n\r\nFreight brokers and forwarders operate on razor-thin margins in a relationship-driven business — yet most of their teams spend the majority of their day on manual, repetitive work.\r\n\r\nWe help freight brokers and forwarders build AI teammates that handle their repetitive, manual tasks so teams have time to focus on customers, carriers, and growing the business.",
+          "id": "30864",
+          "nombre": "dari.dev",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "The Routing Layer for AI Agents We let developers run more agents while keeping your token bill low. We train custom models to determine how we can maintain performance while reducing your token bill. \r\n\r\nIntegrate into your own apps, or use our router with Claude Code, Codex, or any agent of your choice.",
           "tags": [
-            "YC Winter 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.burthq.com/",
-          "equipo": 2
-        },
-        {
-          "id": "30877",
-          "nombre": "Trelium",
-          "categoria": "B2B",
-          "descripcion": "AI Agents for Enterprise Wide Operations Trelium lets enterprise teams build AI agents in simple English to automate back-office work. We serve companies handling custom and bulk operations, including distributors, suppliers, and decorators across the print, merch, and apparel industries, automating workflows like order entry, purchase order creation, PO-invoice matching, order-status follow-ups, and many more.",
-          "tags": [
+            "Developer Tools",
             "B2B",
-            "Workflow Automation",
-            "Enterprise Software",
-            "AI",
             "YC Fall 2025"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.trelium.com",
-          "equipo": 11
+          "url": "https://dari.dev",
+          "equipo": 2
         },
         {
-          "id": "29455",
-          "nombre": "CommodityAI",
-          "categoria": "Operations",
-          "descripcion": "The AI operating system for commodity operations CommodityAI builds intelligent automation agents for some of the most operationally complex businesses in the world: physical commodity traders.\r\n\r\nIn trading operations, critical data is often buried in spreadsheets, emails, PDFs, and legacy systems — making workflows slow, error-prone, and overly manual. CommodityAI acts as a digital operator, continuously reading, interpreting, and updating information across the trade lifecycle to keep records accurate and systems in sync.\r\n\r\nOur agents extract and validate key details from trade confirmations, contracts, vessel updates, and more — turning scattered, unstructured data into clean, structured records that flow directly into CTRMs, ERPs, and other core platforms. No manual entry required.\r\n\r\nBy automating what others still do by hand, we help trading teams move faster, reduce risk, and focus on the decisions that matter most.",
+          "id": "28884",
+          "nombre": "Dialtone",
+          "categoria": "B2B",
+          "descripcion": "AI Agents for Enterprises Connect agentic workflows to all your existing software and data. 100+ first party data, action, and event connectors for the tools and services you already use. Easily configurable custom connectors for your enterprise’s proprietary systems, enterprise grade security, and dedicated infrastructure.",
           "tags": [
             "B2B",
-            "Workflow Automation",
-            "Enterprise Software",
             "AI",
-            "YC Winter 2024"
+            "YC Summer 2023"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://commodityai.io/",
-          "equipo": 6
+          "url": "https://usedialtone.com",
+          "equipo": 2
         },
         {
-          "id": "33672",
-          "nombre": "Grep AI",
-          "categoria": "Productivity",
-          "descripcion": "Self-improving agents that automate tedious operational work Grep AI is the fastest way to create, optimize, and deploy agents for tedious, complex operational work that slows down your business. Our self-improving agents learn from every run, making them smarter and cheaper as you scale. IG.com a global retail brokerage used our agents to review compliance alerts and now 80% of their customers onboad without manual intervention, doubling first trades and propelling them to a FTSE 100 company. \r\n\r\nCustomers including Airwallex, Worldpay, Citizens Bank, FV Bank and Shopmonkey have used our agents to automate over 250,000 of operational work across compliance, onboarding, underwriting, corporate due diligence, document verification, merchant categorization, market and competitive research, rev ops and much more.\r\n\r\nWe founded Grep AI after experiencing firsthand how manual workflows can prevent a business from growing when we ran the platform team at Brex. We're now on a mission to rid businesses of tedious, repetitive so their employees can focus on the most high leverage tasks that matter.",
+          "id": "30906",
+          "nombre": "Agentic Fabriq",
+          "categoria": "Security",
+          "descripcion": "The control plane for AI agents. Agentic Fabriq helps companies securely manage what AI agents can access and do across business tools, data, and teams. We give each agent an identity, scoped permissions, approval flows, and audit logs, so employees and customer-facing workflows can use agents without relying on shared API keys, overbroad service accounts, or one-off integrations.",
           "tags": [
-            "Artificial Intelligence",
-            "Fintech",
-            "YC Fall 2026"
+            "B2B",
+            "Identity",
+            "Cybersecurity",
+            "AI",
+            "YC Winter 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://grep.ai",
-          "equipo": 6
+          "url": "https://www.agenticfabriq.com",
+          "equipo": 2
+        },
+        {
+          "id": "29684",
+          "nombre": "Parahelp",
+          "categoria": "Operations",
+          "descripcion": "Build an AI support agent that securely uses all your tools Build and run an AI support agent that resolves even your most complex tickets end-to-end.\r\n\r\nIf a tool has an API, you can securely connect it to your agent - just by chatting with Parahelp. For example, you can connect Stripe so your agent can resolve billing questions and refund requests.",
+          "tags": [
+            "Customer Success",
+            "Customer Service",
+            "Customer Support",
+            "AI",
+            "Conversational AI",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://parahelp.com/",
+          "equipo": 11
         }
       ],
-      "complementarity_score": 0.6648,
-      "rationale": "Herramientas complementarias para B2B: Retail, Supply Chain and Logistics, B2B, Operations, Productivity",
+      "complementarity_score": 0.6672,
+      "rationale": "Herramientas complementarias para B2B: Infrastructure, Engineering, Product and Design, B2B, Security, Operations",
       "size": 5
     },
     {
@@ -776,51 +775,21 @@
       "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "29319",
-          "nombre": "Meticulate",
-          "categoria": "B2B",
-          "descripcion": "Making it easy for B2B sales teams to send stellar outbound Meticulate is an AI-native sales platform. We make it easy for sales teams to send stellar outbound messaging at scale. Instead of using boilerplate campaigns, Meticulate codifies your rules and strategies (e.g. “CFOs want to hear an ROI calc upfront”) and combines them with deep research to send custom sequences to every lead. We’re serving leading GTM teams today (incl OpenAI, Noda, ThreeKit), and are backed by leading AI investors: Y Combinator, Link, Cervin Ventures.",
-          "tags": [
-            "Artificial Intelligence",
-            "Generative AI",
-            "SaaS",
-            "Sales",
-            "YC Winter 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://meticulate.ai/",
-          "equipo": 5
-        },
-        {
-          "id": "29301",
-          "nombre": "Topo",
-          "categoria": "Sales",
-          "descripcion": "All-in-one AI platform  for outbound sales We are helping B2B companies reach the right leads with an AI Outbound agent. \r\n\r\n\r\n\r\nThe goal is to reproduce the behavior of a sales top performers:\r\n\r\n- They know the product, the industry, the pain points, and the company's value proposition perfectly (trained on datas from your knowledge base, calls transcript, CRM...). \r\n\r\n- They will find the right leads, ready to buy, based on buying signals in the industry-specific channels (Linkedin, G2, Github...) or on the company's website visitors.\r\n\r\n\r\nThat's exactly what the agent can do!\r\n\r\nThink of it as an expert SDR in your industry, ramp up in minutes.",
-          "tags": [
-            "SaaS",
-            "Sales",
-            "AI",
-            "YC Winter 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.topo.io/",
-          "equipo": 12
-        },
-        {
-          "id": "25732",
-          "nombre": "Sprites",
+          "id": "28921",
+          "nombre": "Surface Labs",
           "categoria": "Marketing",
-          "descripcion": "The AI performance marketing agent for entrepreneurs and growth teams Sprites AI automates customer acquisition and demand generation for entrepreneurs and growth teams. Our AI agent handles managing paid ad campaigns on Meta, Google, LinkedIn, Reddit, TikTok, and runs your SEO and AEO gameplan with a content engine —unlocking growth channels that normally require hiring multiple people or agencies. \r\n\r\nTeams using our platform acquire customers much faster and scale their growth funnel without the overhead of hiring large teams of specialists or hiring expensive agencies. \r\n\r\nThe result: heads of marketing, SMBs, and founders can now scale revenue like they have a full marketing department.\r\n\r\nWe're arming businesses with systematic customer acquisition run by AI- so they can focus on the important things that make their offering unique.",
+          "descripcion": "Building the AI-powered marketing ops platform that turns website… Surface Labs helps B2B companies capture, qualify, and convert inbound leads through intelligent contact forms. We replace tools like HubSpot Forms, Zapier, and Chili Piper with a single platform that embeds on any site with one line of code.\r\n\r\nOur AI agents handle lead capture, enrichment, routing, follow-up, and CRO testing — automating what used to require full marketing ops teams. Customers see a 30% lift in conversions in under 2 weeks, and our partial response capture feature collects 50% more emails from form drop-offs.",
           "tags": [
-            "B2B",
+            "Sales",
             "Marketing",
             "Advertising",
             "AI",
-            "YC Winter 2022"
+            "Conversational AI",
+            "YC Summer 2023"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://sprites.ai/",
-          "equipo": 5
+          "url": "https://withsurface.com",
+          "equipo": 6
         },
         {
           "id": "25329",
@@ -828,11 +797,11 @@
           "categoria": "Analytics",
           "descripcion": "AI agents to build B2B datasets PromptLoop helps GTM teams automate account research and data enrichment at scale. We turn manual web scraping and qualification workflows into automated processes, enabling teams to enrich thousands of accounts with detailed company data and buying intent markers in minutes.\r\n\r\nWhy PromptLoop? Sales and marketing teams traditionally spend hours manually researching accounts or rely on outdated data providers. We automatically crawl and extract precise data points from company websites, social profiles, and public sources at 10% the cost of manual research, with built-in quality controls and strict sourcing. Teams can process 10k+ accounts simultaneously, turning raw URLs into actionable qualification data tailored to your goals.",
           "tags": [
-            "Artificial Intelligence",
             "Generative AI",
             "SaaS",
             "Sales",
             "Market Research",
+            "AI",
             "YC Winter 2022"
           ],
           "audiencia_objetivo": "B2B",
@@ -840,25 +809,52 @@
           "equipo": 2
         },
         {
-          "id": "28111",
-          "nombre": "Berry",
-          "categoria": "Operations",
-          "descripcion": "Scale customer success and onboarding with AI Berry offers an AI CSM that scales customer success for SaaS companies.\r\n\r\nEvery post-sales organization faces the challenge of scaling customer success without having to hire more. Berry combines the best of the two worlds - taking the white-glove onboarding experience and offering it at scale. \r\n\r\nOur AI CSM onboards, trains and grows accounts for you non-stop. It’s a 10x hire to your team - at a fraction of the cost.",
+          "id": "31426",
+          "nombre": "Gojiberry AI",
+          "categoria": "Sales",
+          "descripcion": "AI Go-To-Market agents for B2B teams Gojiberry is building the AI GTM team for B2B companies.\r\n\r\nWe start with outbound: Gojiberry finds buyers showing intent, enriches them, reaches out, follows up, handles replies, and books qualified meetings.\r\n\r\nCompanies use Gojiberry to replace the old way of doing outbound: buying tools, hiring SDRs & agencies, testing lists, writing messages, and guessing what works. Gojiberry turns it into one AI team that finds buyers and books meetings.\r\n\r\nEvery campaign makes Gojiberry smarter. It learns which buyers convert, which signals matter, which messages get replies, and which actions create revenue. Over time, Gojiberry uses what works across similar companies and industries to help every new customer get better results from day one.\r\n\r\nLong term, Gojiberry will become the system that finds every revenue opportunity and acts on it: outbound leads, website visitors, inbound leads, old CRM leads, replies, meetings, CRM updates, new campaign ideas, and account expansion.\r\n\r\nThe goal is to make every B2B company able to run a high-performing GTM team without hiring one.\r\n\r\nWe grew from $0 to $2.5M ARR in 10 months, are growing 30% MoM, profitable, and used by 2,000+ customers.\r\n\r\nCustomers get 2-5x more positive replies than traditional outbound.",
           "tags": [
-            "Artificial Intelligence",
-            "Generative AI",
-            "Customer Success",
-            "AI",
-            "Conversational AI",
-            "YC Winter 2023"
+            "YC Spring 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://berryai.com/",
-          "equipo": 8
+          "url": "https://www.gojiberry.ai",
+          "equipo": 7
+        },
+        {
+          "id": "29319",
+          "nombre": "Meticulate",
+          "categoria": "B2B",
+          "descripcion": "Making it easy for B2B sales teams to send stellar outbound Meticulate is an AI-native sales platform. We make it easy for sales teams to send stellar outbound messaging at scale. Instead of using boilerplate campaigns, Meticulate codifies your rules and strategies (e.g. “CFOs want to hear an ROI calc upfront”) and combines them with deep research to send custom sequences to every lead. We’re serving leading GTM teams today (incl OpenAI, Noda, ThreeKit), and are backed by leading AI investors: Y Combinator, Link, Cervin Ventures.",
+          "tags": [
+            "Generative AI",
+            "SaaS",
+            "Sales",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://meticulate.ai/",
+          "equipo": 5
+        },
+        {
+          "id": "29119",
+          "nombre": "Nowadays",
+          "categoria": "Operations",
+          "descripcion": "AI-native platform for corporate meetings and events Nowadays is the AI-native platform for corporate meetings and events. Our AI doesn't just assist planners – it does the work. It emails and calls venues, negotiates rates in 22 languages, parses 50-page hotel proposals into clean apples-to-apples comparisons, and surfaces unmanaged meeting spend across your entire org.\r\n\r\nWe work with companies ranging from ones planning one epic company kickoff a year to ones running thousands of meetings through the platform annually. Clients include Google, Airbnb, BlackRock, Anthropic, Pylon, and Mintlify.\r\n\r\nUnlike legacy platforms like Cvent that bolted AI onto decades-old infrastructure, Nowadays was built from the ground up for the AI era.",
+          "tags": [
+            "B2B",
+            "Logistics",
+            "Marketing",
+            "AI",
+            "YC Summer 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "http://nowadays.ai/",
+          "equipo": 6
         }
       ],
-      "complementarity_score": 0.6552,
-      "rationale": "Herramientas complementarias para B2B: B2B, Sales, Marketing, Analytics, Operations",
+      "complementarity_score": 0.6503,
+      "rationale": "Herramientas complementarias para B2B: Marketing, Analytics, Sales, B2B, Operations",
       "size": 5
     },
     {
@@ -866,21 +862,19 @@
       "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "31222",
-          "nombre": "Superset",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "Building self-improving software Superset is an open-source IDE that helps engineers run 100s of coding agents in parallel.\r\n\r\nOur desktop app is loved by tens of thousands of engineers, and we're scaling out our effort to build a collaborative, cross-platform tool to allow users to code anywhere.",
+          "id": "29798",
+          "nombre": "&AI",
+          "categoria": "Legal",
+          "descripcion": "Collaborative workspace for patent litigators &AI is a collaborative workspace that delivers trial-ready work product for patent litigators — fast enough for pitches, strong enough for court.",
           "tags": [
-            "Developer Tools",
-            "Consumer",
+            "SaaS",
             "B2B",
-            "Enterprise Software",
-            "AI",
-            "YC Spring 2026"
+            "LegalTech",
+            "YC Summer 2024"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.superset.sh/",
-          "equipo": 4
+          "url": "https://www.tryandai.com/",
+          "equipo": 7
         },
         {
           "id": "27820",
@@ -888,7 +882,6 @@
           "categoria": "Operations",
           "descripcion": "Collaborative workspace for internal tools and agents Still cooking...\r\n\r\nReach out to josh@launchflow.com if you'd like early access.",
           "tags": [
-            "Artificial Intelligence",
             "SaaS",
             "B2B",
             "Operations",
@@ -898,6 +891,22 @@
           "audiencia_objetivo": "B2B",
           "url": "https://www.launchflow.com/",
           "equipo": 2
+        },
+        {
+          "id": "29966",
+          "nombre": "Mica AI",
+          "categoria": "Infrastructure",
+          "descripcion": "Turn employees' AI skills into shared company infrastructure Today, as employees teach AI how to perform valuable company work, the resulting capabilities often remain trapped on individual laptops or scattered across chats and repositories. \r\n\r\nMica gives each company a managed, agent-native internal marketplace where employees can publish capabilities, discover them by describing the task they need help with, and install them through the AI tools they already use. Mica tracks ownership, requirements, permissions, and team customizations while letting employees contribute improvements back to the shared version for evaluation and approval.\r\n\r\nThe result: employees stop rebuilding workflows their coworkers have already solved, useful improvements spread across the organization without overwriting team-specific customizations, and security gains visibility without blocking bottom-up innovation. Mica turns scattered AI work into institutional knowledge that compounds.",
+          "tags": [
+            "Marketplace",
+            "B2B",
+            "Infrastructure",
+            "AI",
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://usemica.com/",
+          "equipo": 3
         },
         {
           "id": "28072",
@@ -915,39 +924,24 @@
           "equipo": 3
         },
         {
-          "id": "25672",
-          "nombre": "Cogram",
-          "categoria": "Productivity",
-          "descripcion": "The AI Platform for Architects and Engineers The software architects and engineers rely on is decades old, hard to use, and built for a pre-AI world. Since 2021, Cogram is building the alternative: AI-native tools that leading firms use to deliver projects.",
+          "id": "31241",
+          "nombre": "Corelayer",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "AI production engineer for regulated industries Corelayer is the AI-native platform for production software support, built for regulated industries like finance and healthcare. It continuously monitors alerts, logs, infrastructure, and underlying data for issues and uses agents to debug and suggest fixes.\r\n\r\nWe're helping SRE, production services, and on-call engineers at companies ranging from growth-stage fintechs to Fortune 500 financial institutions spend less time on support and more on high-leverage work.",
           "tags": [
+            "Developer Tools",
             "B2B",
+            "Enterprise Software",
             "AI",
-            "YC Winter 2022"
+            "YC Winter 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://cogram.com",
-          "equipo": 15
-        },
-        {
-          "id": "29966",
-          "nombre": "Mica AI",
-          "categoria": "Infrastructure",
-          "descripcion": "Turn employees' AI skills into shared company infrastructure Today, as employees teach AI how to perform valuable company work, the resulting capabilities often remain trapped on individual laptops or scattered across chats and repositories. \r\n\r\nMica gives each company a managed, agent-native internal marketplace where employees can publish capabilities, discover them by describing the task they need help with, and install them through the AI tools they already use. Mica tracks ownership, requirements, permissions, and team customizations while letting employees contribute improvements back to the shared version for evaluation and approval.\r\n\r\nThe result: employees stop rebuilding workflows their coworkers have already solved, useful improvements spread across the organization without overwriting team-specific customizations, and security gains visibility without blocking bottom-up innovation. Mica turns scattered AI work into institutional knowledge that compounds.",
-          "tags": [
-            "Artificial Intelligence",
-            "Marketplace",
-            "B2B",
-            "Infrastructure",
-            "AI",
-            "YC Summer 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://usemica.com/",
+          "url": "https://www.corelayer.com",
           "equipo": 3
         }
       ],
-      "complementarity_score": 0.6514,
-      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Operations, B2B, Productivity, Infrastructure",
+      "complementarity_score": 0.6498,
+      "rationale": "Herramientas complementarias para B2B: Legal, Operations, Infrastructure, B2B, Engineering, Product and Design",
       "size": 5
     },
     {
@@ -955,82 +949,87 @@
       "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "24153",
-          "nombre": "Dailybot",
-          "categoria": "Productivity",
-          "descripcion": "Make all team work visible — people and AI agents Dailybot is the coordination platform for software teams where people and AI agents work side by side.\r\n\r\nAs engineering teams increasingly operate alongside multiple AI agents — coding agents, incident responders, research assistants — the gap between what's being worked on and what the team can actually see has become a critical problem. Dailybot closes that gap.\r\n\r\nTeams use Dailybot to run async standups, check-ins, retros, and custom workflows directly inside Slack, Microsoft Teams, Google Chat, and Discord. In Dailybot 3, those capabilities now extend to AI agents: every agent can report progress, surface blockers, and be monitored in a dedicated observability layer — all attributed to the humans who delegated the work.\r\n\r\nThe platform combines four capabilities: structured check-ins and forms in chat, AI-powered summaries and blocker detection, no-code workflow automation, and agent infrastructure (API, CLI, open-source skill pack, fleet monitoring). Leaders get a proactive view of what people and agents accomplished together — without adding meetings or dashboards to check.\r\n\r\nDailybot is SOC 2 and GDPR compliant, backed by Y Combinator (S21), and trusted by teams at IBM, Samsung, Pixar, and 8,000+ teams worldwide.",
+          "id": "29760",
+          "nombre": "Mage Legal",
+          "categoria": "Legal",
+          "descripcion": "Automatic AI Legal Diligence Comprehensive AI coverage across your entire data room. Surface red and yellow flags, draft memos, compare redlines, and ensure nothing falls through the cracks.",
           "tags": [
-            "Artificial Intelligence",
-            "Developer Tools",
-            "SaaS",
-            "Collaboration",
-            "AI Assistant",
-            "YC Summer 2021"
+            "Legal",
+            "LegalTech",
+            "AI",
+            "YC Summer 2024"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.dailybot.com/",
-          "equipo": 11
+          "url": "https://magelegal.com",
+          "equipo": 2
         },
         {
-          "id": "29399",
-          "nombre": "Centauri AI",
+          "id": "32127",
+          "nombre": "Perceptron ML",
           "categoria": "B2B",
-          "descripcion": "Helps teams work effectively with AI coding agents. We build coSlash, a management layer for AI coding agents. Our platform enables teams to orchestrate parallel Claude Code and Codex sessions, track project progress, team knowledge, and seamlessly transfer context between developers.\r\n\r\nhttps://coslash.io/",
+          "descripcion": "We make law firms AI-native. We build AI systems for law firms, trained on each firm's own matters and deployed privately in their environment: timekeeping, intake and matter monitoring, research, discovery, and drafting. Our grounding engine verifies every fact against a primary source before a model can cite it, which is why firms trust us with work that off-the-shelf legal AI keeps getting wrong.",
           "tags": [
-            "Developer Tools",
-            "Workflow Automation",
+            "B2B",
+            "Legal",
+            "Automation",
             "AI",
-            "YC Winter 2024"
+            "YC Summer 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://centauri-ai.tech",
+          "url": "https://perceptronml.com",
+          "equipo": 2
+        },
+        {
+          "id": "27926",
+          "nombre": "Variance",
+          "categoria": "Security",
+          "descripcion": "AI Agents for Fraud Review and Investigations Variance builds AI agents for fraud, identity, and investigations for Fortune 500s, Marketplaces, and regulated financial services.",
+          "tags": [
+            "Compliance",
+            "Cybersecurity",
+            "Enterprise Software",
+            "AI",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.variance.com/",
+          "equipo": 12
+        },
+        {
+          "id": "26654",
+          "nombre": "Wolfia",
+          "categoria": "Sales",
+          "descripcion": "We help security, legal and sales teams answer customer questions We help security, legal and sales teams get answers in seconds without depending on subject-matter experts.\r\n\r\nOur AI agent connects to every source that already holds the truth (Google Drive, Notion, Slack, email, website, trust center, SOC 2 docs, etc.). It keeps that knowledge graph fresh on its own and drafts, validates, and formats responses to customer questions, security questionnaires, and RFPs, all in the background, so your team just reviews and ships.",
+          "tags": [
+            "Generative AI",
+            "Security",
+            "Sales",
+            "LegalTech",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://wolfia.com",
           "equipo": 5
         },
         {
-          "id": "35292",
-          "nombre": "Agent Relay",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "The infrastructure to run coding agents for your team Agent Relay helps software teams work better with coding agents, and helps those agents work better as a team. It gives Claude Code, Codex, OpenCode, and custom agents shared messaging, session history, and access to tools like GitHub, Linear, and Slack. Teams can see what every agent is doing, run checked and resumable workflows, and step in when human judgment is needed. Run it in our cloud, locally, or on your own hardware.",
-          "tags": [
-            "Developer Tools",
-            "Swarm AI",
-            "YC Fall 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://agentrelay.com",
-          "equipo": 2
-        },
-        {
-          "id": "30903",
-          "nombre": "Kestrel AI",
-          "categoria": "Security",
-          "descripcion": "AI Agents for Platform Engineering Kestrel is the AI automation layer for platform engineering teams.\r\n\r\nPlatform teams use Kestrel to automate incident response, cloud provisioning, CI/CD, security, and developer requests across their stack.\r\n\r\nKestrel turns natural-language prompts into deterministic, production-ready workflows with 40+ integrations, 200+ pre-built actions, and support for custom HTTP and webhook actions.\r\n\r\nDeveloper-first, with a CLI, Python SDK, and MCP server to manage workflows from where platform teams already work.",
-          "tags": [
-            "AIOps",
-            "Developer Tools",
-            "DevOps",
-            "Infrastructure",
-            "YC Fall 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://usekestrel.ai/",
-          "equipo": 2
-        },
-        {
-          "id": "31185",
-          "nombre": "Chamber",
+          "id": "30464",
+          "nombre": "Sixtyfour",
           "categoria": "Infrastructure",
-          "descripcion": "The AIOps Agent for ML Teams Chamber puts your AI infrastructure on autopilot, and saves your machine learning engineers hours of manual effort. Our agents continually monitor, detects failures, provide root-cause analysis, resolve issues, and optimize AI workloads and scale across clouds. It operates like an autonomous infrastructure team, helping save your research and engineers hours each day, and debugging workload performance issues. Your ML teams move faster, infra waste drops, and GPU bottlenecks disappear.",
+          "descripcion": "Intelligence Infrastructure on People and Entities Sixtyfour deploys AI agents that investigate people and companies across the open and dark web, official records, proprietary databases, and unstructured sources. We resolve identities, map entity relationships, and surface risk signals for teams where data quality is essential.",
           "tags": [
-            "YC Winter 2026"
+            "B2B",
+            "Enterprise Software",
+            "Infrastructure",
+            "AI",
+            "YC Spring 2025"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.usechamber.io",
-          "equipo": 4
+          "url": "https://www.sixtyfour.ai/",
+          "equipo": 12
         }
       ],
-      "complementarity_score": 0.6467,
-      "rationale": "Herramientas complementarias para B2B: Productivity, B2B, Engineering, Product and Design, Security, Infrastructure",
+      "complementarity_score": 0.6493,
+      "rationale": "Herramientas complementarias para B2B: Legal, B2B, Security, Sales, Infrastructure",
       "size": 5
     },
     {
@@ -1038,51 +1037,119 @@
       "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "26294",
-          "nombre": "Lizza",
-          "categoria": "Retail",
-          "descripcion": "AI-assitant for managing creator-brand partnerships Lizza's AI-assistant finds, contacts, and manages the entire collaboration process with content creators for D2C E-commerce brands while making it easy for content creators to make a living off of their talents by working with their favourite brands.",
+          "id": "28880",
+          "nombre": "FleetWorks",
+          "categoria": "Supply Chain and Logistics",
+          "descripcion": "AI enabled marketplace matching trucks with jobs FleetWorks is rebuilding the $1 trillion freight marketplace with AI.\r\n\r\nEvery year, companies spend over a trillion dollars moving freight across the U.S. — but the system for matching trucks with jobs is still slow, manual, and fragmented.\r\n\r\nFleetWorks is fixing that. We’re turning today’s chaotic freight market into a modern, intelligent marketplace — one where AI agents replace the endless phone calls, texts and emails and match jobs to trucks instantly.",
           "tags": [
-            "Marketplace",
-            "SaaS",
-            "E-commerce",
-            "YC Winter 2022"
+            "Logistics",
+            "AI",
+            "YC Summer 2023"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://lizza.link",
-          "equipo": 7
+          "url": "https://fleetworks.ai",
+          "equipo": 20
         },
         {
-          "id": "30761",
-          "nombre": "Reacher",
+          "id": "30615",
+          "nombre": "Lanesurf",
           "categoria": "B2B",
-          "descripcion": "We automate creator marketing for the world's largest brands Reacher is an AI-powered platform that automates creator marketing workflows—from discovery and outreach to campaign management and content strategy—making marketing teams 10x more productive. \r\n\r\nWe handle the manual tasks so brands can focus on building relationships with creators while centralizing their operations in one platform to manage creators on TikTok Shop, Instagram, and YouTube.",
+          "descripcion": "Book any load in 10 minutes Over a million loads move via trucks in the US every day and even in 2026 they are still booked through endless negotiations over calls and emails.\r\n\r\nLanesurf solves this with an army of AI agents that find nearby empty trucks, call/email them in parallel, negotiate rates, and book the best available truck.\r\n\r\nLive Demo: https://www.linkedin.com/feed/update/urn:li:activity:7394069447327555584/\r\n\r\nOur self-improving voice AI stack is built for the messy reality of logistics - noisy calls, compliance checks, constant exceptions and turns them into faster bookings at better margins.",
           "tags": [
-            "Artificial Intelligence",
             "B2B",
-            "E-commerce",
-            "Creator Economy",
+            "Logistics",
+            "Supply Chain",
+            "AI",
             "YC Summer 2025"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://reacherapp.com/",
+          "url": "https://www.lanesurf.com/",
+          "equipo": 11
+        },
+        {
+          "id": "27892",
+          "nombre": "ShortLoop",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Phone AI that Captures Every Dealership Revenue Opportunity Dealerships leave significant revenue every year because they are unable to effectively answer calls or run campaigns due to staffing issues. \r\n\r\nShortLoop fixes this with human-like AI phone agents that answer calls instantly, book appointments and test drives, and also help run outbound campaigns. It ensures that our customers never miss a revenue opportunity, inbound or outbound. \r\n\r\nOur AI is integrated with CDK, Reynolds, Tekion, Xtime, Auto/Mate, DealerFX, VinSolutions, myKaarma and other popular dealership tools. It handles thousands of calls each week for U.S. dealerships across service, sales, and outbound campaigns.\r\n\r\nOur mission is to help dealerships transition their phone operations to the AI world and capture the revenue they leave on the table today.",
+          "tags": [
+            "Generative AI",
+            "B2B",
+            "AI",
+            "Automotive",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://shortloop.dev/",
+          "equipo": 8
+        },
+        {
+          "id": "25681",
+          "nombre": "SpadeWorks",
+          "categoria": "Operations",
+          "descripcion": "AI agents that turn every call into revenue for trade businesses Spadeworks transforms how trade contractors handle customer service through AI agents that work 24/7. We answer every call, schedule every job, send every reminder, and follow up with every customer - turning missed opportunities into booked revenue. Trade businesses grow faster because they never miss a lead again.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "YC Winter 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.spadeworks.co",
+          "equipo": 13
+        },
+        {
+          "id": "29301",
+          "nombre": "Topo",
+          "categoria": "Sales",
+          "descripcion": "All-in-one AI platform  for outbound sales We are helping B2B companies reach the right leads with an AI Outbound agent. \r\n\r\n\r\n\r\nThe goal is to reproduce the behavior of a sales top performers:\r\n\r\n- They know the product, the industry, the pain points, and the company's value proposition perfectly (trained on datas from your knowledge base, calls transcript, CRM...). \r\n\r\n- They will find the right leads, ready to buy, based on buying signals in the industry-specific channels (Linkedin, G2, Github...) or on the company's website visitors.\r\n\r\n\r\nThat's exactly what the agent can do!\r\n\r\nThink of it as an expert SDR in your industry, ramp up in minutes.",
+          "tags": [
+            "SaaS",
+            "Sales",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.topo.io/",
+          "equipo": 12
+        }
+      ],
+      "complementarity_score": 0.6481,
+      "rationale": "Herramientas complementarias para B2B: Supply Chain and Logistics, B2B, Engineering, Product and Design, Operations, Sales",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_14",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "11924",
+          "nombre": "Flockjay",
+          "categoria": "Sales",
+          "descripcion": "AI-driven learning, content, and coaching for sales teams Flockjay is an AI-powered platform for sales teams looking to get the knowledge they need, when they need it, to close more deals. We combine learning, content, and performance management in one place, so teams can effectively share best practices, coach faster and more effectively, and drive faster onboarding and productivity times.",
+          "tags": [
+            "SaaS",
+            "eLearning",
+            "Productivity",
+            "Sales",
+            "AI",
+            "YC Winter 2019"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://flockjay.com",
           "equipo": 10
         },
         {
-          "id": "30438",
-          "nombre": "Beluga",
-          "categoria": "Marketing",
-          "descripcion": "Creator marketing that scales like paid ads Using our 6+ years of creator marketing experience to help companies run their creator campaigns at scale. Fully managed solution to drive real, attributable results to their marketing efforts.",
+          "id": "24391",
+          "nombre": "CoLoop",
+          "categoria": "B2B",
+          "descripcion": "AI Copilot for insights & strategy At CoLoop we’re on a mission to make every company in the world as customer obsessed as Amazon. We’re doing this by giving the next generation of workers immediate, intuitive access to the customer knowledge they need to make better decisions, faster.",
           "tags": [
-            "Marketing",
-            "Advertising",
-            "Creator Economy",
-            "AI",
-            "YC Spring 2025"
+            "Generative AI",
+            "Market Research",
+            "YC Summer 2021"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.trybeluga.ai/",
-          "equipo": 3
+          "url": "https://coloop.ai/",
+          "equipo": 16
         },
         {
           "id": "29239",
@@ -1100,28 +1167,126 @@
           "equipo": 3
         },
         {
-          "id": "30938",
-          "nombre": "Imagine AI",
-          "categoria": "Sales",
-          "descripcion": "We reverse engineer B2B growth, starting with LinkedIn. Imagine AI is a research and software company reverse engineering modern B2B growth, starting with LinkedIn.\r\n\r\nWe build coordinated content systems for executive teams, where the CEO, VP of Sales, and Head of Marketing post aligned narratives from a single calendar, producing compounding reach that single-founder posting cannot reach.\r\n\r\n50+ B2B companies are now using Imagine AI, including MongoDB, Rippling, Slash, and Corgi Insurance. Customers have generated $31M in attributed revenue, 12M impressions, and 1,400 hours of executive time saved.",
+          "id": "29957",
+          "nombre": "Anglera",
+          "categoria": "Retail",
+          "descripcion": "AI-Powered Product Data Enrichment At Anglera, we're developing a suite of AI agents to help e-commerce companies run their operations more efficiently. Our flagship agent helps our customers onboard, enrich, and manage their product data, reducing time per product from 15 mins down to 5 seconds.\r\n\r\nWe previously developed ML to automatically enrich millions of products at Uber Eats, and we're now on a mission to automate the most common manual workflows for every e-commerce business.",
           "tags": [
-            "Artificial Intelligence",
+            "Machine Learning",
+            "SaaS",
             "B2B",
-            "Sales",
-            "Marketing",
-            "YC Fall 2025"
+            "E-commerce",
+            "AI",
+            "YC Summer 2024"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://imagineai.me",
-          "equipo": 5
+          "url": "https://www.anglera.com/",
+          "equipo": 6
+        },
+        {
+          "id": "23541",
+          "nombre": "Mayan",
+          "categoria": "Operations",
+          "descripcion": "A growth automation platform for Amazon sellers We help Amazon sellers grow their business with our data-driven automations. We are starting out with advertising and inventory. From there, we're moving to other avenues that help accelerate brand growth!",
+          "tags": [
+            "SaaS",
+            "Analytics",
+            "E-commerce",
+            "YC Winter 2021"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.mayan.co",
+          "equipo": 14
         }
       ],
-      "complementarity_score": 0.6444,
-      "rationale": "Herramientas complementarias para B2B: Retail, B2B, Marketing, Engineering, Product and Design, Sales",
+      "complementarity_score": 0.6463,
+      "rationale": "Herramientas complementarias para B2B: Sales, B2B, Engineering, Product and Design, Retail, Operations",
       "size": 5
     },
     {
-      "cluster_id": "cluster_b2b_14",
+      "cluster_id": "cluster_b2b_15",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "26837",
+          "nombre": "Unify",
+          "categoria": "Productivity",
+          "descripcion": "Models that keep learning Building the next frontier of models that continually learn from a stream of experience.",
+          "tags": [
+            "Reinforcement Learning",
+            "Open Source",
+            "Infrastructure",
+            "AI",
+            "YC Winter 2023"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://unify.ai",
+          "equipo": 3
+        },
+        {
+          "id": "30173",
+          "nombre": "Aviro",
+          "categoria": "B2B",
+          "descripcion": "Environments for Long Horizon Work We design challenging worlds where AI models learn to explore and solve problems. We turn these worlds into post-training datasets and reinforcement learning environments to train the next frontier of AI. We're research partners with four top frontier AI labs, several Fortune 100 companies, and leading RL data vendors.",
+          "tags": [
+            "Reinforcement Learning",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.aviro.ai/",
+          "equipo": 2
+        },
+        {
+          "id": "31359",
+          "nombre": "Twolabs",
+          "categoria": "Infrastructure",
+          "descripcion": "RL environments for underexplored domains. We build verifiable reinforcement-learning environments, evaluations, and proprietary training datasets to improve frontier AI models and robot policies.\r\n\r\nWe focus on complex, underexplored domains like PCB and chip design, embedded systems, robotics, and specialized coding environments, where high-quality training data is scarce and existing models fall short.\r\n\r\nOur long-term goal is to develop self-improving training infrastructure that can autonomously generate increasingly challenging tasks, evaluate performance, and continuously advance model capabilities toward recursive self-improvement.",
+          "tags": [
+            "Robotics",
+            "AI",
+            "YC Spring 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://twolabs.ai",
+          "equipo": 2
+        },
+        {
+          "id": "30883",
+          "nombre": "hillclimb",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Training Data for Recursive Self-Improvement We work with frontier AI labs to help train their agents to become AI research scientists",
+          "tags": [
+            "Reinforcement Learning",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://hillclimb.com",
+          "equipo": 4
+        },
+        {
+          "id": "33019",
+          "nombre": "Agnost AI",
+          "categoria": "Analytics",
+          "descripcion": "We find where AI agents fail, then train better models to run them. Agnost AI reads every conversation a company's AI Agent has with its users to find where it's silently failing and then turns that same data into custom models that run the agent better, faster & cheaper than frontier models.",
+          "tags": [
+            "Developer Tools",
+            "Machine Learning",
+            "Analytics",
+            "Monitoring",
+            "AI",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://agnost.ai",
+          "equipo": 2
+        }
+      ],
+      "complementarity_score": 0.6447,
+      "rationale": "Herramientas complementarias para B2B: Productivity, B2B, Infrastructure, Engineering, Product and Design, Analytics",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_16",
       "audiencia_objetivo": "B2B",
       "startups": [
         {
@@ -1199,7 +1364,7 @@
           ],
           "audiencia_objetivo": "B2B",
           "url": "https://www.ondeckai.com",
-          "equipo": 7
+          "equipo": 6
         }
       ],
       "complementarity_score": 0.6418,
@@ -1207,92 +1372,256 @@
       "size": 5
     },
     {
-      "cluster_id": "cluster_b2b_15",
+      "cluster_id": "cluster_b2b_17",
       "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "30173",
-          "nombre": "Aviro",
-          "categoria": "B2B",
-          "descripcion": "Environments for Long Horizon Work We design challenging worlds where AI models learn to explore and solve problems. We turn these worlds into post-training datasets and reinforcement learning environments to train the next frontier of AI. We're research partners with four top frontier AI labs, several Fortune 100 companies, and leading RL data vendors.",
+          "id": "31458",
+          "nombre": "Reason Machines",
+          "categoria": "Productivity",
+          "descripcion": "Reason Machines builds Reason Agent, the autonomous software engineer… Reason Machines builds Reason Agent, the autonomous software engineer for engineering teams. Reason connects to GitHub, reproduces bugs, writes code, passes tests, and ships review-ready pull requests with recordings and logs across cloud environments.",
           "tags": [
-            "Reinforcement Learning",
-            "YC Spring 2025"
+            "Developer Tools",
+            "Enterprise Software",
+            "Cloud Computing",
+            "YC Spring 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.aviro.ai/",
+          "url": "https://reasonmachines.com",
           "equipo": 2
         },
         {
-          "id": "26837",
-          "nombre": "Unify",
-          "categoria": "Productivity",
-          "descripcion": "Models that keep learning Building the next frontier of models that continually learn from a stream of experience.",
-          "tags": [
-            "Artificial Intelligence",
-            "Reinforcement Learning",
-            "Open Source",
-            "Infrastructure",
-            "AI",
-            "YC Winter 2023"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://unify.ai",
-          "equipo": 3
-        },
-        {
-          "id": "30883",
-          "nombre": "hillclimb",
+          "id": "31222",
+          "nombre": "Superset",
           "categoria": "Engineering, Product and Design",
-          "descripcion": "Training Data for Recursive Self-Improvement We work with frontier AI labs to help train their agents to become AI research scientists",
+          "descripcion": "Building self-improving software Superset is an open-source IDE that helps engineers run 100s of coding agents in parallel.\r\n\r\nOur desktop app is loved by tens of thousands of engineers, and we're scaling out our effort to build a collaborative, cross-platform tool to allow users to code anywhere.",
           "tags": [
-            "Reinforcement Learning",
-            "YC Fall 2025"
+            "Developer Tools",
+            "Consumer",
+            "B2B",
+            "Enterprise Software",
+            "AI",
+            "YC Spring 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://hillclimb.com",
+          "url": "https://www.superset.sh/",
           "equipo": 4
         },
         {
-          "id": "32198",
-          "nombre": "Riften",
+          "id": "31165",
+          "nombre": "IncidentFox",
           "categoria": "Infrastructure",
-          "descripcion": "Earned intelligence for every company Riften builds model routing, evaluations, private models, and training environments for AI labs, AI-native companies, and enterprises.\r\n\r\nWe help teams choose models for their workloads, evaluate how they perform, and build private models around company-specific work. We’re also developing coding environments where agents learn through backend engineering tasks.",
+          "descripcion": "AI SRE agent that triages, coordinates, and fixes production incidents AI SRE agents that automatically learn each customer’s system so they work just like an in-house engineer.",
           "tags": [
+            "AIOps",
             "Developer Tools",
-            "Reinforcement Learning",
+            "AI",
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://incidentfox.ai",
+          "equipo": 2
+        },
+        {
+          "id": "30903",
+          "nombre": "Kestrel AI",
+          "categoria": "Security",
+          "descripcion": "AI Agents for Platform Engineering Kestrel is the AI automation layer for platform engineering teams.\r\n\r\nPlatform teams use Kestrel to automate incident response, cloud provisioning, CI/CD, security, and developer requests across their stack.\r\n\r\nKestrel turns natural-language prompts into deterministic, production-ready workflows with 40+ integrations, 200+ pre-built actions, and support for custom HTTP and webhook actions.\r\n\r\nDeveloper-first, with a CLI, Python SDK, and MCP server to manage workflows from where platform teams already work.",
+          "tags": [
+            "AIOps",
+            "Developer Tools",
+            "DevOps",
             "Infrastructure",
+            "YC Fall 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://usekestrel.ai/",
+          "equipo": 2
+        },
+        {
+          "id": "31184",
+          "nombre": "Assemble",
+          "categoria": "B2B",
+          "descripcion": "Autonomous IT Delivery Assemble accelerates IT teams by performing development work inside core enterprise systems like ERP, CRM, and HRIS. Our agents help IT teams scope dependencies, build logic, and validate changes across your systems.",
+          "tags": [
+            "SaaS",
+            "Enterprise Software",
             "AI",
             "YC Summer 2026"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://riften.ai",
-          "equipo": 5
-        },
-        {
-          "id": "33019",
-          "nombre": "Agnost AI",
-          "categoria": "Analytics",
-          "descripcion": "We find where AI agents fail, then train better models to run them. Agnost AI reads every conversation a company's AI Agent has with its users to find where it's silently failing and then turns that same data into custom models that run the agent better, faster & cheaper than frontier models.",
-          "tags": [
-            "Artificial Intelligence",
-            "Developer Tools",
-            "Machine Learning",
-            "Analytics",
-            "Monitoring",
-            "YC Summer 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://agnost.ai",
-          "equipo": 2
+          "url": "https://www.assemble.ai/",
+          "equipo": 4
         }
       ],
-      "complementarity_score": 0.6415,
-      "rationale": "Herramientas complementarias para B2B: B2B, Productivity, Engineering, Product and Design, Infrastructure, Analytics",
+      "complementarity_score": 0.6406,
+      "rationale": "Herramientas complementarias para B2B: Productivity, Engineering, Product and Design, Infrastructure, Security, B2B",
       "size": 5
     },
     {
-      "cluster_id": "cluster_b2b_16",
+      "cluster_id": "cluster_b2b_18",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "26693",
+          "nombre": "SigmaMind AI",
+          "categoria": "B2B",
+          "descripcion": "Voice AI platform purpose-built for contact centers. SigmaMind AI is a platform for building voice AI agents purpose-built for call centers. Our agents make and answer calls for lead generation, appointment setting, follow-ups, collections, customer intake, and basic support. Instead of replacing the phone systems a center already uses, we connect on top of them. Because the AI handles many calls at once, a call center can reach far more people than a human team, lower its cost per lead, and stop wasting agent time on calls that go nowhere. Our customers are usually non-technical operators running centers with 25 or more agents, with the strongest traction in insurance, home services, solar, and lending.",
+          "tags": [
+            "SaaS",
+            "B2B",
+            "Call Center",
+            "AI",
+            "Conversational AI",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://sigmamind.ai?utm_source=yc&utm_medium=web",
+          "equipo": 12
+        },
+        {
+          "id": "31416",
+          "nombre": "Callab AI",
+          "categoria": "Operations",
+          "descripcion": "AI voice agents for on-prem telephony stack. 58% of the $400B call center industry runs on on-prem phone systems, and until now bringing AI voice automation to them meant ripping out their entire infrastructure first. That's the largest unserved segment in the market. Callab AI connects directly to legacy PBX systems like Avaya, Cisco UCM, and Mitel, and automates up to 70% of call volume with zero migration needed.\r\n\r\nWe plug into these environments without requiring a rip-and-replace. We serve clients across three continents, including brands like Dunkin Donuts.",
+          "tags": [
+            "YC Spring 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://callab.ai",
+          "equipo": 7
+        },
+        {
+          "id": "29610",
+          "nombre": "Hamming AI",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Complete QA platform for voice agents Hamming AI is the complete QA platform for voice agents from pre-deployment testing to production monitoring. \r\n\r\n4M+ calls tested. 10K+ agents monitored. Trusted by public companies and the fastest-growing voice AI teams.\r\n\r\nConnect your agent, auto-generate test scenarios, and run thousands of test calls in minutes. In production, monitor every call with 50+ built-in metrics and get alerts before customers notice.\r\n\r\nSumanyu (CEO) was previously Head of Data at Citizen and Senior Staff Data Scientist at Tesla, where he grew AI-powered sales to hundreds of millions in revenue per year. \r\n\r\nOur engineering team ranks #1 on Weave (https://workweave.ai) across 10,000+ engineers and 100+ teams.",
+          "tags": [
+            "YC Summer 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://hamming.ai/",
+          "equipo": 10
+        },
+        {
+          "id": "30325",
+          "nombre": "Roark",
+          "categoria": "Analytics",
+          "descripcion": "Test, monitor, and improve your voice agents Roark helps teams test, monitor, and improve their voice agents.\r\n\r\nVoice AI is exploding, but reliability is still the #1 challenge. Teams spend hours manually testing agents and still miss failures. In the last 6 months, Roark has processed over 10M minutes of calls, powering monitoring and simulation for teams across the Voice AI ecosystem (including YC companies).\r\n\r\nWe close that gap by combining:\r\n\r\n 📊 Monitoring & Evaluation - 40+ built-in metrics (latency, instruction-follow, sentiment, etc.), custom dashboards, alerts, and the ability to define your own. Up to 15 speakers with automatic speaker identification.\r\n 🎭 Simulations & Personas - end-to-end phone/WebSocket simulations for inbound and outbound agents, with configurable personas (accents, languages, speech & behavior profiles). Define tests as conversations with a graph-based approach, so you can easily branch into edge cases and variants.\r\n 🔁 Full lifecycle loop - failed calls automatically become repeatable tests, so every failure makes your agent stronger.\r\n\r\nRoark is the missing QA layer for Voice AI - helping teams ship agents they can trust.",
+          "tags": [
+            "Analytics",
+            "AI",
+            "Conversational AI",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://roark.ai",
+          "equipo": 3
+        },
+        {
+          "id": "32169",
+          "nombre": "Speko",
+          "categoria": "Infrastructure",
+          "descripcion": "OpenRouter for Voice AI: one API, every call on the best speech model Speko is a router for voice models: one API key, and your voice agent runs on the speech-to-text, LLM, and text-to-speech models we measured as best for your language and use case. The measurements are public at benchmarks.speko.ai: we test new models the day they ship and re-route when the numbers change, so you rewrite nothing. We ran this bake-off by hand for four years at previous company, shipping production voice for Fortune 500s.",
+          "tags": [
+            "Developer Tools",
+            "AI",
+            "Conversational AI",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://speko.ai/?utm_source=ycombinator&utm_medium=profile",
+          "equipo": 4
+        }
+      ],
+      "complementarity_score": 0.6404,
+      "rationale": "Herramientas complementarias para B2B: B2B, Operations, Engineering, Product and Design, Analytics, Infrastructure",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_19",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "26776",
+          "nombre": "Overwatch",
+          "categoria": "Security",
+          "descripcion": "Enterprise software for enterprise risk and cyber fraud intelligence Overwatch Data offers real-time AI agents to scale fraud, cyber, and security teams. Our agents automate the threat intelligence and brand protection workflow, while also conducting risk reviews at scale to detect fraud and financial crime.",
+          "tags": [
+            "Cybersecurity",
+            "Fraud Prevention",
+            "Fraud Detection",
+            "AI",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "http://www.overwatchdata.ai",
+          "equipo": 14
+        },
+        {
+          "id": "31132",
+          "nombre": "MouseCat",
+          "categoria": "B2B",
+          "descripcion": "AI to fight financial crime MouseCat enables companies to detect suspicious activity, automate investigations, and act before the money leaves.\r\n\r\nWe work with Fortune 500 companies and startups to deploy real-time models and AI agents that reduce fraud, compliance incidents, and friction for good customers.",
+          "tags": [
+            "Compliance",
+            "Fraud Detection",
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.mousecat.ai",
+          "equipo": 6
+        },
+        {
+          "id": "30531",
+          "nombre": "Moby Analytics",
+          "categoria": "Finance and Accounting",
+          "descripcion": "AI financial auditors At Moby Analytics, we provide the first AI agentic platform built for financial auditors. Auditors easily create and deploy AI agents to automate audit workflows. No code, just prompts and domain expertise.",
+          "tags": [
+            "Automation",
+            "AI",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.mobyanalytics.com/",
+          "equipo": 4
+        },
+        {
+          "id": "31518",
+          "nombre": "Runtime",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "The AI agent harness for payment teams Runtime helps fast-growing fintechs build and run AI agents for mission-critical payment and risk operations. Teams turn their procedures into specialized agents that work across their systems, with scoped access, human approvals, and a full audit trail.",
+          "tags": [
+            "YC Spring 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.runtm.com/",
+          "equipo": 7
+        },
+        {
+          "id": "27038",
+          "nombre": "Fini",
+          "categoria": "Operations",
+          "descripcion": "Fini | Automate 80% of enterprise support with AI agents Fini builds AI agents that autonomously resolve up to 80% of customer support tickets for enterprises specially in Fintech, E-commerce, Gaming and Fitness tech.\r\n\r\nOur agents understand complex workflows, take real actions (like refunds or KYC checks), and improve in real-time. Built on a proprietary knowledge engine, our agents deliver 98%+ accuracy and integrate deeply with tools like Zendesk, Salesforce, and internal APIs.\r\n\r\nEnterprises like Bitdefender and Training Peaks use Fini to slash support costs by 50% while boosting CSAT by 10%.",
+          "tags": [
+            "Generative AI",
+            "Machine Learning",
+            "SaaS",
+            "B2B",
+            "AI",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.usefini.com",
+          "equipo": 14
+        }
+      ],
+      "complementarity_score": 0.6395,
+      "rationale": "Herramientas complementarias para B2B: Security, B2B, Finance and Accounting, Engineering, Product and Design, Operations",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_20",
       "audiencia_objetivo": "B2B",
       "startups": [
         {
@@ -1301,7 +1630,7 @@
           "categoria": "Engineering, Product and Design",
           "descripcion": "AI agents for end-to-end testing Narrative is the easiest way to create end-to-end tests, replacing Playwright, Selenium, and Cypress with self-healing tests.\r\n\r\nRecord your user journeys to deploy tests in minutes, and let our agents handle flaky selectors and timing issues. When a test fails, you get a bug report in plain English that's easy to triage.\r\n\r\nTrusted by Nanonets, Commenda, Drumkit, Metal, and Vega.\r\n\r\nLearn more at www.trynarrative.com",
           "tags": [
-            "Artificial Intelligence",
+            "AI",
             "YC Winter 2023"
           ],
           "audiencia_objetivo": "B2B",
@@ -1314,10 +1643,10 @@
           "categoria": "Infrastructure",
           "descripcion": "API sandboxes, built for AI agents Archal provisions sandboxes with the API environments your CI, tests, and evals need. Your coding agent can start the sandbox & environments, connect to your API integrations, run tests, and inspect state changes. Sandboxes and environments are startable within seconds and take milliseconds to reset.",
           "tags": [
-            "Artificial Intelligence",
             "Developer Tools",
             "API",
             "Infrastructure",
+            "AI",
             "YC Summer 2026"
           ],
           "audiencia_objetivo": "B2B",
@@ -1354,10 +1683,10 @@
           "categoria": "Security",
           "descripcion": "Autonomous Security Agents MindFort is building fully autonomous AI agents powered by their in-house models that can find, exploit, and patch complex vulnerabilities in web applications at massive scale. MindFort agents use the same principles as human penetration testers to understand their target and figure out the best ways to work together to exploit it. We can do fully autonomous AI web pentesting and bring offensive security to teams out numbered. \r\n\r\nWhile security teams were already behind with legacy tools and processes, AI coding is make the problem worse. AI generates code far faster than human teams can secure it; MindFort can match that speed and scale. Our agents will become critical as organizations scale up development with AI.",
           "tags": [
-            "Artificial Intelligence",
             "Developer Tools",
             "Cybersecurity",
             "Enterprise Software",
+            "AI",
             "YC Spring 2025"
           ],
           "audiencia_objetivo": "B2B",
@@ -1365,12 +1694,253 @@
           "equipo": 6
         }
       ],
-      "complementarity_score": 0.6399,
+      "complementarity_score": 0.6378,
       "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Infrastructure, B2B, Analytics, Security",
       "size": 5
     },
     {
-      "cluster_id": "cluster_b2b_17",
+      "cluster_id": "cluster_b2b_21",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "29258",
+          "nombre": "Saga AI",
+          "categoria": "Operations",
+          "descripcion": "Voice Agents for Healthcare Operations Saga AI deploys voice agents for healthcare practices, ACOs, and health systems to handle scheduling, patient intake, and care gap outreach. Agents connect directly to your EHR in real time.",
+          "tags": [
+            "SaaS",
+            "Healthcare",
+            "Operations",
+            "AI",
+            "YC Winter 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://usesaga.ai",
+          "equipo": 2
+        },
+        {
+          "id": "27041",
+          "nombre": "Feather",
+          "categoria": "B2B",
+          "descripcion": "Voice AI The platform powering human like phone calls at AI speed",
+          "tags": [
+            "SaaS",
+            "AI",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://featherhq.com",
+          "equipo": 8
+        },
+        {
+          "id": "30046",
+          "nombre": "Cekura",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Voice AI and Chat AI agents: Testing and Observability Cekura helps Conversational AI companies with automated QA. From pre-production simulation and evaluations to production call monitoring, to assisting customers in setting up the CI/CD pipeline, we help in QA across the agent lifecycle.\r\n\r\nWe are working with 75+ customers across healthcare, BFSI, logistics, recruitment, and retail. Some of the largest CCAS players and enterprises use Cekura to ship AI voice and chat agents reliably",
+          "tags": [
+            "Developer Tools",
+            "SaaS",
+            "B2B",
+            "YC Fall 2024"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.cekura.ai/",
+          "equipo": 15
+        },
+        {
+          "id": "31253",
+          "nombre": "Maven",
+          "categoria": "Infrastructure",
+          "descripcion": "Payments for Conversational Agents We enable AI chat and voice agents to collect payments through a single API call, handling card processing and PCI compliance across all payment gateways",
+          "tags": [
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://trymaven.com",
+          "equipo": 2
+        },
+        {
+          "id": "30314",
+          "nombre": "Pinch",
+          "categoria": "Productivity",
+          "descripcion": "AI Voice Translation for live conversations or media Video/audio dubbing that preserves your tone and timing.  Real-time speech translation for any online meeting.",
+          "tags": [
+            "Telecommunications",
+            "AI",
+            "YC Winter 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://startpinch.com",
+          "equipo": 3
+        }
+      ],
+      "complementarity_score": 0.6358,
+      "rationale": "Herramientas complementarias para B2B: Operations, B2B, Engineering, Product and Design, Infrastructure, Productivity",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_22",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "31030",
+          "nombre": "Haladir",
+          "categoria": "Supply Chain and Logistics",
+          "descripcion": "Operational Intelligence for Global Logistics Haladir builds advanced AI systems for logistics. We sit on top of your WMS, TMS and ERP, turning their data into decisions across supply chain planning and execution: solver-grade optimization that decides what should happen, and AI agents that run the workflows. Today's AI brought intelligence. The next frontier is judgement.",
+          "tags": [
+            "Logistics",
+            "Supply Chain",
+            "Operations",
+            "AI",
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.haladir.com/",
+          "equipo": 4
+        },
+        {
+          "id": "30480",
+          "nombre": "Flott HQ",
+          "categoria": "B2B",
+          "descripcion": "AI-native operating system for vehicle fleet management Flott helps transport and logistics companies run leaner, smarter, and more profitable operations. Flott unifies everything transport and logistics teams need in a single, AI-powered control center—bringing planning, live tracking (gps, fuel, etc), invoicing, and payments into one place and delivering true end-to-end visibility. Flott’s AI agents act as an extension of fleet managers — automating repetitive tasks and optimizing workflows.This lets companies focus on what truly matters: growing the business.",
+          "tags": [
+            "Logistics",
+            "Transportation",
+            "Operations",
+            "AI Assistant",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.flotthq.com",
+          "equipo": 2
+        },
+        {
+          "id": "31172",
+          "nombre": "Terminal Use",
+          "categoria": "Operations",
+          "descripcion": "AI-native transformation for operations-heavy companies AI pilots are everywhere. Few organizations can point to a department that actually runs AI-first. Terminal Use changes that.\r\n\r\nWe help operations teams rebuild how work gets done, end to end. We begin with one critical process, map how it runs today and where it breaks, then redesign the workflow around AI agents, existing systems, and people at the right control points.\r\nThe result is a working AI-first process, measurable operational change, and a blueprint for transforming the broader department.\r\n\r\nFounded by ex-Palantir FDEs and engineers working on transformation at scale, Terminal Use works across construction, logistics, manufacturing, retail, and other complex operating environments.",
+          "tags": [
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.terminaluse.com/",
+          "equipo": 4
+        },
+        {
+          "id": "30521",
+          "nombre": "Kairos",
+          "categoria": "Infrastructure",
+          "descripcion": "Specialized AI for Critical Industries Kairos closes the last-mile reliability gap in AI deployments. \r\n\r\nWe bring frontier techniques to companies in critical industries, deploying specialized agents that encode operator expertise and reliably automate their most manual workflows.",
+          "tags": [
+            "AIOps",
+            "Machine Learning",
+            "Reinforcement Learning",
+            "AI",
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.withkairos.co/",
+          "equipo": 3
+        },
+        {
+          "id": "26783",
+          "nombre": "Raven",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "AI Assistants for Manufacturing Operations At Raven, we are building AI assistants for manufacturing plants which can offer intelligent assistance for day-to-day operations like training, job planning, troubleshooting, reporting and also helps with real-time analytics — all while seamlessly integrating with your existing systems.\r\nWe’re taking decades of manufacturing expertise and combining it with AI to solve real operational problems. We’re a small, focused team working to make industrial operations safer, smarter, and more efficient.",
+          "tags": [
+            "AI-Enhanced Learning",
+            "Manufacturing",
+            "AI",
+            "AI Assistant",
+            "YC Summer 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://startraven.com",
+          "equipo": 4
+        }
+      ],
+      "complementarity_score": 0.6175,
+      "rationale": "Herramientas complementarias para B2B: Supply Chain and Logistics, B2B, Operations, Infrastructure, Engineering, Product and Design",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_23",
+      "audiencia_objetivo": "B2B",
+      "startups": [
+        {
+          "id": "30672",
+          "nombre": "Induction Labs",
+          "categoria": "Infrastructure",
+          "descripcion": "Building intellectually curious AI We are scaling foundation models that are curious about the world.\r\n\r\nWe’ve seen general intelligence appear exactly once, and its hallmark has been curiosity: a dissatisfaction with what we already know about the world, an ability to learn from world experience, and a disposition to share knowledge with other individuals. Across generations, these human traits have built modern science, technology, and culture.\r\n\r\nWe think superintelligence will come from models that work the same way: learning from their own observation, updating as they go, growing what they know. These models will start from what humanity knows and discover past us.\r\n\r\nWe believe that scaling curious intelligence is a defining problem of our time. If solved, we will live to see a new era of technological advances, scientific understanding, and human flourishing.",
+          "tags": [
+            "Deep Learning",
+            "Hard Tech",
+            "AI",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://inductionlabs.com",
+          "equipo": 2
+        },
+        {
+          "id": "31555",
+          "nombre": "rekursiv.ai",
+          "categoria": "Productivity",
+          "descripcion": "Scale AI scientists whose own breakthroughs accelerate the next. We're scaling self-improving AI scientist teams to ideate/experiment/discover, generating new knowledge autonomously. Their discoveries reduced ARC-1/2 costs by 10,000× while maintaining state-of-the-art accuracy and yielded material advances on combinatorial ML problems.\r\n\r\nWe believe that AI is bounded not by compute, but ideas. Scaling to millions of sessions of discovery enables leveraging its own discoveries and presents a novel training source capable of ushering a new era of self-reliant foundational models.",
+          "tags": [
+            "Deep Learning",
+            "Machine Learning",
+            "AI",
+            "YC Summer 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://rekursiv.ai",
+          "equipo": 5
+        },
+        {
+          "id": "31162",
+          "nombre": "Confluence Labs",
+          "categoria": "B2B",
+          "descripcion": "AI models that learn from experience While modern AI excels in any area you can collect a lot of data for, it struggles in areas where data is sparse or costly to attain. Designing new molecules, discovering new physics, and engineering new materials are all domains where collecting data is extremely costly. \r\n\r\nWe dream of a world where AI accelerates research in all of these domains and creates a more abundant future for humanity, but the current technology is not there. That’s why we started Confluence Labs. \r\n\r\nWe are building AI that can design highly effective experiments in data-sparse domains and learn maximally from the data it already has.",
+          "tags": [
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://confluence.sh",
+          "equipo": 2
+        },
+        {
+          "id": "31181",
+          "nombre": "Synthetic Sciences",
+          "categoria": "Engineering, Product and Design",
+          "descripcion": "Infrastructure for Autonomous Science Synthetic Sciences is a research lab building infrastructure for scientific superintelligence. Empirical science is bottlenecked by verification that is slow, expensive, and imperfect. We work on tooling, evals, training environments, algorithms, and labs that make autonomous science possible.",
+          "tags": [
+            "Reinforcement Learning",
+            "YC Winter 2026"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://syntheticsciences.ai/",
+          "equipo": 4
+        },
+        {
+          "id": "30466",
+          "nombre": "Labric",
+          "categoria": "Analytics",
+          "descripcion": "The data layer for scientific research Labric is building the data layer that makes AI work for science. We capture messy lab data from instruments and tools, clean it, and connect it—so researchers can actually use AI to accelerate discovery.",
+          "tags": [
+            "YC Spring 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://labric.co",
+          "equipo": 6
+        }
+      ],
+      "complementarity_score": 0.6169,
+      "rationale": "Herramientas complementarias para B2B: Infrastructure, Productivity, B2B, Engineering, Product and Design, Analytics",
+      "size": 5
+    },
+    {
+      "cluster_id": "cluster_b2b_24",
       "audiencia_objetivo": "B2B",
       "startups": [
         {
@@ -1391,7 +1961,6 @@
           "categoria": "Operations",
           "descripcion": "The AI Cowork for big data OneSchema Studio brings AI Cowork into your private cloud. Teams can clean and validate massive datasets at 1,000x the scale of generic AI tools - data never leaves your network, you pick the AI model, and proven work becomes a skill your whole team can reuse. It self-hosts natively on AWS, Azure, or GCP, gives you granular, role-based control over who can touch what data, and connects directly to the systems you already run - from Salesforce and Workday to SAP and Snowflake.",
           "tags": [
-            "Artificial Intelligence",
             "SaaS",
             "B2B",
             "Workflow Automation",
@@ -1401,6 +1970,19 @@
           "audiencia_objetivo": "B2B",
           "url": "https://www.oneschema.co",
           "equipo": 20
+        },
+        {
+          "id": "26254",
+          "nombre": "Eventual",
+          "categoria": "Infrastructure",
+          "descripcion": "Building the AI data engine for any modality and scale Every breakthrough AI application, from foundation models to autonomous vehicles, relies on processing massive volumes of images, video, and complex data. But today’s data platforms (like Databricks and Snowflake) are built on top of tools made for spreadsheet-like analytics, not the petabytes of multimodal data that power AI. As a result, teams waste months on brittle infrastructure instead of conducting research and building their core product.\r\n\r\nEventual was founded in 2022 to solve this. Our mission is to make querying any kind of data, images, video, audio, text, as intuitive as working with tables, and powerful enough to scale to production workloads. Our open-source engine, Daft, is purpose-built for real-world AI systems: coordinating with external APIs, managing GPU clusters, and handling failures that traditional engines can’t. Daft already powers critical workloads at companies like Amazon, Mobileye, Together AI, and CloudKitchens.\r\n\r\nWe’ve assembled a world-class team from Databricks, AWS, Nvidia, Pinecone, GitHub Copilot, Tesla, and more, quadrupling our size within a year. With backing from Y Combinator, Caffeinated Capital, Array.vc, and top angels from the co-founders of Databricks and Perplexity, we’re looking to double the team now. Join us—Eventual is just getting started.\r\n\r\nPlease note we are looking for someone who is willing and able to come into our San Francisco office in the Mission district 4 days / week.",
+          "tags": [
+            "Computer Vision",
+            "YC Winter 2022"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://www.daft.ai/",
+          "equipo": 18
         },
         {
           "id": "30212",
@@ -1435,324 +2017,44 @@
           "audiencia_objetivo": "B2B",
           "url": "https://upsolve.ai/",
           "equipo": 5
-        },
-        {
-          "id": "30464",
-          "nombre": "Sixtyfour",
-          "categoria": "Infrastructure",
-          "descripcion": "Intelligence Infrastructure on People and Entities Sixtyfour deploys AI agents that investigate people and companies across the open and dark web, official records, proprietary databases, and unstructured sources. We resolve identities, map entity relationships, and surface risk signals for teams where data quality is essential.",
-          "tags": [
-            "B2B",
-            "Enterprise Software",
-            "Infrastructure",
-            "AI",
-            "YC Spring 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.sixtyfour.ai/",
-          "equipo": 12
         }
       ],
-      "complementarity_score": 0.6359,
-      "rationale": "Herramientas complementarias para B2B: B2B, Operations, Engineering, Product and Design, Analytics, Infrastructure",
+      "complementarity_score": 0.6118,
+      "rationale": "Herramientas complementarias para B2B: B2B, Operations, Infrastructure, Engineering, Product and Design, Analytics",
       "size": 5
     },
     {
-      "cluster_id": "cluster_b2b_18",
+      "cluster_id": "cluster_b2b_25",
       "audiencia_objetivo": "B2B",
       "startups": [
         {
-          "id": "27873",
-          "nombre": "Floworks",
-          "categoria": "Sales",
-          "descripcion": "Hire the best AI Sales employees | AI SDR | AI RevOps | AI EA Floworks (https://floworks.ai) is building a suite of AI employees that helps business to run several business functions such as sales, on autopilot.\r\n\r\nOur flagship product, Alisha is an AI SDR that performs the full outbound SDR job- fully autonomously without any human involvement. \r\n\r\nOur AI SDR Alisha can perform ICP research, find out prospect lists, research about each prospect across 180 web sources, write highly personalized emails to each, follow and engage, and finally coordinate like a human to book sales calls.\r\n\r\nBusinesses using Alisha get 3 key benefits:\r\n1.⁠ ⁠They get 12x output from your existing sales team.\r\n2.⁠ ⁠⁠Are able to scale to 8 figure revenues with just a single AE.\r\n\r\nAlisha is built on our proprietary function calling model ThorV2 (https://floworks.ai/research) that outperforms both Claude 3 and GPT-4 function calling in accuracy by 13% and 43% respectively. At the same time, ThorV2 uses only a fraction of the cost (<40%) and time/latency (<78%) as the other models.\r\n\r\nOur second AI employee, Ashley, is an AI Executive Assistant that keeps you reminded and on top of your on your schedule. Works on your whim- just command Flowy to book a meeting, move a meeting or write a email, and it does without you having to navigate through every apps. You can teach Flowy specific workflows such as ‘inform me immediately if i receive a reply from xyz’, “show my unread emails from last day every morning 7am” and much more\r\n\r\nOur third AI employee, Romona is a helpful AI Revenue Operations Manager that keeps track of every CRM data updation on behalf of your team, works on your instruction to update notes, next steps, MEDDIC after every call, does periodic CRM reporting and much more.",
-          "tags": [
-            "Generative AI",
-            "Productivity",
-            "Sales",
-            "AI",
-            "AI Assistant",
-            "YC Winter 2023"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://floworks.ai/",
-          "equipo": 20
-        },
-        {
-          "id": "29748",
-          "nombre": "Titanio",
-          "categoria": "B2B",
-          "descripcion": "AI Employees for Distributors Titanio is a suite of AI Employees for Wholesalers & Distributors. Instead of relying on humans to quote, take orders, collect payments, place purchase orders and enter data into ERPs. We build AI Employees that do these manual repetitive tasks for the 700k wholesalers in the US.\r\n\r\nWe’re a team of three Computer Science majors, and Fernando launched and grew AT&T in Mexico to $120M ARR. Previously, we all worked together at our last YC-backed startup, building it to over $6M in revenue. It was there that we placed thousands of purchase orders with wholesalers.\r\n\r\nWe realized that almost every physical product comes from B2B sales in the supply chain. However, it turns out that most of these operations are still done manually through phone and email, involving tasks like quoting, taking orders, collecting payments, entering data into ERPs, and providing support. By automating these tasks with AI agents in a human-like manner, we are creating a massive opportunity to convert $100B of payroll expenses into software spending.",
-          "tags": [
-            "SaaS",
-            "B2B",
-            "AI",
-            "YC Summer 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.titanio.ai/",
-          "equipo": 4
-        },
-        {
-          "id": "28844",
-          "nombre": "Alguna",
-          "categoria": "Finance and Accounting",
-          "descripcion": "AI-Native CPQ & Billing for Modern Pricing Models We are Alguna, building a modern platform that helps B2B companies price deals, send quotes, bill customers, and collect payments - all in one place.\r\n\r\nOur mission is to create the most efficient revenue engine for B2B SaaS.\r\n\r\nToday, many companies run these processes with spreadsheets and a patchwork of separate tools. That leads to slow approvals, manual work, mistakes, and missed revenue—especially as pricing gets more complex.\r\n\r\nAlguna replaces that mess by connecting the entire flow from **quote to cash**: what sales sells becomes what finance bills, automatically. We help teams automate invoicing, handle usage-based or custom pricing, and reduce back-and-forth between sales, finance, and engineering.\r\n\r\nThe result: growth-stage startups and enterprises can close deals faster, bill accurately, and scale revenue operations without adding headcount or building internal systems.",
-          "tags": [
-            "Fintech",
-            "SaaS",
-            "B2B",
-            "Enterprise",
-            "AI",
-            "YC Summer 2023"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://alguna.com",
-          "equipo": 10
-        },
-        {
-          "id": "30230",
-          "nombre": "SalesPatriot",
-          "categoria": "Operations",
-          "descripcion": "Supply chain superintelligence for distribution and procurement SalesPatriot deploys supply chain superintelligence into distribution, original equipment manufacturing, and procurement. By embedding AI in the teams that run quote to cash workflows, we turn email chains, ERPs, websites, spreadsheets, and portals into a unified transactional layer, so critical parts reach the production line faster.\r\n\r\nThe West’s advantage depends on supply chains that work. We build and deploy the software that makes them work.",
-          "tags": [
-            "SaaS",
-            "B2B",
-            "Sales",
-            "AI",
-            "Industrial",
-            "YC Winter 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.salespatriot.com/",
-          "equipo": 15
-        },
-        {
-          "id": "32617",
-          "nombre": "Whitespace",
-          "categoria": "Supply Chain and Logistics",
-          "descripcion": "AI Operating System for Wholesale Distribution Whitespace builds AI agents that run the entire operation of supply chain businesses, starting with wholesale distributors. We give them self-improving AI agents that learn their business and do work like inventory planning and customer service.\r\n\r\nWe're building towards a world where all supply chain operations run through our agents, and all physical goods purchases can happen across businesses without human touch.",
-          "tags": [
-            "SaaS",
-            "B2B",
-            "Supply Chain",
-            "AI",
-            "YC Summer 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://whitespacehq.ai/",
-          "equipo": 2
-        }
-      ],
-      "complementarity_score": 0.635,
-      "rationale": "Herramientas complementarias para B2B: Sales, B2B, Finance and Accounting, Operations, Supply Chain and Logistics",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_19",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "29407",
-          "nombre": "JustAI",
-          "categoria": "Marketing",
-          "descripcion": "Agentic Marketing Platform Always-on AI agents for 1-1 personalization at scale",
-          "tags": [
-            "Artificial Intelligence",
-            "Reinforcement Learning",
-            "Workflow Automation",
-            "Personalization",
-            "Marketing",
-            "YC Winter 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://getjust.ai",
-          "equipo": 4
-        },
-        {
-          "id": "30441",
-          "nombre": "stratify",
-          "categoria": "B2B",
-          "descripcion": "AI agents that help you understand your customers' needs Stratify is the AI-powered user researcher that discovers the why behind every decision, click, and preference.\r\nOur platform uses agentic workflows that instantly recruit participants, conduct user interviews, analyze responses, and provide actionable insights.",
-          "tags": [
-            "B2B",
-            "Design",
-            "Consumer Products",
-            "AI",
-            "Conversational AI",
-            "YC Spring 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.trystratify.com",
-          "equipo": 2
-        },
-        {
-          "id": "32136",
-          "nombre": "Palisade",
+          "id": "30283",
+          "nombre": "Confident AI",
           "categoria": "Engineering, Product and Design",
-          "descripcion": "AI-native sales agents that run marketplaces Palisade spins up a personal sales agent for every single visitor to your website. Marketplaces like trading card platforms, vintage stores, and short-term rental operators sell more when each customer works with a personal agent that remembers them.",
-          "tags": [
-            "Artificial Intelligence",
-            "Marketplace",
-            "Sales",
-            "E-commerce",
-            "YC Summer 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://palisade.run",
-          "equipo": 1
-        },
-        {
-          "id": "33639",
-          "nombre": "Magma",
-          "categoria": "Infrastructure",
-          "descripcion": "Monetize your agent's traces. We enable companies monetize their agents' traces.",
-          "tags": [
-            "Reinforcement Learning",
-            "Data Engineering",
-            "AI",
-            "YC Summer 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://magmahq.ai",
-          "equipo": 1
-        },
-        {
-          "id": "29957",
-          "nombre": "Anglera",
-          "categoria": "Retail",
-          "descripcion": "AI-Powered Product Data Enrichment At Anglera, we're developing a suite of AI agents to help e-commerce companies run their operations more efficiently. Our flagship agent helps our customers onboard, enrich, and manage their product data, reducing time per product from 15 mins down to 5 seconds.\r\n\r\nWe previously developed ML to automatically enrich millions of products at Uber Eats, and we're now on a mission to automate the most common manual workflows for every e-commerce business.",
-          "tags": [
-            "Artificial Intelligence",
-            "Machine Learning",
-            "SaaS",
-            "B2B",
-            "E-commerce",
-            "YC Summer 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.anglera.com/",
-          "equipo": 6
-        }
-      ],
-      "complementarity_score": 0.6312,
-      "rationale": "Herramientas complementarias para B2B: Marketing, B2B, Engineering, Product and Design, Infrastructure, Retail",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_20",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "30188",
-          "nombre": "Hey Telo",
-          "categoria": "B2B",
-          "descripcion": "Voice AI for Home Services Voice AI for Home Services",
-          "tags": [
-            "YC Winter 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.heytelo.com",
-          "equipo": 2
-        },
-        {
-          "id": "30314",
-          "nombre": "Pinch",
-          "categoria": "Productivity",
-          "descripcion": "AI Voice Translation for live conversations or media Video/audio dubbing that preserves your tone and timing.  Real-time speech translation for any online meeting.",
-          "tags": [
-            "Telecommunications",
-            "AI",
-            "YC Winter 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://startpinch.com",
-          "equipo": 3
-        },
-        {
-          "id": "30770",
-          "nombre": "Button Computer",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "The tiny computer built for voice AI. We’re launching a small hardware device: a button that you clip to your shirt. You press it to talk to AI, and it responds instantly.",
-          "tags": [
-            "YC Winter 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://buttoncomputer.com",
-          "equipo": 1
-        },
-        {
-          "id": "30038",
-          "nombre": "Lightscreen AI",
-          "categoria": "Recruiting and Talent",
-          "descripcion": "Voice + video AI interviewer Lightscreen’s voice + video AI interviewer enables companies to identify and invest in genuinely skilled candidates. It's already being used by high-growth startups and recruiting agencies to screen technical candidates. \r\n\r\nWe provide companies with a voicebot that can run a full-length technical interview, does smart interruptions, and multi-modal cheating detection. The AI provides the company rubric-based, rich candidate evaluation in minutes and can be fully customized to ask questions and evaluate based on the company's needs.",
-          "tags": [
-            "YC Fall 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://lightscreen.ai",
-          "equipo": 2
-        },
-        {
-          "id": "30182",
-          "nombre": "Flowtel",
-          "categoria": "Infrastructure",
-          "descripcion": "The AI Voice agents for hotels Flowtel is building the next generation operating system for hospitality, powered by modern AI agents that can handle everything from booking to room service.",
-          "tags": [
-            "YC Winter 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://flowtel.ai",
-          "equipo": 5
-        }
-      ],
-      "complementarity_score": 0.6308,
-      "rationale": "Herramientas complementarias para B2B: B2B, Productivity, Engineering, Product and Design, Recruiting and Talent, Infrastructure",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_21",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "30644",
-          "nombre": "Wafer",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "AI that makes AI fast Wafer builds AI agents that work as autonomous performance engineers, optimizing GPU kernels for AI inference. \r\n\r\nOur product is serverless and dedicated inference for the world’s fastest open source LLMs, achieved by Wafer's autonomous performance engineers.",
-          "tags": [
-            "Artificial Intelligence",
-            "YC Summer 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.wafer.ai",
-          "equipo": 15
-        },
-        {
-          "id": "31591",
-          "nombre": "RightNow",
-          "categoria": "Infrastructure",
-          "descripcion": "Co-designing the fastest intelligence RightNow AI is a research lab for GPU kernel optimization. Our platform RunInfra serves top open-source models optimized for AI agents at a fraction of the cost of closed-source APIs\r\n\r\nRightNow AI lab: https://rightnowai.co\r\nRunInfra platform: https://runinfra.ai.",
-          "tags": [
-            "YC Fall 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://runinfra.ai/",
-          "equipo": 2
-        },
-        {
-          "id": "30402",
-          "nombre": "Kashikoi",
-          "categoria": "B2B",
-          "descripcion": "Simulation Engine for Benchmarking AI Products Kashikoi is a simulation engine to benchmark AI agents. We generate CPU friendly world models that autonomously interview agents and generate deep behavioral assessments. We built a similar technology at Moveworks which was used to ship 250+ enterprise agents to customers daily.",
+          "descripcion": "The LLM Eval and Observability Platform for AI Quality Confident AI provides enterprises an all-in-one platform to evaluate, observe, red team, and govern AI applications. Built by the creators of DeepEval (16k stars, 8m monthly downloads), Confident AI is able to offer battle-tested, open-source evaluation algorithms while providing the infrastructure needed for teams to stay confident their AI systems.",
           "tags": [
             "Developer Tools",
             "Generative AI",
-            "Machine Learning",
+            "Open Source",
             "AI",
-            "YC Spring 2025"
+            "YC Winter 2025"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.getkashikoi.com",
+          "url": "https://confident-ai.com",
+          "equipo": 7
+        },
+        {
+          "id": "30625",
+          "nombre": "LLM Stats",
+          "categoria": "Infrastructure",
+          "descripcion": "Independent AI evaluations lab We build independent and contamination-proof benchmarks that measure real world performance.\r\n\r\nLLM Stats is the most complete LLM leaderboard. We have the most complete archive of LLM benchmark results and also run independent evaluations that are not the classical ones that are already in the training data of most models.\r\n\r\nOur mission: become the biggest community dedicated to AI transparency.",
+          "tags": [
+            "Infrastructure",
+            "AI",
+            "YC Summer 2025"
+          ],
+          "audiencia_objetivo": "B2B",
+          "url": "https://llm-stats.com",
           "equipo": 2
         },
         {
@@ -1761,7 +2063,6 @@
           "categoria": "Productivity",
           "descripcion": "Meet Tara AI, your new engineering efficiency co-pilot. Tara AI helps engineering leaders measure and improve engineering efficiency, with fine-tuned, secure LLMs trained on source control and project data. \r\n\r\nOur customers include MongoDB, Clearbit and Prometric. Our platform generates all-in-one views on cycle times, benchmarks, investments and overall size and velocity of engineering activity. We're helping customers achieve 30% reduction in time to customer deployment.",
           "tags": [
-            "Artificial Intelligence",
             "Generative AI",
             "SaaS",
             "DevOps",
@@ -1773,365 +2074,37 @@
           "equipo": 13
         },
         {
-          "id": "27038",
-          "nombre": "Fini",
+          "id": "28846",
+          "nombre": "Parea",
           "categoria": "Operations",
-          "descripcion": "Fini | Automate 80% of enterprise support with AI agents Fini builds AI agents that autonomously resolve up to 80% of customer support tickets for enterprises specially in Fintech, E-commerce, Gaming and Fitness tech.\r\n\r\nOur agents understand complex workflows, take real actions (like refunds or KYC checks), and improve in real-time. Built on a proprietary knowledge engine, our agents deliver 98%+ accuracy and integrate deeply with tools like Zendesk, Salesforce, and internal APIs.\r\n\r\nEnterprises like Bitdefender and Training Peaks use Fini to slash support costs by 50% while boosting CSAT by 10%.",
-          "tags": [
-            "Generative AI",
-            "Machine Learning",
-            "SaaS",
-            "B2B",
-            "AI",
-            "YC Summer 2022"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.usefini.com",
-          "equipo": 14
-        }
-      ],
-      "complementarity_score": 0.6244,
-      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Infrastructure, B2B, Productivity, Operations",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_22",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "29417",
-          "nombre": "Brainbase Labs",
-          "categoria": "B2B",
-          "descripcion": "The AI Labor Company Brainbase Labs is an applied AI research lab enabling AI in the workforce by building high-fidelity agent environments and tooling.",
-          "tags": [
-            "Artificial Intelligence",
-            "Generative AI",
-            "SaaS",
-            "B2B",
-            "Workflow Automation",
-            "YC Winter 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://brainbaselabs.com",
-          "equipo": 4
-        },
-        {
-          "id": "31433",
-          "nombre": "Savant",
-          "categoria": "Productivity",
-          "descripcion": "Company brain every AI-native enterprise runs on Savant is the company brain every AI-native enterprise runs on. We plug into the tools you already use, capture the written knowledge / undocumented procedures, and serve them to your employees and agents at decision time.",
-          "tags": [
-            "YC Spring 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://heysavant.com/",
-          "equipo": 2
-        },
-        {
-          "id": "30779",
-          "nombre": "Smartbase",
-          "categoria": "Operations",
-          "descripcion": "AI-native ERP for manufacturers Smartbase is an AI-native ERP for manufacturers.",
-          "tags": [
-            "YC Spring 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.smartbase.so/",
-          "equipo": 2
-        },
-        {
-          "id": "31241",
-          "nombre": "Corelayer",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "AI production engineer for regulated industries Corelayer is the AI-native platform for production software support, built for regulated industries like finance and healthcare. It continuously monitors alerts, logs, infrastructure, and underlying data for issues and uses agents to debug and suggest fixes.\r\n\r\nWe're helping SRE, production services, and on-call engineers at companies ranging from growth-stage fintechs to Fortune 500 financial institutions spend less time on support and more on high-leverage work.",
+          "descripcion": "Test, evaluate & observe your LLM applications Parea AI is the essential developer platform for debugging and monitoring every stage of LLM application development. We provide testing, evaluation, and monitoring in one unified platform. These capabilities help developers get visibility into LLM responses, quickly test and optimize prompts, and ensure customers get the best user experience.",
           "tags": [
             "Developer Tools",
-            "B2B",
-            "Enterprise Software",
-            "AI",
-            "YC Winter 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.corelayer.com",
-          "equipo": 3
-        },
-        {
-          "id": "29764",
-          "nombre": "Zeit AI",
-          "categoria": "Analytics",
-          "descripcion": "The autonomous data engineer for the mid-market Ask a question in plain English and ZeitMind connects SAP, your ERP, CRM, HR systems and 600+ other sources, prepares the messy data, and turns it into the live applications your teams actually make decisions with.\r\n\r\nIt is built for the finance, controlling, procurement, supply chain and sales teams at companies that run enterprise systems without an enterprise data team.",
-          "tags": [
-            "Artificial Intelligence",
+            "Generative AI",
             "SaaS",
-            "B2B",
-            "Analytics",
-            "Data Engineering",
-            "YC Summer 2024"
+            "DevOps",
+            "Monitoring",
+            "YC Summer 2023"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://zeit-ai.com/",
-          "equipo": 12
-        }
-      ],
-      "complementarity_score": 0.6201,
-      "rationale": "Herramientas complementarias para B2B: B2B, Productivity, Operations, Engineering, Product and Design, Analytics",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_23",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "36577",
-          "nombre": "OpEra",
-          "categoria": "Supply Chain and Logistics",
-          "descripcion": "The AI decision engine for factories, warehouses and fleets OpEra Technologies is the AI decision engine for factories, warehouses and fleets. Companies with physical operations make thousands of decisions every day, and we help their teams make the best one at every step from production to delivery: (1) Planning: how much to make, buy and stock. (2) Scheduling: what runs when, and who works on what. (3) Allocation: which warehouse or store gets each order. (4) Routing: boat, plane or truck, and which route each one takes. Founded out of MIT's Operations Research Center.",
-          "tags": [
-            "Artificial Intelligence",
-            "Logistics",
-            "Manufacturing",
-            "Supply Chain",
-            "Operations",
-            "YC Fall 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://operatechnologies.com",
+          "url": "https://www.parea.ai",
           "equipo": 2
         },
         {
-          "id": "30480",
-          "nombre": "Flott HQ",
+          "id": "30858",
+          "nombre": "Deeptrace",
           "categoria": "B2B",
-          "descripcion": "AI-native operating system for vehicle fleet management Flott helps transport and logistics companies run leaner, smarter, and more profitable operations. Flott unifies everything transport and logistics teams need in a single, AI-powered control center—bringing planning, live tracking (gps, fuel, etc), invoicing, and payments into one place and delivering true end-to-end visibility. Flott’s AI agents act as an extension of fleet managers — automating repetitive tasks and optimizing workflows.This lets companies focus on what truly matters: growing the business.",
+          "descripcion": "AI agents for on-call At Deeptrace, we’re building AI agents that investigate and resolve production alerts end-to-end. Deeptrace cuts through the noise, pinpoints root causes instantly, and gives engineering teams back what they need most: the freedom to build instead of firefighting.\r\n\r\nIn production, we're already seeing a reduction in time spent triaging, investigating, and resolving alerts with some of the fastest growing companies in the world.",
           "tags": [
-            "Logistics",
-            "Transportation",
-            "Operations",
-            "AI Assistant",
-            "YC Spring 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.flotthq.com",
-          "equipo": 2
-        },
-        {
-          "id": "29376",
-          "nombre": "Carma",
-          "categoria": "Operations",
-          "descripcion": "The AI Operating System For Modern Fleets. Carma is building an AI-native platform that transforms fleet operations from tedious, manual work into effortless, automated workflows.\r\n\r\nWe’re the fastest-growing company in fleet management software. Carma already powers some of the largest fleets in the U.S., saving operations teams thousands of hours by eliminating busywork and keeping vehicles on the road.\r\n\r\nBacked by Soma Capital, Y Combinator, founders of Superhuman, and Tier-1 investors, we are sprinting toward a Series A in 2026.\r\n\r\nWe’re hiring the top 0.1% of engineers who want real ownership and impact—starting Day 1, you’ll build and ship fast to production for enterprise clients. Fleet operations run in real time, so your work is immediately used in the field and gets real customer feedback in hours, not months.",
-          "tags": [
-            "B2B",
-            "Workflow Automation",
-            "Compliance",
-            "AI",
-            "Automotive",
-            "YC Winter 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.joincarma.com/",
-          "equipo": 5
-        },
-        {
-          "id": "30521",
-          "nombre": "Kairos",
-          "categoria": "Infrastructure",
-          "descripcion": "Specialized AI for Critical Industries Kairos closes the last-mile reliability gap in AI deployments. \r\n\r\nWe bring frontier techniques to companies in critical industries, deploying specialized agents that encode operator expertise and reliably automate their most manual workflows.",
-          "tags": [
-            "AIOps",
-            "Artificial Intelligence",
-            "Machine Learning",
-            "Reinforcement Learning",
-            "YC Spring 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.withkairos.co/",
-          "equipo": 3
-        },
-        {
-          "id": "30849",
-          "nombre": "MOVEdot",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "AI Agents for Hardware Engineering Our agents run hardware engineering tasks that normally take hours or days in just a few minutes, allowing engineers to process 100x more data and information. Our platform allows hardware engineers to orchestrate agents for tasks such as analyzing failures across entire test campaigns, pulling the right data and KPIs from their databases, checking how conditions (like temperature or load) affect performance and reliability, and then document findings in reports and dashboards.",
-          "tags": [
-            "Hardware",
-            "Manufacturing",
-            "AI",
-            "Automotive",
-            "Industrial",
             "YC Fall 2025"
           ],
           "audiencia_objetivo": "B2B",
-          "url": "https://www.movedot.ai/",
-          "equipo": 10
+          "url": "https://deeptrace.com/",
+          "equipo": 4
         }
       ],
-      "complementarity_score": 0.6151,
-      "rationale": "Herramientas complementarias para B2B: Supply Chain and Logistics, B2B, Operations, Infrastructure, Engineering, Product and Design",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_24",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "25351",
-          "nombre": "Axross Pte Ltd",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "AI-driven HVAC control system for improved energy performance At Axross, we specialize in delivering AI-driven HVAC control systems designed to enhance energy efficiency and reduce operational costs for manufacturers. Our solutions are tailored to meet the stringent requirements of industries, where maintaining precise environmental conditions is critical.\r\n\r\nWith a team of experts in AI, data science, and industrial systems, Axross is committed to providing reliable, scalable solutions that help manufacturers achieve their energy efficiency goals and support sustainable practices.",
-          "tags": [
-            "B2B",
-            "Manufacturing",
-            "AI",
-            "YC Winter 2022"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.axross.co/",
-          "equipo": 10
-        },
-        {
-          "id": "33805",
-          "nombre": "Edviro",
-          "categoria": "Infrastructure",
-          "descripcion": "AI That Operates Energy Infrastructure Edviro builds AI that operates energy infrastructure. We connect to meters, HVAC systems, batteries, solar, and other energy equipment and continuously handle the work required to keep them efficient: detecting and diagnosing problems to forecasting demand, simulating fixes, creating work orders, coordinating maintenance, and controlling equipment where authorized. Our energy world models learn how each site behaves, choose the highest-value actions, and verify the results against real operational, meter, and billing data.",
-          "tags": [
-            "Deep Learning",
-            "B2B",
-            "Energy",
-            "YC Summer 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://edviroenergy.com",
-          "equipo": 2
-        },
-        {
-          "id": "29438",
-          "nombre": "Spark",
-          "categoria": "B2B",
-          "descripcion": "AI-powered workflows for energy infrastructure Spark AI is workflow software for solar, storage, and data center developers. We've reviewed and identified over 1 million zoning, permitting, and project-related documents in nearly every jurisdiction in America, so that you can instantly identify project requirements, local sentiment, and fatal flaws in seconds.\r\n\r\nWe’re trusted by dozens of industry-leading developers representing over 90 gigawatts of project pipeline and $30 billion in financing. Our team combines leadership experience from AI and energy (Microsoft, Apple, Department of Energy, Brex).",
-          "tags": [
-            "Energy Storage",
-            "Solar Power",
-            "Climate",
-            "Energy",
-            "AI",
-            "YC Winter 2024"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.sparkhq.ai",
-          "equipo": 5
-        },
-        {
-          "id": "34959",
-          "nombre": "Applied Kinetics",
-          "categoria": "Supply Chain and Logistics",
-          "descripcion": "AI for the industries that power America. Applied Kinetics builds and deploys specialized AI employees to handle the coordination work behind America's energy and data center buildout. Our agents chase suppliers, track equipment approvals and delivery dates, and flag delays so project teams can keep critical equipment moving without hunting for updates across emails and spreadsheets.",
-          "tags": [
-            "B2B",
-            "Supply Chain",
-            "Procurement",
-            "Energy",
-            "AI",
-            "YC Fall 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://appliedkinetics.ai",
-          "equipo": 2
-        },
-        {
-          "id": "26668",
-          "nombre": "Elessar",
-          "categoria": "Productivity",
-          "descripcion": "AI-powered engineering productivity tools Elessar boosts engineering productivity by integrating with your existing ecosystem of tools to automatically generate changelogs, streamline communications, and provide AI-powered reporting to engineers & managers.",
-          "tags": [
-            "Artificial Intelligence",
-            "Productivity",
-            "YC Summer 2022"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://www.getelessar.com/",
-          "equipo": 2
-        }
-      ],
-      "complementarity_score": 0.6064,
-      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Infrastructure, B2B, Supply Chain and Logistics, Productivity",
-      "size": 5
-    },
-    {
-      "cluster_id": "cluster_b2b_25",
-      "audiencia_objetivo": "B2B",
-      "startups": [
-        {
-          "id": "30466",
-          "nombre": "Labric",
-          "categoria": "Analytics",
-          "descripcion": "The data layer for scientific research Labric is building the data layer that makes AI work for science. We capture messy lab data from instruments and tools, clean it, and connect it—so researchers can actually use AI to accelerate discovery.",
-          "tags": [
-            "YC Spring 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://labric.co",
-          "equipo": 6
-        },
-        {
-          "id": "34794",
-          "nombre": "Petrichor Bio",
-          "categoria": "B2B",
-          "descripcion": "Wet lab infrastructure that turns AI experiments into training data. Real biology requires a wet lab, and building one takes years and a team most AI companies don't have. Petrichor runs their experiments at scale and sends back the dense, clean data their models need to learn from.",
-          "tags": [
-            "Deep Learning",
-            "AI",
-            "YC Fall 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://petrichorbio.com/",
-          "equipo": 3
-        },
-        {
-          "id": "31181",
-          "nombre": "Synthetic Sciences",
-          "categoria": "Engineering, Product and Design",
-          "descripcion": "Infrastructure for Autonomous Science Synthetic Sciences is a research lab building infrastructure for scientific superintelligence. Empirical science is bottlenecked by verification that is slow, expensive, and imperfect. We work on tooling, evals, training environments, algorithms, and models that make autonomous science possible.",
-          "tags": [
-            "YC Winter 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://syntheticsciences.ai/",
-          "equipo": 2
-        },
-        {
-          "id": "31555",
-          "nombre": "rekursiv.ai",
-          "categoria": "Productivity",
-          "descripcion": "Scale AI scientists whose own breakthroughs accelerate the next. We're scaling self-improving AI scientist teams to ideate/experiment/discover, generating new knowledge autonomously. Their discoveries reduced ARC-1/2 costs by 10,000× while maintaining state-of-the-art accuracy and yielded material advances on combinatorial ML problems.\r\n\r\nWe believe that AI is bounded not by compute, but ideas. Scaling to millions of sessions of discovery enables leveraging its own discoveries and presents a novel training source capable of ushering a new era of self-reliant foundational models.",
-          "tags": [
-            "Artificial Intelligence",
-            "Deep Learning",
-            "Machine Learning",
-            "YC Summer 2026"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://rekursiv.ai",
-          "equipo": 5
-        },
-        {
-          "id": "30899",
-          "nombre": "Sciloop",
-          "categoria": "Infrastructure",
-          "descripcion": "Expert STEM reasoning data for frontier AI labs. Sciloop creates expert-level math and physics problems that frontier AI models can't solve, then sells the data to AI labs for training and evaluation. Our problems are created by IPhO and IMO medalists — the top 0.01% of STEM talent globally. On our benchmark, models like GPT 5.4 Pro and Gemini 3.1 Pro score 0-5% on our hardest problems. We work with AI labs to supply continuous, fresh training data that pushes the frontier of mathematical and scientific reasoning. Founded by Bilal and Osman, International Physics Olympiad medalists from MIT with hands-on ML research experience at MIT CSAIL.",
-          "tags": [
-            "Marketplace",
-            "Data Labeling",
-            "Big Data",
-            "AI",
-            "YC Fall 2025"
-          ],
-          "audiencia_objetivo": "B2B",
-          "url": "https://sciloop.dev",
-          "equipo": 6
-        }
-      ],
-      "complementarity_score": 0.606,
-      "rationale": "Herramientas complementarias para B2B: Analytics, B2B, Engineering, Product and Design, Productivity, Infrastructure",
+      "complementarity_score": 0.6106,
+      "rationale": "Herramientas complementarias para B2B: Engineering, Product and Design, Infrastructure, Productivity, Operations, B2B",
       "size": 5
     }
   ]
